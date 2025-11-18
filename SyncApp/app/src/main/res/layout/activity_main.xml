@@ -5,13 +5,15 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/bg_turquesa">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/appBarCv"
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardBackgroundColor="@color/bg_turquesa">
 
         <LinearLayout
             android:id="@+id/arrowBack"
@@ -29,15 +31,16 @@
             </ImageView>
 
             <ImageView
-                android:layout_marginStart="40dp"
+                android:layout_marginStart="20dp"
                 android:layout_width="250dp"
                 android:layout_height="50dp"
                 android:src="@drawable/title_image_removebg">
             </ImageView>
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
                 android:src="@drawable/logo_image_removebg">
             </ImageView>
 
@@ -45,5 +48,111 @@
 
 
     </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/ivUserIcon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toBottomOf="@+id/appBarCv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/user_icon_image"
+        android:tint="@color/azul_real">
+
+    </ImageView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ivUserIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="16dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@color/bg_gris_claro"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Escribe tu nombre aqui"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/black">
+            </TextView>
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:hint="name"
+                android:backgroundTint="@color/gris_oscuro">
+            </EditText>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Escribe la contraseña"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/black">
+            </TextView>
+            <EditText
+                android:id="@+id/etContrasena1"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:hint="password"
+                android:backgroundTint="@color/gris_oscuro">
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvRecuperarContrasena"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recuperar Contraseña"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/gris_oscuro"
+                android:gravity="start">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvCreaCuenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crear Cuenta"
+                android:textColor="@color/gris_oscuro"
+                android:gravity="start">
+            </TextView>
+
+            <Button
+                android:id="@+id/btLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cvCrearCuenta"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="25dp"
+                android:text="LOGIN"
+                android:backgroundTint="@color/gris_oscuro">
+            </Button>
+            <Button
+                android:id="@+id/btInvitado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cvCrearCuenta"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="25dp"
+                android:text="INVITADO"
+                android:backgroundTint="@color/gris_oscuro">
+            </Button>
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
