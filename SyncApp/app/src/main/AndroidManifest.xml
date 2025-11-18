@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SyncApp">
         <activity
+            android:name=".MenuPrincipalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateAcontActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

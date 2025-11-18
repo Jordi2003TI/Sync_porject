@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">SyncApp</string>
+    <string name="icono_login">Icono login</string>
+    <string name="writeYourName">Escribe tu nombre aqui</string>
+    <string name="name">name</string>
+    <string name="writeYourPassword">Escribe la contraseña</string>
+    <string name="password">password</string>
+    <string name="recoverPassword">Recuperar Contraseña</string>
+    <string name="CreateAccount">Crear Cuenta</string>
+    <string name="login">LOGIN</string>
+    <string name="guest">INVITADO</string>
+    <string name="TitleLogin">Titulo_Login</string>
+    <string name="iconUser">IconoUser</string>
 </resources>

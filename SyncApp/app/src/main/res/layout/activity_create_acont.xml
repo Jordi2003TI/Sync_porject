@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".CreateAcontActivity"
     android:background="@color/bg_turquesa">
 
     <androidx.cardview.widget.CardView
@@ -27,24 +27,21 @@
                 android:id="@+id/arrowBackIv"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/arrow_back"
-                android:contentDescription="@string/icono_login">
+                android:src="@drawable/arrow_back">
             </ImageView>
 
             <ImageView
                 android:layout_marginStart="20dp"
                 android:layout_width="250dp"
                 android:layout_height="50dp"
-                android:src="@drawable/title_image_removebg"
-                android:contentDescription="@string/TitleLogin">
+                android:src="@drawable/title_image_removebg">
             </ImageView>
 
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="20dp"
-                android:src="@drawable/logo_image_removebg"
-                android:contentDescription="@string/icono_login">
+                android:src="@drawable/logo_image_removebg">
             </ImageView>
 
         </LinearLayout>
@@ -54,15 +51,14 @@
 
     <ImageView
         android:id="@+id/ivUserIcon"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
         app:layout_constraintTop_toBottomOf="@+id/appBarCv"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="40dp"
         android:src="@drawable/user_icon_image"
-        app:tint="@color/azul_real"
-        android:contentDescription="@string/iconUser">
+        app:tint="@color/azul_real">
 
     </ImageView>
 
@@ -89,50 +85,60 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/writeYourName"
+                android:text="Elige un nombre de usuario"
                 android:layout_marginTop="25dp"
                 android:textColor="@color/black">
             </TextView>
             <EditText
                 android:id="@+id/etName"
                 android:layout_width="300dp"
-                android:layout_height="48dp"
-                android:hint="@string/name"
+                android:layout_height="match_parent"
+                android:hint="name"
                 android:backgroundTint="@color/gris_oscuro">
             </EditText>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/writeYourPassword"
+                android:text="Escribe tu correo electronico"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/black">
+            </TextView>
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:hint="email"
+                android:backgroundTint="@color/gris_oscuro">
+            </EditText>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Escribe una contraseña"
                 android:layout_marginTop="25dp"
                 android:textColor="@color/black">
             </TextView>
             <EditText
                 android:id="@+id/etContrasena1"
                 android:layout_width="300dp"
-                android:layout_height="48dp"
-                android:hint="@string/password"
+                android:layout_height="match_parent"
+                android:hint="password"
+                android:backgroundTint="@color/gris_oscuro">
+            </EditText>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Repite la contraseña"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/black">
+            </TextView>
+            <EditText
+                android:id="@+id/etContrasena2"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:hint="password"
                 android:backgroundTint="@color/gris_oscuro">
             </EditText>
 
-            <TextView
-                android:id="@+id/tvRecuperarContrasena"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/recoverPassword"
-                android:layout_marginTop="25dp"
-                android:textColor="@color/gris_oscuro"
-                android:gravity="start">
-            </TextView>
-
-            <TextView
-                android:id="@+id/tvCreaCuenta"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/CreateAccount"
-                android:textColor="@color/gris_oscuro"
-                android:gravity="start">
-            </TextView>
 
             <Button
                 android:id="@+id/btLogin"
@@ -141,19 +147,10 @@
                 app:layout_constraintTop_toBottomOf="@+id/cvCrearCuenta"
                 android:layout_marginLeft="100dp"
                 android:layout_marginTop="25dp"
-                android:text="@string/login"
+                android:text="CREAR"
                 android:backgroundTint="@color/gris_oscuro">
             </Button>
-            <Button
-                android:id="@+id/btInvitado"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/cvCrearCuenta"
-                android:layout_marginLeft="90dp"
-                android:layout_marginTop="25dp"
-                android:text="@string/guest"
-                android:backgroundTint="@color/gris_oscuro">
-            </Button>
+
         </LinearLayout>
 
 
