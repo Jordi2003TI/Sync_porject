@@ -98,16 +98,16 @@
             >
         </TextView>
     </androidx.cardview.widget.CardView>
-
+<!--Solo se pone weigh 0 cuando es linear
+app:layoutManager=""
+-->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvRecientes"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         app:layout_constraintTop_toBottomOf="@+id/cvTituloRecientes"
+        app:layout_constraintBottom_toTopOf="@+id/menuBottomBar"
         android:orientation="vertical">
-
-
-
     </androidx.recyclerview.widget.RecyclerView>
 
     <androidx.cardview.widget.CardView
