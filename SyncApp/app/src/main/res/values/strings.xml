@@ -13,4 +13,6 @@
     <string name="iconUser">IconoUser</string>
     <string name="filters">FILTROS</string>
     <string name="mostRecent">Mas recientes</string>
+    <string name="description">Descripcion...</string>
+    <string name="Title">Titulo</string>
 </resources>
