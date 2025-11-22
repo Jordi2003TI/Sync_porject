@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -12,6 +13,8 @@ import androidx.core.view.WindowInsetsCompat
 class MainActivity : AppCompatActivity() {
 
     private lateinit var btLogin: Button
+
+    private lateinit var tvCreaCuenta: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,12 +26,18 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initComponents(){
-        btLogin = findViewById(R.id.btLogin)
+        btLogin = findViewById<Button>(R.id.btLogin)
+        tvCreaCuenta = findViewById<TextView>(R.id.tvCreaCuenta)
     }
 
     private fun initListeners(){
         btLogin.setOnClickListener {
             val intent = Intent(this, MenuPrincipalActivity::class.java)
+            startActivity(intent)
+        }
+
+        tvCreaCuenta.setOnClickListener {
+            val intent = Intent(this, CreateAcontActivity::class.java )
             startActivity(intent)
         }
     }
