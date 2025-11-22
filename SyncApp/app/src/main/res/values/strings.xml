@@ -15,4 +15,5 @@
     <string name="mostRecent">Mas recientes</string>
     <string name="description">Descripcion...</string>
     <string name="Title">Titulo</string>
+    <string name="descripction_user">Descripcion User</string>
 </resources>
