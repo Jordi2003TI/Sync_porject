@@ -46,7 +46,7 @@
                 android:id="@+id/ivLikeElementoUser"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/favorite_icon"
+                android:src="@drawable/edit_icon"
                 android:layout_marginStart="10dp">
             </ImageView>
 
@@ -54,7 +54,7 @@
                 android:id="@+id/ivFotoPerfilUser"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/user_icon_image"
+                android:src="@drawable/delete_icon"
                 android:layout_marginStart="10dp">
             </ImageView>
         </LinearLayout>
@@ -67,7 +67,6 @@
             android:text="@string/description"
             android:ellipsize="end"/>
 
-        <!-- ESTRELLAS -->
         <!-- ESTRELLAS -->
         <LinearLayout
             android:id="@+id/ll_puntuation"
@@ -117,6 +116,7 @@
             </ImageView>
 
         </LinearLayout>
+
     </LinearLayout>
 
 </LinearLayout>
