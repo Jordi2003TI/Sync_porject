@@ -76,7 +76,7 @@
                 android:textColor="@color/black">
             </TextView>
             <EditText
-                android:id="@+id/etTitle_create"
+                android:id="@+id/etTitleCreate"
                 android:layout_marginTop="12dp"
                 android:layout_width="240dp"
                 android:layout_height="50dp"
@@ -92,25 +92,66 @@
                 android:backgroundTint="@color/white">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clAddFile"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
+                        android:layout_width="112dp"
+                        android:layout_height="112dp"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        android:src="@drawable/add_file_icon">
+                        android:src="@drawable/add_file_icon"
+                        app:tint="@color/gris_oscuro">
 
                     </ImageView>
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.cardview.widget.CardView>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Escribe una descripcion paara tu articulo"
+                android:layout_marginTop="18dp"
+                android:textColor="@color/black">
+            </TextView>
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                android:layout_margin="12dp">
+                <EditText
+                    android:id="@+id/etDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:inputType="textMultiLine"
+                    android:hint="Esribe aqui la descripción"
+                    android:gravity="top|start"
+                    android:scrollbars="vertical"
+                    android:layout_margin="10dp">
 
+                </EditText>
+            </androidx.cardview.widget.CardView>
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp">
+                <Button
+                    android:id="@+id/btCreatePost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    android:text="CREAR"
+                    android:backgroundTint="@color/gris_oscuro">
+                </Button>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
 
