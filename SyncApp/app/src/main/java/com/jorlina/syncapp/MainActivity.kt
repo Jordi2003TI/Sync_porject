@@ -6,6 +6,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -13,6 +14,8 @@ import androidx.core.view.WindowInsetsCompat
 class MainActivity : AppCompatActivity() {
 
     private lateinit var btLogin: Button
+
+    private lateinit var  arrowBackIv: ImageView
 
     private lateinit var tvCreaCuenta: TextView
 
@@ -28,6 +31,7 @@ class MainActivity : AppCompatActivity() {
     private fun initComponents(){
         btLogin = findViewById<Button>(R.id.btLogin)
         tvCreaCuenta = findViewById<TextView>(R.id.tvCreaCuenta)
+        arrowBackIv = findViewById<ImageView>(R.id.arrowBackIv)
     }
 
     private fun initListeners(){
@@ -40,9 +44,25 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, CreateAcontActivity::class.java )
             startActivity(intent)
         }
+
+        arrowBackIv.setOnClickListener {
+            SalirApp()
+        }
     }
 
     private fun initUI(){
 
+    }
+
+    private fun SalirApp(){
+        AlertDialog.Builder(this)
+            .setTitle("Quieres salir de la aplicacion")
+            .setMessage("Seguro que quieres salir")
+            .setPositiveButton("Sí"){_, _,->
+                finish()
+            }
+            .setNegativeButton("No", null)
+            .setCancelable(true)
+            .show()
     }
 }
