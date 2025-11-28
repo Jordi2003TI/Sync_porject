@@ -16,4 +16,12 @@
     <string name="description">Descripcion...</string>
     <string name="Title">Titulo</string>
     <string name="descripction_user">Descripcion User</string>
+
+
+    <string-array name="abc_spinner">
+        <item>ABC</item>
+        <item>ZXY</item>
+    </string-array>
+    <string name="titulo_spinner_alfabetico">Alfabetico</string>
+
 </resources>
