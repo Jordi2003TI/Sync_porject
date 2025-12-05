@@ -42,7 +42,6 @@ class Filtros : AppCompatActivity() {
             android.R.layout.simple_spinner_item
         )
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-
         spinner.adapter=adapter
 
         arrowBackIv.setOnClickListener {
@@ -53,7 +52,7 @@ class Filtros : AppCompatActivity() {
 
     private fun initComponents() {
         spinner=findViewById<Spinner>(R.id.SpinerAlfabetic)
-        spinner.prompt="Alfabetico"
+        //spinner.prompt="Alfabetico"
 
         arrowBackIv = findViewById<ImageView>(R.id.arrowBackIv)
     }

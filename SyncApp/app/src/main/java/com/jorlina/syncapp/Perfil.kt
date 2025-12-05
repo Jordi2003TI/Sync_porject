@@ -11,6 +11,7 @@ import androidx.core.view.WindowInsetsCompat
 class Perfil : AppCompatActivity() {
 
     private lateinit var arrowBackIv : ImageView
+    private lateinit var ivInfo : ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,12 +30,17 @@ class Perfil : AppCompatActivity() {
 
     private fun initComponents(){
         arrowBackIv = findViewById<ImageView>(R.id.arrowBackIv)
+        ivInfo = findViewById<ImageView>(R.id.ivInfo)
 
     }
 
     private fun initListeners(){
         arrowBackIv.setOnClickListener {
             finish()
+        }
+        ivInfo.setOnClickListener {
+            val intent = Intent(this, AyudaActivity::class.java)
+            startActivity(intent)
         }
 
     }
