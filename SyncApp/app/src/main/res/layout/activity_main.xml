@@ -28,7 +28,8 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:src="@drawable/arrow_back"
-                android:contentDescription="@string/icono_login">
+                android:contentDescription="@string/icono_login"
+                android:theme="@style/vectorAssets">
             </ImageView>
 
             <ImageView
@@ -76,6 +77,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:cardCornerRadius="16dp"
         app:cardElevation="14dp"
+        android:theme="@style/fondoCards"
         >
 
         <LinearLayout

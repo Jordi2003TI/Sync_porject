@@ -6,4 +6,20 @@
     </style>
 
     <style name="Theme.SyncApp" parent="Base.Theme.SyncApp" />
+
+    <style name="fondoApp">
+        <item name= "android:background">@color/bg_turquesa</item>
+    </style>
+    <style name="vectorAssets">
+        <item name="android:tint">@color/azul_real</item>
+    </style>
+    <style name="fondoCards">
+        <item name="android:background">@color/bg_gris_claro</item>
+    </style>
+
+    <style name="fondoCardsSmall">
+        <item name="backgroundColor">@color/white</item>
+    </style>
+
+
 </resources>

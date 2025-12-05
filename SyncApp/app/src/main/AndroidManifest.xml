@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SyncApp">
         <activity
+            android:name=".preferencias"
+            android:exported="false" />
+        <activity
             android:name=".ayuda"
             android:exported="false" />
         <activity

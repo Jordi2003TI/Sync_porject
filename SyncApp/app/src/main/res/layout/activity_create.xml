@@ -27,7 +27,8 @@
                 android:id="@+id/arrowBackIv"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/arrow_back">
+                android:src="@drawable/arrow_back"
+                android:theme="@style/vectorAssets">
             </ImageView>
 
             <ImageView
@@ -41,7 +42,8 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="20dp"
-                android:src="@drawable/user_icon_image">
+                android:src="@drawable/user_icon_image"
+                android:theme="@style/vectorAssets">
             </ImageView>
 
         </LinearLayout>
@@ -56,7 +58,7 @@
         android:layout_marginHorizontal="18dp"
         android:layout_marginBottom="18dp"
         app:cardCornerRadius="16dp"
-        android:backgroundTint="@color/bg_gris_claro">
+        android:theme="@style/fondoCards">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -104,18 +106,19 @@
                     android:id="@+id/clAddFile"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:background="@color/white"
                     >
 
                     <ImageView
                         android:layout_width="112dp"
                         android:layout_height="112dp"
                         android:src="@drawable/add_file_icon"
+                        android:theme="@style/vectorAssets"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:tint="@color/gris_oscuro"
-                        >
+                        style="@style/FileCard">
 
                     </ImageView>
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -141,7 +144,8 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@+id/tvEscribeDescripcion"
                 app:cardCornerRadius="16dp"
-                app:layout_constraintBottom_toTopOf="@+id/clBotonCrear">
+                app:layout_constraintBottom_toTopOf="@+id/clBotonCrear"
+                android:theme="@style/fondoCardsSmall">
 
                 <EditText
                     android:id="@+id/etDescription"
@@ -167,11 +171,11 @@
                     android:id="@+id/btCreatePost"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/gris_oscuro"
                     android:text="CREAR"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"></Button>
+                    app:layout_constraintStart_toStartOf="parent">
+                </Button>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

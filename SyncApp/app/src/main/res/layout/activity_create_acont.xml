@@ -27,7 +27,8 @@
                 android:id="@+id/arrowBackIv"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/arrow_back">
+                android:src="@drawable/arrow_back"
+                android:theme="@style/vectorAssets">
             </ImageView>
 
             <ImageView
@@ -58,7 +59,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="40dp"
         android:src="@drawable/user_icon_image"
-        app:tint="@color/azul_real">
+        android:theme="@style/vectorAssets">
 
     </ImageView>
 
@@ -72,6 +73,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:cardCornerRadius="16dp"
         app:cardElevation="14dp"
+        android:theme="@style/fondoCards"
         >
 
         <LinearLayout
@@ -80,6 +82,7 @@
             android:orientation="vertical"
             android:padding="20dp"
             android:background="@color/bg_gris_claro"
+
             >
 
             <TextView

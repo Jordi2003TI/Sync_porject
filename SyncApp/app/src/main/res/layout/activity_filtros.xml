@@ -28,7 +28,8 @@
                 android:id="@+id/arrowBackIv"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/arrow_back">
+                android:src="@drawable/arrow_back"
+                android:theme="@style/vectorAssets">
             </ImageView>
 
             <ImageView
@@ -41,7 +42,8 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="20dp"
-                android:src="@drawable/user_icon_image">
+                android:src="@drawable/user_icon_image"
+                android:theme="@style/vectorAssets">
             </ImageView>
         </LinearLayout>
 

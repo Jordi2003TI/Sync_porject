@@ -47,7 +47,8 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/favorite_icon"
-                android:layout_marginStart="10dp">
+                android:layout_marginStart="10dp"
+                android:theme="@style/vectorAssets">
             </ImageView>
 
             <ImageView
@@ -55,7 +56,8 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/user_icon_image"
-                android:layout_marginStart="10dp">
+                android:layout_marginStart="10dp"
+                android:theme="@style/vectorAssets">
             </ImageView>
         </LinearLayout>
 
@@ -81,7 +83,8 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/full_star_icon"
-                android:layout_marginStart="10dp">
+                android:layout_marginStart="10dp"
+                android:theme="@style/vectorAssets">
             </ImageView>
 
             <ImageView
@@ -89,7 +92,8 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/full_star_icon"
-                android:layout_marginStart="10dp">
+                android:layout_marginStart="10dp"
+                android:theme="@style/vectorAssets">
             </ImageView>
 
             <ImageView
@@ -97,7 +101,8 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/full_star_icon"
-                android:layout_marginStart="10dp">
+                android:layout_marginStart="10dp"
+                android:theme="@style/vectorAssets">
             </ImageView>
 
             <ImageView
@@ -105,7 +110,8 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/empty_star_icon"
-                android:layout_marginStart="10dp">
+                android:layout_marginStart="10dp"
+                android:theme="@style/vectorAssets">
             </ImageView>
 
             <ImageView
@@ -113,7 +119,8 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/empty_star_icon"
-                android:layout_marginStart="10dp">
+                android:layout_marginStart="10dp"
+                android:theme="@style/vectorAssets">
             </ImageView>
 
         </LinearLayout>
