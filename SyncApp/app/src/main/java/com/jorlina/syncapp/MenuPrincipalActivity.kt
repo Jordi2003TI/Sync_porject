@@ -14,6 +14,8 @@ class MenuPrincipalActivity : AppCompatActivity() {
     private lateinit var filterButton: Button
     private lateinit var add_iv : ImageView
 
+    private lateinit var ivPerfil : ImageView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -32,6 +34,7 @@ class MenuPrincipalActivity : AppCompatActivity() {
         arrowBackIv = findViewById<ImageView>(R.id.arrowBackIv)
         filterButton = findViewById<Button>(R.id.btFiltrosUser)
         add_iv = findViewById<ImageView>(R.id.add_iv)
+        ivPerfil = findViewById<ImageView>(R.id.ivPerfil)
 
     }
 
@@ -46,6 +49,11 @@ class MenuPrincipalActivity : AppCompatActivity() {
         }
         add_iv.setOnClickListener {
             val intent = Intent(this, CreateActivity::class.java)
+            startActivity(intent)
+        }
+
+        ivPerfil.setOnClickListener {
+            val intent = Intent(this, Perfil::class.java)
             startActivity(intent)
         }
     }
