@@ -19,6 +19,8 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var tvCreaCuenta: TextView
 
+    private lateinit var btInvitado: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -32,6 +34,7 @@ class MainActivity : AppCompatActivity() {
         btLogin = findViewById<Button>(R.id.btLogin)
         tvCreaCuenta = findViewById<TextView>(R.id.tvCreaCuenta)
         arrowBackIv = findViewById<ImageView>(R.id.arrowBackIv)
+        btInvitado = findViewById<Button>(R.id.btInvitado)
     }
 
     private fun initListeners(){
