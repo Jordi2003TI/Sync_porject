@@ -5,6 +5,42 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ayuda">
+    tools:context=".AyudaActivity"
+    android:background="@color/bg_turquesa">
+
+    <LinearLayout
+        android:id="@+id/arrowBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/arrowBackIv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/arrow_back"
+            android:theme="@style/vectorAssets">
+        </ImageView>
+
+        <ImageView
+            android:layout_marginStart="20dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:src="@drawable/title_image_removebg">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/user_icon_image"
+            android:theme="@style/vectorAssets">
+        </ImageView>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

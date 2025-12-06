@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".Perfil"
     android:background="@color/bg_turquesa">
-
     <androidx.cardview.widget.CardView
         android:id="@+id/appBarCv"
         android:layout_width="match_parent"
@@ -38,7 +37,14 @@
                 android:src="@drawable/title_image_removebg">
             </ImageView>
 
-
+            <ImageView
+                android:id="@+id/ivInfo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/info_icon"
+                android:theme="@style/vectorAssets">
+            </ImageView>
 
         </LinearLayout>
 
