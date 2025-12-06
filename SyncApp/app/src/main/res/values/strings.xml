@@ -26,6 +26,9 @@
     <string name="filter">FILTRAR</string>
     <string name="preferencias">Preferencias</string>
     <string name="aplicar">APLICAR</string>
+    <string name="mode_oscuro">Mode oscuro</string>
+    <string name="idioma">Idioma</string>
+    <string name="medida_fuente">Medida fuente</string>
 
     <string-array name="categorias_spinner">
         <item>Calculo</item>
