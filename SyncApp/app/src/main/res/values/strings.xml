@@ -23,5 +23,16 @@
         <item>ZXY</item>
     </string-array>
     <string name="titulo_spinner_alfabetico">Alfabetico</string>
+    <string name="filter">FILTRAR</string>
+
+    <string-array name="categorias_spinner">
+        <item>Calculo</item>
+        <item>Fundamentos de la programacion</item>
+        <item>Biologia General</item>
+        <item>Economia</item>
+        <item>Psicologia General</item>
+        <item>Historia del Arte</item>
+        <item>Quimica Organica</item>
+    </string-array>
 
 </resources>

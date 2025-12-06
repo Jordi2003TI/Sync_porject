@@ -3,6 +3,7 @@ package com.jorlina.syncapp
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ArrayAdapter
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.Spinner
 import androidx.activity.enableEdgeToEdge
@@ -14,7 +15,11 @@ class Filtros : AppCompatActivity() {
 
     private lateinit var spinner : Spinner
 
+    private lateinit var SpinerCategoria: Spinner
+
     private lateinit var arrowBackIv: ImageView
+
+    private lateinit var btFiltrar: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,10 +37,6 @@ class Filtros : AppCompatActivity() {
     }
 
     private fun initUI() {
-        
-    }
-
-    private fun listeners() {
         val adapter = ArrayAdapter.createFromResource(
             this,
             R.array.abc_spinner,
@@ -44,8 +45,26 @@ class Filtros : AppCompatActivity() {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinner.adapter=adapter
 
+        // Segundo Spinner
+        val adapterSpinner2 = ArrayAdapter.createFromResource(
+            this,
+            R.array.categorias_spinner,
+            android.R.layout.simple_spinner_item
+        )
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        SpinerCategoria.adapter= adapterSpinner2
+
+    }
+
+    private fun listeners() {
+
         arrowBackIv.setOnClickListener {
             finish()
+        }
+
+        btFiltrar.setOnClickListener {
+            val intent = Intent(this, MenuPrincipalActivity::class.java)
+            startActivity(intent)
         }
 
     }
@@ -55,5 +74,7 @@ class Filtros : AppCompatActivity() {
         //spinner.prompt="Alfabetico"
 
         arrowBackIv = findViewById<ImageView>(R.id.arrowBackIv)
+        SpinerCategoria = findViewById<Spinner>(R.id.SpinerCategoria)
+        btFiltrar = findViewById<Button>(R.id.btFiltrar)
     }
 }
