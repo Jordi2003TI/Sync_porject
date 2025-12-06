@@ -24,6 +24,8 @@
     </string-array>
     <string name="titulo_spinner_alfabetico">Alfabetico</string>
     <string name="filter">FILTRAR</string>
+    <string name="preferencias">Preferencias</string>
+    <string name="aplicar">APLICAR</string>
 
     <string-array name="categorias_spinner">
         <item>Calculo</item>
