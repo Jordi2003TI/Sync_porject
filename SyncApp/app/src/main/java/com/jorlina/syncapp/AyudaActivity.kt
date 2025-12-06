@@ -10,6 +10,8 @@ import androidx.core.view.WindowInsetsCompat
 class AyudaActivity : AppCompatActivity() {
     private lateinit var arrowBackIv : ImageView
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()

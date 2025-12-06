@@ -18,6 +18,60 @@
     <string name="descripction_user">Descripcion User</string>
 
 
+    <string name="titulo_ayuda_menu">1. Menu principal</string>
+    <string name="texto_menu">
+        A. Toca sobre el icono de perfil para ver tu perfil.
+        B. Toca sobre la barra de busqueda para buscar por nombre de articulo.
+        C. En el boton de filtros encontraras erramientas que te eyudaran a encontrar lo que buscas.
+        D. Toca sobre cada item para hacerlo grande y ver mejor su contenido.
+        E. Deslizando podras encontrar los articulos mas recientes.
+        F. En el corazon encontraras los articulos que ayas guardado como preferidos.
+        G. En el simbolo MAS podras crear tus propios articulos.
+        H. En el dibujo del engranaje encontraras configuraciones de preferencias.
+    </string>
+
+    <string name="titulo_ayuda_perfil">2. Perfil personal</string>
+    <string name="texto_perfil">
+        A. Vuelve al menu principal.
+        B. Encuentra la ayuda que necesites.
+        C. Toca sobre tu nombre para editarlo.
+        D. Toca sobre tu foto de perfil para cambiarla.
+        E. Añade una ligera descripción sobre ti. Aque te dedicas, que estudias,...
+        F. Edita tus articulos.
+        G. Veras la media de estrellas de tus articulos.
+        H. Elimina articulos que ya no quieres que sean publicos.
+        I. Desliza para ver todos tus articulos publicados.
+    </string>
+
+    <string name="titulo_ayuda_filtros">3. Filtros de busqueda</string>
+    <string name="texto_filtros">
+        A. Desliza la barra para filtrar por las valoraciones de los usuarios.
+        B. Elige el orden (alfabetico o alfabetico inverso) de los articulos segun su titulo.
+        C. Filtra por temas o categorias.
+        D. Dale al boton de FILTRAR para aplicar los cambios que has elegido.
+    </string>
+
+    <string name="titulo_ayuda_create">4. Crea tu articulo</string>
+    <string name="texto_create">
+        A. Toca la flecha para volver al meu principal, los cambios no se guardarán.
+        B. Toca el icono para ir a tu perfil.
+        Sigue los pasos para crear un articulo propio:
+        1. Elige i escribe el titulo
+        2. Puedes añadir una imagen o archivo si quieres.
+        3. Puedes añadir una descripcion, un texto o informacion adicional, si quieres.
+        4. Dale al boton de CREAR para guardar y compartit tu artiuclo.
+
+    </string>
+
+    <string name="titulo_ayuda_settings">5. Guarda tus preferencias</string>
+    <string name="texto_settings">
+        A. Selecciona el idioma que prefieras de entre los disponibles.
+        B. Selecciona el modo claro o oscuro de la pantalla.
+        C. Elige un tamaño de fuente comodo para ti.
+        D. Toca el boton APLICAR antes de salir para guardar tus preferencias.
+    </string>
+
+
     <string-array name="abc_spinner">
         <item>ABC</item>
         <item>ZXY</item>
@@ -39,5 +93,7 @@
         <item>Historia del Arte</item>
         <item>Quimica Organica</item>
     </string-array>
+
+
 
 </resources>
