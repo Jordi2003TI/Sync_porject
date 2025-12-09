@@ -39,7 +39,7 @@ class MenuPrincipalActivity : AppCompatActivity() {
         arrowBackIv = findViewById<ImageView>(R.id.arrowBackIv)
         filterButton = findViewById<Button>(R.id.btFiltrosUser)
         //add_iv = findViewById<ImageView>(R.id.add_iv)
-        ivPerfil = findViewById<ImageView>(R.id.ivPerfil)
+        //ivPerfil = findViewById<ImageView>(R.id.ivPerfil)
         //settings_iv = findViewById<ImageView>(R.id.settings_iv)
         bnvNavegation = findViewById<BottomNavigationView>(R.id.bnvNavegation)
 
