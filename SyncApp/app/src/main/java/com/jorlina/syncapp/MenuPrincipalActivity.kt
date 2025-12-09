@@ -8,6 +8,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MenuPrincipalActivity : AppCompatActivity() {
     private lateinit var arrowBackIv: ImageView
@@ -17,6 +18,8 @@ class MenuPrincipalActivity : AppCompatActivity() {
     private lateinit var ivPerfil : ImageView
 
     private lateinit var settings_iv : ImageView
+
+    private lateinit var bnvNavegation: BottomNavigationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,9 +38,10 @@ class MenuPrincipalActivity : AppCompatActivity() {
     private fun initComponents(){
         arrowBackIv = findViewById<ImageView>(R.id.arrowBackIv)
         filterButton = findViewById<Button>(R.id.btFiltrosUser)
-        add_iv = findViewById<ImageView>(R.id.add_iv)
+        //add_iv = findViewById<ImageView>(R.id.add_iv)
         ivPerfil = findViewById<ImageView>(R.id.ivPerfil)
-        settings_iv = findViewById<ImageView>(R.id.settings_iv)
+        //settings_iv = findViewById<ImageView>(R.id.settings_iv)
+        bnvNavegation = findViewById<BottomNavigationView>(R.id.bnvNavegation)
 
     }
 
@@ -50,19 +54,35 @@ class MenuPrincipalActivity : AppCompatActivity() {
             val intent = Intent(this, Filtros::class.java)
             startActivity(intent)
         }
+        /*
         add_iv.setOnClickListener {
             val intent = Intent(this, CreateActivity::class.java)
             startActivity(intent)
         }
-
+        */
         ivPerfil.setOnClickListener {
             val intent = Intent(this, Perfil::class.java)
             startActivity(intent)
         }
-
+        /*
         settings_iv.setOnClickListener {
             val intent = Intent(this, PreferenciasActivity::class.java)
             startActivity(intent)
+        }
+        */
+
+        bnvNavegation.setOnItemSelectedListener { item ->
+            when (item.itemId){
+                R.id.nav_favorites -> {
+                    startActivity(Intent(this, CreateActivity::class.java))
+                    true
+                }
+                R.id.nav_profile -> {
+                    startActivity(Intent(this, PreferenciasActivity::class.java))
+                    true
+                }
+                else -> false
+            }
         }
     }
     private fun initUI(){
