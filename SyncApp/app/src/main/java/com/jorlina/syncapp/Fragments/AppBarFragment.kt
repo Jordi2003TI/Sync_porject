@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import com.jorlina.syncapp.AyudaActivity
 import com.jorlina.syncapp.Perfil
 import com.jorlina.syncapp.R
 
@@ -23,6 +24,9 @@ class AppBarFragment: Fragment() {
 
         val arrowBackIv = view.findViewById<ImageView>(R.id.arrowBackIv)
         val userIconIv = view.findViewById<ImageView>(R.id.userIconIv)
+        val ivInfo = view.findViewById<ImageView>(R.id.ivInfo)
+
+
 
         arrowBackIv.setOnClickListener {
             requireActivity().finish()
@@ -30,6 +34,11 @@ class AppBarFragment: Fragment() {
 
         userIconIv.setOnClickListener {
             val intent = Intent(requireContext(), Perfil::class.java)
+            startActivity(intent)
+        }
+
+        ivInfo.setOnClickListener {
+            val intent = Intent(requireContext(), AyudaActivity::class.java)
             startActivity(intent)
         }
 

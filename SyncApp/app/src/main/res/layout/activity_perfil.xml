@@ -7,63 +7,27 @@
     android:layout_height="match_parent"
     tools:context=".Perfil"
     android:background="@color/bg_turquesa">
-    <androidx.cardview.widget.CardView
-        android:id="@+id/appBarCv"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/tbApp"
         app:layout_constraintTop_toTopOf="parent"
-        app:cardBackgroundColor="@color/bg_turquesa">
-
-        <LinearLayout
-            android:id="@+id/arrowBack"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="5dp"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/arrowBackIv"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/arrow_back"
-                android:theme="@style/vectorAssets">
-            </ImageView>
-
-            <ImageView
-                android:layout_marginStart="20dp"
-                android:layout_width="250dp"
-                android:layout_height="50dp"
-                android:src="@drawable/title_image_removebg">
-            </ImageView>
-
-            <ImageView
-                android:id="@+id/ivInfo"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="20dp"
-                android:src="@drawable/info_icon"
-                android:theme="@style/vectorAssets">
-            </ImageView>
-
-        </LinearLayout>
-
-
-    </androidx.cardview.widget.CardView>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.jorlina.syncapp.Fragments.AppBarFragment"
+        tools:layout="@layout/app_bar_fragment">
+    </androidx.fragment.app.FragmentContainerView>
 
     <TextView
         android:id="@+id/tvNombreUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
         android:text="Your Name"
-        app:layout_constraintTop_toBottomOf="@id/appBarCv"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="30dp"
         android:textSize="35sp"
         android:textStyle="bold"
-        >
-    </TextView>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tbApp"></TextView>
 
     <ImageView
         android:id="@+id/ivFotoPerfilUser"

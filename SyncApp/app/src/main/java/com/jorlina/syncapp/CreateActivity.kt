@@ -8,7 +8,6 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class CreateActivity : AppCompatActivity() {
-    private lateinit var arrowBackIv : ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,13 +24,11 @@ class CreateActivity : AppCompatActivity() {
     }
 
     private fun initComponents(){
-        arrowBackIv = findViewById<ImageView>(R.id.arrowBackIv)
+
     }
 
     private fun initListeners(){
-        arrowBackIv.setOnClickListener {
-            finish()
-        }
+
     }
     private fun initUI(){
 
