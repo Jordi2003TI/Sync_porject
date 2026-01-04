@@ -8,6 +8,8 @@ import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.splashscreen.SplashScreen
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
@@ -33,9 +35,7 @@ class MainActivity : AppCompatActivity() {
         initComponents();
         initListeners();
         initUI()
-
     }
-
     private fun initComponents(){
         btLogin = findViewById<Button>(R.id.btLogin)
         tvCreaCuenta = findViewById<TextView>(R.id.tvCreaCuenta)
