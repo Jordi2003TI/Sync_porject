@@ -54,19 +54,14 @@
     </androidx.cardview.widget.CardView>
     -->
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/tbApp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        >
-
-        <ImageView
-            android:layout_width="230dp"
-            android:layout_height="60dp"
-            android:src="@drawable/title_image_removebg">
-        </ImageView>
-    </androidx.appcompat.widget.Toolbar>
+   <androidx.fragment.app.FragmentContainerView
+       android:id="@+id/tbApp"
+       app:layout_constraintTop_toTopOf="parent"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:name="com.jorlina.syncapp.Fragments.AppBarFragment"
+       tools:layout="@layout/app_bar_fragment">
+   </androidx.fragment.app.FragmentContainerView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cvBusquedaUser"
