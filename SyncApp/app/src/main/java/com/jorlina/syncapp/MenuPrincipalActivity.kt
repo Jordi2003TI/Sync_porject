@@ -18,21 +18,11 @@ import com.jorlina.syncapp.model.SyncItem
 import javax.sql.DataSource
 
 class MenuPrincipalActivity : AppCompatActivity() {
-    //private lateinit var arrowBackIv: ImageView
     private lateinit var filterButton: Button
-    //private lateinit var add_iv : ImageView
-
-    //private lateinit var ivPerfil : ImageView
-
-    //private lateinit var settings_iv : ImageView
-
     private lateinit var bnvNavegation: BottomNavigationView
-
     private lateinit var rvRecientes: RecyclerView
-    private lateinit var SyncAdapter: SyncAdapter
-
+    private lateinit var syncAdapter: SyncAdapter
     private var listaCompleta: List<SyncItem> = listOf()
-
     private var REQUEST_CODE_FILTROS = 100
 
 
@@ -51,11 +41,7 @@ class MenuPrincipalActivity : AppCompatActivity() {
     }
 
     private fun initComponents(){
-        //arrowBackIv = findViewById<ImageView>(R.id.arrowBackIv)
         filterButton = findViewById<Button>(R.id.btFiltrosUser)
-        //add_iv = findViewById<ImageView>(R.id.add_iv)
-        //ivPerfil = findViewById<ImageView>(R.id.ivPerfil)
-        //settings_iv = findViewById<ImageView>(R.id.settings_iv)
         bnvNavegation = findViewById<BottomNavigationView>(R.id.bnvNavegation)
         rvRecientes = findViewById<RecyclerView>(R.id.rvRecientes)
         
@@ -63,31 +49,11 @@ class MenuPrincipalActivity : AppCompatActivity() {
     }
 
     private fun initListeners(){
-        /*
-        arrowBackIv.setOnClickListener {
-            finish()
-        }*/
 
         filterButton.setOnClickListener {
             val intent = Intent(this, Filtros::class.java)
-            startActivity(intent)
+            startActivityForResult(intent, REQUEST_CODE_FILTROS)
         }
-        /*
-        add_iv.setOnClickListener {
-            val intent = Intent(this, CreateActivity::class.java)
-            startActivity(intent)
-        }
-        */
-        /*ivPerfil.setOnClickListener {
-            val intent = Intent(this, Perfil::class.java)
-            startActivity(intent)
-        }*/
-        /*
-        settings_iv.setOnClickListener {
-            val intent = Intent(this, PreferenciasActivity::class.java)
-            startActivity(intent)
-        }
-        */
 
         bnvNavegation.setOnItemSelectedListener { item ->
             when (item.itemId){
@@ -105,9 +71,11 @@ class MenuPrincipalActivity : AppCompatActivity() {
     }
     private fun initUI(){
         rvRecientes.layoutManager = LinearLayoutManager(this)
-        val items = DataSyncItem.item
-        SyncAdapter = SyncAdapter(
-            items = items,
+
+        listaCompleta = DataSyncItem.item
+
+        syncAdapter= SyncAdapter(
+            items = listaCompleta,
             onItemClick = { item ->
                 Toast.makeText(
                     this,
@@ -116,6 +84,33 @@ class MenuPrincipalActivity : AppCompatActivity() {
                 ).show()
             }
         )
-        rvRecientes.adapter = SyncAdapter
+        rvRecientes.adapter = syncAdapter
     }
+
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if (requestCode == REQUEST_CODE_FILTROS && resultCode == RESULT_OK) {
+
+            val categoriaSeleccionada = data?.getStringExtra("CATEGORIA") ?: "Todas"
+
+
+            aplicarFiltro(categoriaSeleccionada)
+        }
+    }
+
+
+    private fun aplicarFiltro(categoria: String) {
+        val listaFiltrada = if (categoria == "Todas") {
+            listaCompleta // Mostrar todos los items
+        } else {
+            listaCompleta.filter { it.categoria == categoria }
+        }
+
+        syncAdapter.updateList(listaFiltrada)
+
+        Toast.makeText(this, "Filtrado por: $categoria", Toast.LENGTH_SHORT).show()
+    }
+
 }

@@ -8,5 +8,6 @@ data class SyncItem(
     val puntuacion: Int,
     val favoritos: Boolean,
     val ImagenDoc: Int,
-    val ImagenPer: Int
+    val ImagenPer: Int,
+    val categoria: String
 )
