@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.jorlina.syncapp.model.DataSyncItem
 import com.jorlina.syncapp.model.SyncAdapter
+import com.jorlina.syncapp.model.SyncItem
 import javax.sql.DataSource
 
 class MenuPrincipalActivity : AppCompatActivity() {
@@ -29,6 +30,10 @@ class MenuPrincipalActivity : AppCompatActivity() {
 
     private lateinit var rvRecientes: RecyclerView
     private lateinit var SyncAdapter: SyncAdapter
+
+    private var listaCompleta: List<SyncItem> = listOf()
+
+    private var REQUEST_CODE_FILTROS = 100
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -53,6 +58,7 @@ class MenuPrincipalActivity : AppCompatActivity() {
         //settings_iv = findViewById<ImageView>(R.id.settings_iv)
         bnvNavegation = findViewById<BottomNavigationView>(R.id.bnvNavegation)
         rvRecientes = findViewById<RecyclerView>(R.id.rvRecientes)
+        
 
     }
 

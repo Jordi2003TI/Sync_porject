@@ -7,8 +7,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.jorlina.syncapp.R
 
 class SyncAdapter (
-    private val items: List<SyncItem>,
-    private val onItemClick: (SyncItem) -> Unit
+    private var items: List<SyncItem>,
+    private val onItemClick: (SyncItem) -> Unit,
 ): RecyclerView.Adapter<SyncHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SyncHolder{
         val view = LayoutInflater.from(parent.context)
@@ -23,5 +23,10 @@ class SyncAdapter (
 
     override fun getItemCount(): Int{
         return items.size
+    }
+
+    fun updateList(newList: List<SyncItem>){
+        items = newList
+        notifyDataSetChanged()
     }
 }
