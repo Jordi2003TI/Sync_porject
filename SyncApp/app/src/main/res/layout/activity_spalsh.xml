@@ -5,6 +5,30 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".model.SpalshActivity"
+    tools:context=".SpalshActivity"
+    android:background="@drawable/bg_splash"
     >
+    <androidx.cardview.widget.CardView
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="180dp"
+        android:backgroundTint="@color/bg_gris_claro"
+        >
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/logo_image_removebg"
+            android:background="@color/bg_gris_claro"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp">
+        </ImageView>
+
+
+    </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

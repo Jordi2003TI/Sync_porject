@@ -1,4 +1,4 @@
-package com.jorlina.syncapp.model
+package com.jorlina.syncapp
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,8 +8,6 @@ import androidx.core.splashscreen.SplashScreen
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.jorlina.syncapp.MainActivity
-import com.jorlina.syncapp.R
 
 class SpalshActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

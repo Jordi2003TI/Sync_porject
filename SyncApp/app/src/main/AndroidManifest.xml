@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SyncApp">
         <activity
-            android:name=".model.SpalshActivity"
+            android:name=".SpalshActivity"
             android:exported="true"
             android:theme="@style/Theme.App.SplashScreen">
             <intent-filter>
