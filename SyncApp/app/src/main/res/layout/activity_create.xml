@@ -46,8 +46,8 @@
 
             <EditText
                 android:id="@+id/etTitleCreate"
-                android:layout_width="240dp"
-                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:hint="Titulo"
                 app:layout_constraintTop_toBottomOf="@+id/tvTituloArticulo"
@@ -116,7 +116,7 @@
                 <EditText
                     android:id="@+id/etDescription"
                     android:layout_width="match_parent"
-                    android:layout_height="160dp"
+                    android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     android:gravity="top|start"
                     android:hint="Esribe aqui la descripción"

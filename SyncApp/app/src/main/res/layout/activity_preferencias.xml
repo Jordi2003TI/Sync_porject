@@ -41,7 +41,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardAjustes"
         android:layout_width="0dp"
-        android:layout_height="500dp"
+        android:layout_height="wrap_content"
         android:layout_margin="20dp"
         app:cardCornerRadius="20dp"
         app:layout_constraintTop_toBottomOf="@+id/arrowBack"
@@ -71,8 +71,8 @@
 
                 <Spinner
                     android:id="@+id/spIdioma"
-                    android:layout_width="130dp"
-                    android:layout_height="45dp" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
             </LinearLayout>
 
             <!-- MODO OSCURO -->
@@ -113,8 +113,8 @@
 
                 <Spinner
                     android:id="@+id/spFontSize"
-                    android:layout_width="130dp"
-                    android:layout_height="45dp" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
             </LinearLayout>
 
 

@@ -68,8 +68,10 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cvLogin"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         app:layout_constraintTop_toBottomOf="@+id/ivUserIcon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -96,8 +98,8 @@
             </TextView>
             <EditText
                 android:id="@+id/etName"
-                android:layout_width="300dp"
-                android:layout_height="48dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:hint="@string/name"
                 android:backgroundTint="@color/gris_oscuro">
             </EditText>
@@ -110,8 +112,8 @@
             </TextView>
             <EditText
                 android:id="@+id/etContrasena1"
-                android:layout_width="300dp"
-                android:layout_height="48dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:hint="@string/password"
                 android:backgroundTint="@color/gris_oscuro">
             </EditText>
