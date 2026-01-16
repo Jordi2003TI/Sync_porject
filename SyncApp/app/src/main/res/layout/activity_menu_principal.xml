@@ -77,7 +77,7 @@
             android:id="@+id/svBusquedaUser"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/bg_gris_claro"
+            android:background="@color/white"
             >
 
         </SearchView>
