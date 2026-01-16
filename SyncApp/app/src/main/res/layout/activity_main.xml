@@ -78,55 +78,63 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:cardCornerRadius="16dp"
         app:cardElevation="14dp"
-        android:theme="@style/fondoCards"
-        >
+        android:theme="@style/fondoCards">
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
+            android:layout_height="wrap_content"
             android:padding="20dp"
-            android:background="@color/bg_gris_claro"
-            >
+            android:background="@color/bg_gris_claro">
 
             <TextView
+                android:id="@+id/tvLabelName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/writeYourName"
                 android:layout_marginTop="25dp"
-                android:textColor="@color/black">
-            </TextView>
+                android:text="@string/writeYourName"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
             <EditText
                 android:id="@+id/etName"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/gris_oscuro"
                 android:hint="@string/name"
-                android:backgroundTint="@color/gris_oscuro">
-            </EditText>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabelName" />
+
             <TextView
+                android:id="@+id/tvLabelPassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/writeYourPassword"
                 android:layout_marginTop="25dp"
-                android:textColor="@color/black">
-            </TextView>
+                android:text="@string/writeYourPassword"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etName" />
+
             <EditText
                 android:id="@+id/etContrasena1"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/gris_oscuro"
                 android:hint="@string/password"
-                android:backgroundTint="@color/gris_oscuro">
-            </EditText>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabelPassword" />
 
             <TextView
                 android:id="@+id/tvRecuperarContrasena"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:text="@string/recoverPassword"
-                android:layout_marginTop="25dp"
                 android:textColor="@color/gris_oscuro"
-                android:gravity="start">
-            </TextView>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etContrasena1" />
 
             <TextView
                 android:id="@+id/tvCreaCuenta"
@@ -134,31 +142,32 @@
                 android:layout_height="wrap_content"
                 android:text="@string/CreateAccount"
                 android:textColor="@color/gris_oscuro"
-                android:gravity="start">
-            </TextView>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvRecuperarContrasena" />
 
             <Button
                 android:id="@+id/btLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/cvCrearCuenta"
-                android:layout_marginLeft="100dp"
                 android:layout_marginTop="25dp"
+                android:backgroundTint="@color/gris_oscuro"
                 android:text="@string/login"
-                android:backgroundTint="@color/gris_oscuro">
-            </Button>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvCreaCuenta"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
             <Button
                 android:id="@+id/btInvitado"
+                app:layout_constraintTop_toBottomOf="@+id/btLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/cvCrearCuenta"
-                android:layout_marginLeft="90dp"
-                android:layout_marginTop="25dp"
+                android:backgroundTint="@color/gris_oscuro"
                 android:text="@string/guest"
-                android:backgroundTint="@color/gris_oscuro">
-            </Button>
-        </LinearLayout>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </com.google.android.material.card.MaterialCardView>
 
