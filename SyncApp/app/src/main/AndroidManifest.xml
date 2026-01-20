@@ -49,7 +49,7 @@
             android:name=".CreateAcontActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="MainLogin.MainActivity"
             android:exported="false"
             >
         </activity>

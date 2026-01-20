@@ -1,20 +1,30 @@
-package com.jorlina.syncapp
+package MainLogin
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.splashscreen.SplashScreen
-import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.jorlina.syncapp.CreateAcontActivity
+import com.jorlina.syncapp.MenuPrincipalActivity
+import com.jorlina.syncapp.R
 
 class MainActivity : AppCompatActivity() {
 
+    private val viewModel: LoginViewModel by viewModels()
+
+    private lateinit var etName: EditText
+
+    private lateinit var etContrasena1: EditText
+
+    private lateinit var tvError: TextView
     private lateinit var btLogin: Button
 
     private lateinit var  arrowBackIv: ImageView
@@ -41,16 +51,35 @@ class MainActivity : AppCompatActivity() {
         tvCreaCuenta = findViewById<TextView>(R.id.tvCreaCuenta)
         arrowBackIv = findViewById<ImageView>(R.id.arrowBackIv)
         btInvitado = findViewById<Button>(R.id.btInvitado)
+        etName = findViewById<EditText>(R.id.etName)
+        etContrasena1 = findViewById<EditText>(R.id.etContrasena1)
+        tvError = findViewById<TextView>(R.id.tvError)
+
     }
 
     private fun initListeners(){
+
+
         btLogin.setOnClickListener {
-            val intent = Intent(this, MenuPrincipalActivity::class.java)
-            startActivity(intent)
+            viewModel.login(
+                etName.text.toString(),
+                etContrasena1.text.toString()
+            )
+        }
+
+        viewModel.errorMessage.observe(this){error ->
+            tvError.text = error
+        }
+
+        viewModel.loginResult.observe(this){ success ->
+            if (success){
+                val intent = Intent(this, MenuPrincipalActivity::class.java)
+                startActivity(intent)
+            }
         }
 
         tvCreaCuenta.setOnClickListener {
-            val intent = Intent(this, CreateAcontActivity::class.java )
+            val intent = Intent(this, CreateAcontActivity::class.java)
             startActivity(intent)
         }
 
@@ -75,3 +104,5 @@ class MainActivity : AppCompatActivity() {
             .show()
     }
 }
+
+private fun Any.observe(activity: MainActivity, function: Any) {}
