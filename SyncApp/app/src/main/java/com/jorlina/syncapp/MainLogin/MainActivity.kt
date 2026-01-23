@@ -1,4 +1,4 @@
-package MainLogin
+package com.jorlina.syncapp.MainLogin
 
 import android.content.Intent
 import android.os.Bundle
@@ -12,7 +12,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.jorlina.syncapp.CreateAcontActivity
+import com.jorlina.syncapp.CreateAccount.CreateAcontActivity
 import com.jorlina.syncapp.MenuPrincipalActivity
 import com.jorlina.syncapp.R
 
@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var etName: EditText
 
-    private lateinit var etContrasena1: EditText
+    private lateinit var etPasswordLogin: EditText
 
     private lateinit var tvError: TextView
     private lateinit var btLogin: Button
@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
         arrowBackIv = findViewById<ImageView>(R.id.arrowBackIv)
         btInvitado = findViewById<Button>(R.id.btInvitado)
         etName = findViewById<EditText>(R.id.etName)
-        etContrasena1 = findViewById<EditText>(R.id.etContrasena1)
+        etPasswordLogin = findViewById<EditText>(R.id.etPasswordLogin)
         tvError = findViewById<TextView>(R.id.tvError)
 
     }
@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
         btLogin.setOnClickListener {
             viewModel.login(
                 etName.text.toString(),
-                etContrasena1.text.toString()
+                etPasswordLogin.text.toString()
             )
         }
 

@@ -46,10 +46,10 @@
             android:name=".MenuPrincipalActivity"
             android:exported="false" />
         <activity
-            android:name=".CreateAcontActivity"
+            android:name=".CreateAccount.CreateAcontActivity"
             android:exported="false" />
         <activity
-            android:name="MainLogin.MainActivity"
+            android:name=".MainLogin.MainActivity"
             android:exported="false"
             >
         </activity>

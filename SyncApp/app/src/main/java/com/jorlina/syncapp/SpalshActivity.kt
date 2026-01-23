@@ -1,6 +1,6 @@
 package com.jorlina.syncapp
 
-import MainLogin.MainActivity
+import com.jorlina.syncapp.MainLogin.MainActivity
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge

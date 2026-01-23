@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CreateAcontActivity"
+    tools:context=".CreateAccount.CreateAcontActivity"
     android:background="@color/bg_turquesa">
     <androidx.cardview.widget.CardView
         android:id="@+id/appBarCv"
@@ -85,6 +85,13 @@
             android:padding="20dp">
 
             <TextView
+                android:id="@+id/tvErrorCreate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/red"></TextView>
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
@@ -120,7 +127,7 @@
                 android:textColor="@color/black"></TextView>
 
             <EditText
-                android:id="@+id/etContrasena1"
+                android:id="@+id/etPasswordCreate"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:backgroundTint="@color/gris_oscuro"
@@ -134,7 +141,7 @@
                 android:textColor="@color/black"></TextView>
 
             <EditText
-                android:id="@+id/etContrasena2"
+                android:id="@+id/etRepeatPasswordCreate"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:backgroundTint="@color/gris_oscuro"
@@ -142,7 +149,7 @@
 
 
             <Button
-                android:id="@+id/btLogin"
+                android:id="@+id/btCreateAccount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="100dp"

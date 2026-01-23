@@ -1,4 +1,4 @@
-package MainLogin
+package com.jorlina.syncapp.MainLogin
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
