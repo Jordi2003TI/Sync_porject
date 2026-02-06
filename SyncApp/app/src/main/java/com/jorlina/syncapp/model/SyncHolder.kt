@@ -10,6 +10,8 @@ class SyncHolder (
     itemView: View,
     private val onItemClick: (SyncItem) -> Unit
 ): RecyclerView.ViewHolder(itemView){
+    private val tvData : TextView = itemView.findViewById(R.id.tvData)
+    private val tvIdUser : TextView = itemView.findViewById(R.id.tvIdUser)
     private val tvTituloElementoUser: TextView = itemView.findViewById(R.id.tvTituloElementoUser)
     private val tvDescripcionDeUser: TextView = itemView.findViewById(R.id.tvDescripcionDeUser)
     private val ivImagenElementoUser: ImageView = itemView.findViewById(R.id.ivImagenElementoUser)
@@ -22,11 +24,20 @@ class SyncHolder (
     private val ivFotoPerfilUser: ImageView = itemView.findViewById(R.id.ivFotoPerfilUser)
 
     fun bind(item: SyncItem){
+
+        tvIdUser.text = item.idUser.toString()
+
         tvTituloElementoUser.text = item.titulo
         tvDescripcionDeUser.text = item.description
 
         ivImagenElementoUser.setImageResource(item.ImagenDoc)
         ivFotoPerfilUser.setImageResource(item.ImagenPer)
+
+        tvData.text = if (item.dateUpdated != null) {
+            "Editado: ${item.dateUpdated.toDateString()}"
+        } else {
+            "Creado: ${item.dateCreated.toDateString()}"
+        }
 
 
         val estrellas = listOf(ivStar1, ivStar2, ivStar3, ivStar4, ivStar5)

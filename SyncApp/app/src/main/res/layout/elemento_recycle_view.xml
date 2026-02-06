@@ -2,130 +2,180 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:padding="10dp">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginEnd="10dp">
-
-        <ImageView
-            android:id="@+id/ivImagenElementoUser"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/logo_image_removebg">
-        </ImageView>
-    </androidx.cardview.widget.CardView>
-
-    <!-- PARTE DERECHA Para que lo calcule el propio id usamos el 0dp pero como ademas usamos un lineras Layout usamos el peso a 1-->
     <LinearLayout
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_weight="1">
+        android:orientation="horizontal">
 
-        <!-- TÍTULO y ICONOS -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="10dp">
+
+            <ImageView
+                android:id="@+id/ivImagenElementoUser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/logo_image_removebg">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:orientation="vertical"
+            android:layout_weight="1">
 
-            <TextView
-                android:id="@+id/tvTituloElementoUser"
-                android:layout_width="0dp"
+            <!-- TÍTULO y ICONOS -->
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/Title"
-                android:textSize="20sp"
-                android:textColor="@color/black"
-                android:layout_weight="1">
-            </TextView>
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
 
-            <ImageView
-                android:id="@+id/ivLikeElementoUser"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/favorite_icon"
-                android:layout_marginStart="10dp"
-                android:theme="@style/vectorAssets">
-            </ImageView>
+                <TextView
+                    android:id="@+id/tvTituloElementoUser"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Title"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1">
+                </TextView>
 
-            <ImageView
-                android:id="@+id/ivFotoPerfilUser"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/user_icon_image"
-                android:layout_marginStart="10dp"
-                android:theme="@style/vectorAssets">
-            </ImageView>
+                <ImageView
+                    android:id="@+id/ivLikeElementoUser"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/favorite_icon"
+                    android:layout_marginStart="10dp"
+                    android:theme="@style/vectorAssets">
+                </ImageView>
+
+
+            </LinearLayout>
+
+            <!-- IDENTIFICACION DEL USUARIO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/ivFotoPerfilUser"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/user_icon_image"
+                    android:layout_marginHorizontal="10dp"
+                    android:theme="@style/vectorAssets">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/tvIdUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="68dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/idUserString" />
+
+            </LinearLayout>
+
+
+
+            <!-- ESTRELLAS -->
+            <!-- ESTRELLAS -->
+            <LinearLayout
+                android:id="@+id/ll_puntuation"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="bottom">
+
+                <ImageView
+                    android:id="@+id/ivStar1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/full_star_icon"
+                    android:layout_marginStart="10dp"
+                    android:theme="@style/vectorAssets">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/ivStar2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/full_star_icon"
+                    android:layout_marginStart="10dp"
+                    android:theme="@style/vectorAssets">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/ivStar3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/full_star_icon"
+                    android:layout_marginStart="10dp"
+                    android:theme="@style/vectorAssets">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/ivStar4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/empty_star_icon"
+                    android:layout_marginStart="10dp"
+                    android:theme="@style/vectorAssets">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/ivStar5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/empty_star_icon"
+                    android:layout_marginStart="10dp"
+                    android:theme="@style/vectorAssets">
+                </ImageView>
+
+            </LinearLayout>
+
+
         </LinearLayout>
 
-        <!-- LÍNEAS DE TEXTO -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tvData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/dataCreatedString" />
+
         <TextView
             android:id="@+id/tvDescripcionDeUser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="68dp"
+            android:layout_marginEnd="32dp"
             android:ellipsize="end"
             android:maxLines="1"
             android:text="@string/description" />
 
-        <!-- ESTRELLAS -->
-        <!-- ESTRELLAS -->
-        <LinearLayout
-            android:id="@+id/ll_puntuation"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:orientation="horizontal"
-            android:gravity="bottom">
-
-            <ImageView
-                android:id="@+id/ivStar1"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/full_star_icon"
-                android:layout_marginStart="10dp"
-                android:theme="@style/vectorAssets">
-            </ImageView>
-
-            <ImageView
-                android:id="@+id/ivStar2"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/full_star_icon"
-                android:layout_marginStart="10dp"
-                android:theme="@style/vectorAssets">
-            </ImageView>
-
-            <ImageView
-                android:id="@+id/ivStar3"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/full_star_icon"
-                android:layout_marginStart="10dp"
-                android:theme="@style/vectorAssets">
-            </ImageView>
-
-            <ImageView
-                android:id="@+id/ivStar4"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/empty_star_icon"
-                android:layout_marginStart="10dp"
-                android:theme="@style/vectorAssets">
-            </ImageView>
-
-            <ImageView
-                android:id="@+id/ivStar5"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/empty_star_icon"
-                android:layout_marginStart="10dp"
-                android:theme="@style/vectorAssets">
-            </ImageView>
-
-        </LinearLayout>
     </LinearLayout>
+
+
+    <!-- PARTE DERECHA Para que lo calcule el propio id usamos el 0dp pero como ademas usamos un lineras Layout usamos el peso a 1-->
+
 
 </LinearLayout>

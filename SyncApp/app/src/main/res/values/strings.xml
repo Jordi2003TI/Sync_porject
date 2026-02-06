@@ -13,7 +13,9 @@
     <string name="iconUser">IconoUser</string>
     <string name="filters">FILTROS</string>
     <string name="mostRecent">Mas recientes</string>
-    <string name="description">Descripcion...</string>
+    <string name="description">Descripcion del post y información o textos complementarios...</string>
+    <string name="idUserString">1001</string>
+    <string name="dataCreatedString">10/02/2026</string>
     <string name="Title">Titulo</string>
     <string name="descripction_user">Descripcion User</string>
 
