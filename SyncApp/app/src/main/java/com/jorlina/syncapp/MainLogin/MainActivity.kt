@@ -50,7 +50,6 @@ class MainActivity : AppCompatActivity() {
         btLogin = findViewById<Button>(R.id.btLogin)
         tvCreaCuenta = findViewById<TextView>(R.id.tvCreaCuenta)
         arrowBackIv = findViewById<ImageView>(R.id.arrowBackIv)
-        btInvitado = findViewById<Button>(R.id.btInvitado)
         etName = findViewById<EditText>(R.id.etName)
         etPasswordLogin = findViewById<EditText>(R.id.etPasswordLogin)
         tvError = findViewById<TextView>(R.id.tvError)
