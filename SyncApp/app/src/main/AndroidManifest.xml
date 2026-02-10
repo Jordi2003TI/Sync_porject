@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SyncApp">
         <activity
+            android:name=".model.PerfilHolder"
+            android:exported="false" />
+        <activity
             android:name=".SpalshActivity"
             android:exported="true"
             android:theme="@style/Theme.App.SplashScreen">
@@ -50,9 +53,7 @@
             android:exported="false" />
         <activity
             android:name=".MainLogin.MainActivity"
-            android:exported="false"
-            >
-        </activity>
+            android:exported="false"></activity>
     </application>
 
 </manifest>

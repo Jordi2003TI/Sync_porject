@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:padding="10dp">
+
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:padding="10dp">
+    android:orientation="horizontal">
 
     <androidx.cardview.widget.CardView
         android:layout_width="100dp"
@@ -18,7 +23,6 @@
         </ImageView>
     </androidx.cardview.widget.CardView>
 
-    <!-- PARTE DERECHA Para que lo calcule el propio id usamos el 0dp pero como ademas usamos un lineras Layout usamos el peso a 1-->
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -43,7 +47,7 @@
             </TextView>
 
             <ImageView
-                android:id="@+id/ivLikeElementoUser"
+                android:id="@+id/ivEditElementoUser"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/edit_icon"
@@ -52,7 +56,7 @@
             </ImageView>
 
             <ImageView
-                android:id="@+id/ivFotoPerfilUser"
+                android:id="@+id/ivFotoDeleteItemUser"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/delete_icon"
@@ -61,14 +65,12 @@
             </ImageView>
         </LinearLayout>
 
-        <!-- LÍNEAS DE TEXTO -->
-        <TextView
-            android:id="@+id/tvDescripcionDeUser"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/description"
-            android:ellipsize="end"/>
+        <!-- IDENTIFICACION DEL USUARIO -->
 
+
+
+
+        <!-- ESTRELLAS -->
         <!-- ESTRELLAS -->
         <LinearLayout
             android:id="@+id/ll_puntuation"
@@ -124,6 +126,30 @@
 
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/tvData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/dataCreatedString" />
+
     </LinearLayout>
 
+
 </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDescripcionDeUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/description" />
+
+<!-- PARTE DERECHA Para que lo calcule el propio id usamos el 0dp pero como ademas usamos un lineras Layout usamos el peso a 1-->
+
+</LinearLayout>
+

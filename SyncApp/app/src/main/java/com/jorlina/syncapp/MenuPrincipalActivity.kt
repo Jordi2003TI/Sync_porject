@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.jorlina.syncapp.model.DataSyncItem
-import com.jorlina.syncapp.model.SyncAdapter
+import com.jorlina.syncapp.model.menuprincipalrecicler.SyncAdapter
 import com.jorlina.syncapp.model.SyncItem
 import javax.sql.DataSource
 

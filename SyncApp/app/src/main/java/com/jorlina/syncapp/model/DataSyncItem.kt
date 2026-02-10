@@ -71,6 +71,19 @@ object DataSyncItem{
             R.drawable.user_icon_image,
             "Fundamentos de la programacion",
             now,
+            now ),
+
+        SyncItem(
+            6,
+            1001,
+            "Ejemplo 6",
+            "ejemplo descripcion del user 1001",
+            4, false,
+            R.drawable.docs_icon,
+            R.drawable.user_icon_image,
+            "Calculo",
+            now,
             now )
+
     )
 } 

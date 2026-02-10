@@ -1,10 +1,12 @@
-package com.jorlina.syncapp.model
+package com.jorlina.syncapp.model.menuprincipalrecicler
 
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.jorlina.syncapp.R
+import com.jorlina.syncapp.model.SyncItem
+import com.jorlina.syncapp.model.toDateString
 
 class SyncHolder (
     itemView: View,
@@ -20,7 +22,7 @@ class SyncHolder (
     private val ivStar3: ImageView = itemView.findViewById(R.id.ivStar3)
     private val ivStar4: ImageView = itemView.findViewById(R.id.ivStar4)
     private val ivStar5: ImageView = itemView.findViewById(R.id.ivStar5)
-    private val ivLikeElementoUser:ImageView = itemView.findViewById(R.id.ivLikeElementoUser)
+    private val ivLikeElementoUser: ImageView = itemView.findViewById(R.id.ivLikeElementoUser)
     private val ivFotoPerfilUser: ImageView = itemView.findViewById(R.id.ivFotoPerfilUser)
 
     fun bind(item: SyncItem){
