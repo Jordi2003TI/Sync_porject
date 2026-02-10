@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.SearchView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -18,12 +19,14 @@ import com.jorlina.syncapp.model.SyncItem
 import javax.sql.DataSource
 
 class MenuPrincipalActivity : AppCompatActivity() {
+    private lateinit var  svBusquedaUser : SearchView
     private lateinit var filterButton: Button
     private lateinit var bnvNavegation: BottomNavigationView
     private lateinit var rvRecientes: RecyclerView
     private lateinit var syncAdapter: SyncAdapter
     private var listaCompleta: List<SyncItem> = listOf()
     private var REQUEST_CODE_FILTROS = 100
+    private var likeBool = false
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,6 +44,8 @@ class MenuPrincipalActivity : AppCompatActivity() {
     }
 
     private fun initComponents(){
+
+        svBusquedaUser = findViewById(R.id.svBusquedaUser)
         filterButton = findViewById<Button>(R.id.btFiltrosUser)
         bnvNavegation = findViewById<BottomNavigationView>(R.id.bnvNavegation)
         rvRecientes = findViewById<RecyclerView>(R.id.rvRecientes)
@@ -50,6 +55,19 @@ class MenuPrincipalActivity : AppCompatActivity() {
 
     private fun initListeners(){
 
+        svBusquedaUser.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                filtrarPorTitulo(query.orEmpty())
+                return true
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                filtrarPorTitulo(newText.orEmpty())
+                return true
+            }
+        })
+
         filterButton.setOnClickListener {
             val intent = Intent(this, Filtros::class.java)
             startActivityForResult(intent, REQUEST_CODE_FILTROS)
@@ -57,12 +75,16 @@ class MenuPrincipalActivity : AppCompatActivity() {
 
         bnvNavegation.setOnItemSelectedListener { item ->
             when (item.itemId){
-                R.id.nav_favorites -> {
+                R.id.nav_crud -> {
                     startActivity(Intent(this, CreateActivity::class.java))
                     true
                 }
-                R.id.nav_profile -> {
+                R.id.nav_settings -> {
                     startActivity(Intent(this, PreferenciasActivity::class.java))
+                    true
+                }
+                R.id.like_bool -> {
+                    filtrarPorLike()
                     true
                 }
                 else -> false
@@ -100,6 +122,27 @@ class MenuPrincipalActivity : AppCompatActivity() {
         }
     }
 
+    private fun filtrarPorTitulo(texto: String) {
+        val listaFiltrada = listaCompleta.filter {
+            it.titulo.lowercase().contains(texto.lowercase())
+        }
+
+        syncAdapter.updateList(listaFiltrada)
+    }
+
+    private fun filtrarPorLike() {
+        likeBool = !likeBool
+
+        val listaFiltrada = if (likeBool) {
+            // mostrar solo favoritos
+            listaCompleta.filter { it.favoritos }
+        } else {
+            // mostrar todos
+            listaCompleta
+        }
+
+        syncAdapter.updateList(listaFiltrada)
+    }
 
     private fun aplicarFiltro(categoria: String) {
         val listaFiltrada = if (categoria == "Todas") {
