@@ -29,14 +29,14 @@ class PerfilHolder  (
     fun bind(item: SyncItem){
         tvTituloElementoUser.text = item.titulo
         tvDescripcionDeUser.text = item.description
-        ivImagenElementoUser.setImageResource(item.ImagenDoc)
+        ivImagenElementoUser.setImageResource(item.imagen_doc)
         ivEditElementoUser.setImageResource(R.drawable.edit_icon)
         ivFotoDeleteItemUser.setImageResource(R.drawable.delete_icon)
 
-        tvData.text = if (item.dateUpdated != null) {
-            "Editado: ${item.dateUpdated.toDateString()}"
+        tvData.text = if (item.onUpdate != null) {
+            "Editado: ${item.onUpdate.toDateString()}"
         } else {
-            "Creado: ${item.dateCreated.toDateString()}"
+            "Creado: ${item.onCreated.toDateString()}"
         }
 
         val estrellas = listOf(ivStar1, ivStar2, ivStar3, ivStar4, ivStar5)

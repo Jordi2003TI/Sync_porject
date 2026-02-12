@@ -1,7 +1,5 @@
 package com.jorlina.syncapp.model
 
-import android.widget.ImageView
-
 data class SyncItem(
     val id : Long,
     val idUser : Long,
@@ -9,9 +7,9 @@ data class SyncItem(
     val description: String,
     val puntuacion: Int,
     val favoritos: Boolean,
-    val ImagenDoc: Int,
-    val ImagenPer: Int,
+    val imagen_doc: Int,
+    val imagen_per: Int,
     val categoria: String,
-    val dateCreated: Long,
-    val dateUpdated: Long
+    val onCreated: Long,
+    val onUpdate: Long
 )

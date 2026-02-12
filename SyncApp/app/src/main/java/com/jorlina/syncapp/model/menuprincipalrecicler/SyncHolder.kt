@@ -32,13 +32,13 @@ class SyncHolder (
         tvTituloElementoUser.text = item.titulo
         tvDescripcionDeUser.text = item.description
 
-        ivImagenElementoUser.setImageResource(item.ImagenDoc)
-        ivFotoPerfilUser.setImageResource(item.ImagenPer)
+        ivImagenElementoUser.setImageResource(item.imagen_doc)
+        ivFotoPerfilUser.setImageResource(item.imagen_per)
 
-        tvData.text = if (item.dateUpdated != null) {
-            "Editado: ${item.dateUpdated.toDateString()}"
+        tvData.text = if (item.onUpdate != null) {
+            "Editado: ${item.onUpdate.toDateString()}"
         } else {
-            "Creado: ${item.dateCreated.toDateString()}"
+            "Creado: ${item.onCreated.toDateString()}"
         }
 
 
