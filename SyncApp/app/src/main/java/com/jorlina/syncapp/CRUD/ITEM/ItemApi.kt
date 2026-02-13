@@ -61,5 +61,3 @@ class ItemApi {
         }
     }
 }
-
-annotation class ItemService

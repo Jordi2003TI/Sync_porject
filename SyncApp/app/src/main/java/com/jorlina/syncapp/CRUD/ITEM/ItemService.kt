@@ -2,7 +2,6 @@ package com.jorlina.syncapp.CRUD.ITEM
 
 import com.jorlina.syncapp.model.SyncItem
 import okhttp3.MultipartBody
-import okhttp3.Response
 import retrofit2.http.Body
 import retrofit2.http.DELETE
 import retrofit2.http.GET
@@ -13,7 +12,7 @@ import retrofit2.http.Part
 import retrofit2.http.Path
 import retrofit2.http.Query
 
-interface ItemsServices {
+interface ItemService {
 
     @GET("/items")
     suspend fun getItem(): retrofit2.Response<List<SyncItem>>
