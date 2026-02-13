@@ -14,41 +14,41 @@ import retrofit2.http.Query
 
 interface ItemService {
 
-    @GET("/items")
+    @GET("/api/items")
     suspend fun getItem(): retrofit2.Response<List<SyncItem>>
 
-    @GET("/item/{id}")
+    @GET("/api/item/{id}")
     suspend fun getItemById(
         @Path("id") id: Long
     ): retrofit2.Response<List<SyncItem>>
 
-    @POST("/item")
+    @POST("/api/item")
     suspend fun addItem(
         @Body item: SyncItem
     ): retrofit2.Response<String>
 
-    @PATCH("/item/{id}/titulo")
+    @PATCH("/api/item/{id}/titulo")
     suspend fun updateItemTitulo(
         @Path("id") id: Long,
         @Query("titulo") titulo: String
     ): retrofit2.Response<String>
 
-    @PATCH("/item/{id}/descripcion")
+    @PATCH("/api/item/{id}/descripcion")
     suspend fun updateItemDescripcion(
         @Path("id") id: Long,
         @Query("descripcion") descripcion: String
     ): retrofit2.Response<String>
 
-    @DELETE("/items")
+    @DELETE("/api/items")
     suspend fun deleteAllItems(): retrofit2.Response<String>
 
-    @DELETE("/item/{id}")
+    @DELETE("/api/item/{id}")
     suspend fun deleteItemById(
         @Path("id") id: Long
     ): retrofit2.Response<String>
 
     @Multipart
-    @POST("/item/{id}/image")
+    @POST("/api/item/{id}/image")
     suspend fun uploadImage(
         @Path("id") id: Long,
         @Part image: MultipartBody.Part
