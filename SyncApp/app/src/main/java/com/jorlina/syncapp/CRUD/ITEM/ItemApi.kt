@@ -26,7 +26,7 @@ class ItemApi {
 
                 mItemAPI = Retrofit.Builder()
                     .addConverterFactory(GsonConverterFactory.create(gsondateformat))
-                    .baseUrl("https://oracleitic.mooo.com/")
+                    .baseUrl("http://141.253.193.196:8080/")
                     .client(unsafeOkHttpClient) // Afegeix el client
                     .build()
                     .create(ItemService::class.java)
