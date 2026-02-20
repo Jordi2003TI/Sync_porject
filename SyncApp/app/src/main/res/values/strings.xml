@@ -75,9 +75,11 @@
 
 
     <string-array name="abc_spinner">
-        <item>ABC</item>
-        <item>ZXY</item>
+        <item>Orden</item>
+        <item>Ascendente</item>
+        <item>Descendente</item>
     </string-array>
+
     <string name="titulo_spinner_alfabetico">Alfabetico</string>
     <string name="filter">FILTRAR</string>
     <string name="preferencias">Preferencias</string>
@@ -87,6 +89,7 @@
     <string name="medida_fuente">Medida fuente</string>
 
     <string-array name="categorias_spinner">
+        <item>Todas</item>
         <item>Calculo</item>
         <item>Fundamentos de la programacion</item>
         <item>Biologia General</item>

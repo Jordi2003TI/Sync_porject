@@ -26,6 +26,7 @@ class MenuPrincipalActivity : AppCompatActivity() {
     private lateinit var syncAdapter: SyncAdapter
     private var listaCompleta: List<SyncItem> = listOf()
     private var REQUEST_CODE_FILTROS = 100
+
     private var likeBool = false
 
 
@@ -83,10 +84,10 @@ class MenuPrincipalActivity : AppCompatActivity() {
                     startActivity(Intent(this, PreferenciasActivity::class.java))
                     true
                 }
-                R.id.like_bool -> {
-                    filtrarPorLike()
-                    true
-                }
+//                R.id.like_bool -> {
+//                    filtrarPorLike()
+//                    true
+//                }
                 else -> false
             }
         }
@@ -116,9 +117,12 @@ class MenuPrincipalActivity : AppCompatActivity() {
         if (requestCode == REQUEST_CODE_FILTROS && resultCode == RESULT_OK) {
 
             val categoriaSeleccionada = data?.getStringExtra("CATEGORIA") ?: "Todas"
+            val likeSeleccionado = data?.getBooleanExtra("LIKE", false) ?: false
+
+            aplicarFiltro(categoriaSeleccionada, likeSeleccionado)
 
 
-            aplicarFiltro(categoriaSeleccionada)
+
         }
     }
 
@@ -130,30 +134,29 @@ class MenuPrincipalActivity : AppCompatActivity() {
         syncAdapter.updateList(listaFiltrada)
     }
 
-    private fun filtrarPorLike() {
-        likeBool = !likeBool
+//    private fun filtrarPorLike(likeBool : Boolean) {
+//        likeBool = !likeBool
+//
+//        val listaFiltrada = if (likeBool) {
+//            // mostrar solo favoritos
+//            listaCompleta.filter { it.favoritos }
+//        } else {
+//            // mostrar todos
+//            listaCompleta
+//        }
+//
+//        syncAdapter.updateList(listaFiltrada)
+//    }
 
-        val listaFiltrada = if (likeBool) {
-            // mostrar solo favoritos
-            listaCompleta.filter { it.favoritos }
-        } else {
-            // mostrar todos
-            listaCompleta
+    private fun aplicarFiltro(categoria: String, like: Boolean) {
+        val listaFiltrada = listaCompleta.filter { item ->
+            val categoriaOk = categoria == "Todas" || item.categoria == categoria
+            val likeOk = !like || item.favoritos // si like=false, mostrar todos; si true, solo favoritos
+            categoriaOk && likeOk
         }
 
         syncAdapter.updateList(listaFiltrada)
-    }
-
-    private fun aplicarFiltro(categoria: String) {
-        val listaFiltrada = if (categoria == "Todas") {
-            listaCompleta // Mostrar todos los items
-        } else {
-            listaCompleta.filter { it.categoria == categoria }
-        }
-
-        syncAdapter.updateList(listaFiltrada)
-
-        Toast.makeText(this, "Filtrado por: $categoria", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Filtrado por: $categoria, favoritos: $like", Toast.LENGTH_SHORT).show()
     }
 
 }

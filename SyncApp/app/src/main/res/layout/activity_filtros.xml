@@ -156,17 +156,58 @@
 
         </androidx.cardview.widget.CardView>
 
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/cvSpinner2"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="36dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="16dp"
+            android:paddingVertical="5dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Visualitzar preferits"
+                    android:textSize="18dp"
+                    android:layout_marginEnd="15dp"
+                    >
+
+                </TextView>
+
+                <Switch
+                    android:id="@+id/switchLike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </Switch>
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
         <Button
             android:id="@+id/btFiltrar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/cvSpinner2"
+            app:layout_constraintTop_toBottomOf="@+id/cvLike"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="25dp"
             android:text="@string/filter"
             android:backgroundTint="@color/gris_oscuro">
         </Button>
+
+
 
 
 

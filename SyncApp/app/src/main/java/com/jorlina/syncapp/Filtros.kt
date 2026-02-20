@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.Spinner
+import android.widget.Switch
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -27,6 +28,10 @@ class Filtros : AppCompatActivity() {
     private lateinit var btFiltrar: Button
 
     private var categoriaSeleccionada: String = "Todas"
+
+
+    private lateinit var switchLike: Switch
+    private var likeSeleccionado: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -85,8 +90,10 @@ class Filtros : AppCompatActivity() {
         }
 
         btFiltrar.setOnClickListener {
+            likeSeleccionado = switchLike.isChecked
             val intent = Intent()
             intent.putExtra("CATEGORIA", categoriaSeleccionada)
+            intent.putExtra("LIKE", likeSeleccionado)
             setResult(RESULT_OK, intent)
             finish()
         }
@@ -99,6 +106,8 @@ class Filtros : AppCompatActivity() {
 
         arrowBackIv = findViewById<ImageView>(R.id.arrowBackIv)
         SpinerCategoria = findViewById<Spinner>(R.id.SpinerCategoria)
+        switchLike = findViewById(R.id.switchLike)
         btFiltrar = findViewById<Button>(R.id.btFiltrar)
+
     }
 }
