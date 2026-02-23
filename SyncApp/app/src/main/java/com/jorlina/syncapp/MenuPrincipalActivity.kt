@@ -2,6 +2,7 @@ package com.jorlina.syncapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.SearchView
@@ -10,16 +11,19 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.jorlina.syncapp.CRUD.ITEM.ItemApi
 import com.jorlina.syncapp.model.DataSyncItem
 import com.jorlina.syncapp.model.menuprincipalrecicler.SyncAdapter
 import com.jorlina.syncapp.model.SyncItem
+import kotlinx.coroutines.launch
 import javax.sql.DataSource
 
 class MenuPrincipalActivity : AppCompatActivity() {
-    private lateinit var  svBusquedaUser : SearchView
+    private lateinit var svBusquedaUser: SearchView
     private lateinit var filterButton: Button
     private lateinit var bnvNavegation: BottomNavigationView
     private lateinit var rvRecientes: RecyclerView
@@ -44,17 +48,17 @@ class MenuPrincipalActivity : AppCompatActivity() {
         initUI()
     }
 
-    private fun initComponents(){
+    private fun initComponents() {
 
         svBusquedaUser = findViewById(R.id.svBusquedaUser)
         filterButton = findViewById<Button>(R.id.btFiltrosUser)
         bnvNavegation = findViewById<BottomNavigationView>(R.id.bnvNavegation)
         rvRecientes = findViewById<RecyclerView>(R.id.rvRecientes)
-        
+
 
     }
 
-    private fun initListeners(){
+    private fun initListeners() {
 
         svBusquedaUser.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
 
@@ -75,11 +79,12 @@ class MenuPrincipalActivity : AppCompatActivity() {
         }
 
         bnvNavegation.setOnItemSelectedListener { item ->
-            when (item.itemId){
+            when (item.itemId) {
                 R.id.nav_crud -> {
                     startActivity(Intent(this, CreateActivity::class.java))
                     true
                 }
+
                 R.id.nav_settings -> {
                     startActivity(Intent(this, PreferenciasActivity::class.java))
                     true
@@ -92,12 +97,13 @@ class MenuPrincipalActivity : AppCompatActivity() {
             }
         }
     }
-    private fun initUI(){
+
+    private fun initUI() {
         rvRecientes.layoutManager = LinearLayoutManager(this)
 
         listaCompleta = DataSyncItem.item
 
-        syncAdapter= SyncAdapter(
+        syncAdapter = SyncAdapter(
             items = listaCompleta,
             onItemClick = { item ->
                 Toast.makeText(
@@ -108,6 +114,24 @@ class MenuPrincipalActivity : AppCompatActivity() {
             }
         )
         rvRecientes.adapter = syncAdapter
+
+        rvRecientes.layoutManager = LinearLayoutManager(this)
+
+        syncAdapter = SyncAdapter(
+            items = listOf(), // Inicialmente vacío
+            onItemClick = { item ->
+                Toast.makeText(
+                    this,
+                    "Has pulsado sobre ${item.titulo}",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+        )
+        rvRecientes.adapter = syncAdapter
+
+        // Llamamos al API
+        cargarDatosDesdeAPI()
+
     }
 
 
@@ -120,7 +144,6 @@ class MenuPrincipalActivity : AppCompatActivity() {
             val likeSeleccionado = data?.getBooleanExtra("LIKE", false) ?: false
 
             aplicarFiltro(categoriaSeleccionada, likeSeleccionado)
-
 
 
         }
@@ -151,12 +174,36 @@ class MenuPrincipalActivity : AppCompatActivity() {
     private fun aplicarFiltro(categoria: String, like: Boolean) {
         val listaFiltrada = listaCompleta.filter { item ->
             val categoriaOk = categoria == "Todas" || item.categoria == categoria
-            val likeOk = !like || item.favoritos // si like=false, mostrar todos; si true, solo favoritos
+            val likeOk =
+                !like || item.favoritos // si like=false, mostrar todos; si true, solo favoritos
             categoriaOk && likeOk
         }
 
         syncAdapter.updateList(listaFiltrada)
-        Toast.makeText(this, "Filtrado por: $categoria, favoritos: $like", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Filtrado por: $categoria, favoritos: $like", Toast.LENGTH_SHORT)
+            .show()
     }
 
+    private fun cargarDatosDesdeAPI() {
+        lifecycleScope.launch {
+            try {
+                val response = ItemApi.API().getItem()
+                if (response.isSuccessful) {
+                    val listaAPI = response.body() ?: emptyList()
+                    listaCompleta = listaAPI
+                    // Actualizamos el RecyclerView
+                    syncAdapter.updateList(listaCompleta)
+                }
+            } catch (e: Exception) {
+                e.printStackTrace()
+                Toast.makeText(
+                    this@MenuPrincipalActivity,
+                    "Error de conexión: ${e.message}",
+                    Toast.LENGTH_SHORT
+                ).show()
+                Log.i("Error", e.message.toString())
+            }
+        }
+
+    }
 }

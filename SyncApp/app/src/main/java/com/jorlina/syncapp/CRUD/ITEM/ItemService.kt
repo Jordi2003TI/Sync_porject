@@ -1,6 +1,7 @@
 package com.jorlina.syncapp.CRUD.ITEM
 
 import com.jorlina.syncapp.model.SyncItem
+import com.jorlina.syncapp.model.SyncItemRequest
 import okhttp3.MultipartBody
 import retrofit2.http.Body
 import retrofit2.http.DELETE
@@ -24,7 +25,7 @@ interface ItemService {
 
     @POST("/api/item")
     suspend fun addItem(
-        @Body item: SyncItem
+        @Body item: SyncItemRequest
     ): retrofit2.Response<String>
 
     @PATCH("/api/item/{id}/titulo")
