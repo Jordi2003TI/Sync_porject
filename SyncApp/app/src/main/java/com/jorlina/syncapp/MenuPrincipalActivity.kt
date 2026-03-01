@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
-import android.widget.ImageView
 import android.widget.SearchView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -18,10 +17,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.jorlina.syncapp.CRUD.ITEM.ItemApi
 import com.jorlina.syncapp.model.DataSyncItem
-import com.jorlina.syncapp.model.menuprincipalrecicler.SyncAdapter
 import com.jorlina.syncapp.model.SyncItem
+import com.jorlina.syncapp.model.menuprincipalrecicler.SyncAdapter
 import kotlinx.coroutines.launch
-import javax.sql.DataSource
 
 class MenuPrincipalActivity : AppCompatActivity() {
     private lateinit var svBusquedaUser: SearchView
@@ -83,6 +81,7 @@ class MenuPrincipalActivity : AppCompatActivity() {
         })
 
         filterButton.setOnClickListener {
+
             val intent = Intent(this, Filtros::class.java)
             startActivityForResult(intent, REQUEST_CODE_FILTROS)
         }

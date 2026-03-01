@@ -72,6 +72,10 @@ class MainActivity : AppCompatActivity() {
 
         viewModel.loginResult.observe(this){ success ->
             if (success){
+                // Guardar userId en SharedPreferences
+                val prefs = getSharedPreferences("sync_prefs", MODE_PRIVATE)
+                prefs.edit().putString("userId", etName.text.toString()).apply()
+
                 val intent = Intent(this, MenuPrincipalActivity::class.java)
                 startActivity(intent)
             }
@@ -101,6 +105,10 @@ class MainActivity : AppCompatActivity() {
             .setNegativeButton("No", null)
             .setCancelable(true)
             .show()
+    }
+
+    fun getCurrentUserId(): String? {
+        return etName.text.toString() // o donde tengas almacenado el ID
     }
 }
 

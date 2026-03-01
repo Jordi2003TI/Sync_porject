@@ -1,5 +1,6 @@
 package com.jorlina.syncapp.CRUD.ITEM
 
+import com.jorlina.syncapp.model.ItemPerfilResponseDTO
 import com.jorlina.syncapp.model.SyncItem
 import com.jorlina.syncapp.model.SyncItemRequest
 import okhttp3.MultipartBody
@@ -22,6 +23,11 @@ interface ItemService {
     suspend fun getItemById(
         @Path("id") id: Long
     ): retrofit2.Response<List<SyncItem>>
+
+    @GET("/api/itemsPerfil/{idUser}")
+    suspend fun getItemsByUserId(
+        @Path("idUser") idUser: Long
+    ): retrofit2.Response<List<ItemPerfilResponseDTO>>
 
     @POST("/api/item")
     suspend fun addItem(

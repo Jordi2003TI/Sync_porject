@@ -7,7 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.Toast
 import com.jorlina.syncapp.AyudaActivity
+import com.jorlina.syncapp.MainLogin.MainActivity
 import com.jorlina.syncapp.Perfil
 import com.jorlina.syncapp.R
 
@@ -33,8 +35,15 @@ class AppBarFragment: Fragment() {
         }
 
         userIconIv.setOnClickListener {
-            val intent = Intent(requireContext(), Perfil::class.java)
-            startActivity(intent)
+            val prefs = requireContext().getSharedPreferences("sync_prefs", 0)
+            val userId = prefs.getString("userId", null)
+            if (userId != null) {
+                val intent = Intent(requireContext(), Perfil::class.java)
+                intent.putExtra("RecueprarIdUser", userId)
+                startActivity(intent)
+            } else {
+                Toast.makeText(requireContext(), "Usuario no disponible", Toast.LENGTH_SHORT).show()
+            }
         }
 
         ivInfo.setOnClickListener {
