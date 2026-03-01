@@ -34,6 +34,7 @@ class CreateActivity : AppCompatActivity() {
 
     private lateinit var btCreatePost: Button
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -108,6 +109,9 @@ class CreateActivity : AppCompatActivity() {
                     Toast.makeText(this@CreateActivity,
                         "Item creado correctamente",
                         Toast.LENGTH_LONG).show()
+                        setResult(RESULT_OK)
+                        finish()
+
                 } else {
                     Toast.makeText(this@CreateActivity,
                         "Error: ${response.code()}",

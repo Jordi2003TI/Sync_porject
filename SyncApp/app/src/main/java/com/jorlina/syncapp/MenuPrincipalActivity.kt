@@ -8,6 +8,7 @@ import android.widget.ImageView
 import android.widget.SearchView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -32,6 +33,14 @@ class MenuPrincipalActivity : AppCompatActivity() {
     private var REQUEST_CODE_FILTROS = 100
 
     private var likeBool = false
+
+    private val createItemLauncher =
+        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+            if (result.resultCode == RESULT_OK) {
+                cargarDatosDesdeAPI()
+            }
+        }
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -81,7 +90,8 @@ class MenuPrincipalActivity : AppCompatActivity() {
         bnvNavegation.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_crud -> {
-                    startActivity(Intent(this, CreateActivity::class.java))
+                    val intent = Intent(this, CreateActivity::class.java)
+                    createItemLauncher.launch(intent)
                     true
                 }
 
@@ -104,7 +114,7 @@ class MenuPrincipalActivity : AppCompatActivity() {
         listaCompleta = DataSyncItem.item
 
         syncAdapter = SyncAdapter(
-            items = listaCompleta,
+            items = listOf(), // Inicialmente vacío
             onItemClick = { item ->
                 Toast.makeText(
                     this,
@@ -117,16 +127,7 @@ class MenuPrincipalActivity : AppCompatActivity() {
 
         rvRecientes.layoutManager = LinearLayoutManager(this)
 
-        syncAdapter = SyncAdapter(
-            items = listOf(), // Inicialmente vacío
-            onItemClick = { item ->
-                Toast.makeText(
-                    this,
-                    "Has pulsado sobre ${item.titulo}",
-                    Toast.LENGTH_SHORT
-                ).show()
-            }
-        )
+
         rvRecientes.adapter = syncAdapter
 
         // Llamamos al API
