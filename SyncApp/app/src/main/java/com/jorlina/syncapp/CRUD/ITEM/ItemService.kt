@@ -26,7 +26,7 @@ interface ItemService {
     @POST("/api/item")
     suspend fun addItem(
         @Body item: SyncItemRequest
-    ): retrofit2.Response<String>
+    ): retrofit2.Response<SyncItem>
 
     @PATCH("/api/item/{id}/titulo")
     suspend fun updateItemTitulo(

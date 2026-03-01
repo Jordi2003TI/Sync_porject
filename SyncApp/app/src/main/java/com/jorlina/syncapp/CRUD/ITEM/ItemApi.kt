@@ -2,12 +2,14 @@ package com.jorlina.syncapp.CRUD.ITEM
 
 import com.google.gson.GsonBuilder
 import okhttp3.OkHttpClient
+import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import java.security.cert.X509Certificate
 import javax.net.ssl.SSLContext
 import javax.net.ssl.TrustManager
-import java.security.cert.X509Certificate
 import javax.net.ssl.X509TrustManager
+
 
 class ItemApi {
     companion object {
@@ -23,12 +25,12 @@ class ItemApi {
 
                 // Client HTTP insegur (només per desenvolupament)
                 val unsafeOkHttpClient = getUnsafeOkHttpClient()
-
                 mItemAPI = Retrofit.Builder()
                     .addConverterFactory(GsonConverterFactory.create(gsondateformat))
                     .baseUrl("http://141.253.193.196:8080/")
                     .client(unsafeOkHttpClient) // Afegeix el client
                     .build()
+
                     .create(ItemService::class.java)
             }
             return mItemAPI!!
@@ -50,8 +52,12 @@ class ItemApi {
                 sslContext.init(null, trustAllCerts, java.security.SecureRandom())
                 val sslSocketFactory = sslContext.socketFactory
 
+                val logging = HttpLoggingInterceptor()
+                logging.setLevel(HttpLoggingInterceptor.Level.BASIC)
+
                 return OkHttpClient.Builder()
                     .sslSocketFactory(sslSocketFactory, trustAllCerts[0] as X509TrustManager)
+                    .addInterceptor (logging)
                     .hostnameVerifier { _, _ -> true } // Accepta qualsevol hostname
                     .build()
 

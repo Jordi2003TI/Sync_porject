@@ -164,6 +164,7 @@
                     android:background="@color/white">
 
                     <ImageView
+                        android:id="@+id/ivAddImage"
                         style="@style/FileCard"
                         android:layout_width="112dp"
                         android:layout_height="112dp"

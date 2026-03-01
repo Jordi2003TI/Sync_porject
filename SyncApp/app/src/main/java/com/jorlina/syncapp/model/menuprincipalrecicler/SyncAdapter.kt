@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.jorlina.syncapp.R
 import com.jorlina.syncapp.model.menuprincipalrecicler.SyncHolder
 import com.jorlina.syncapp.model.SyncItem
+import com.jorlina.syncapp.model.SyncItemRequest
 
 class SyncAdapter (
     private var items: List<SyncItem>,
@@ -30,4 +31,8 @@ class SyncAdapter (
         items = newList
         notifyDataSetChanged()
     }
+
+    companion object
 }
+
+
