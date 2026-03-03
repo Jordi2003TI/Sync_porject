@@ -52,6 +52,9 @@ android:padding="10dp">
                 android:layout_height="30dp"
                 android:src="@drawable/edit_icon"
                 android:layout_marginStart="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
                 android:theme="@style/vectorAssets">
             </ImageView>
 
@@ -61,6 +64,9 @@ android:padding="10dp">
                 android:layout_height="30dp"
                 android:src="@drawable/delete_icon"
                 android:layout_marginStart="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
                 android:theme="@style/vectorAssets">
             </ImageView>
         </LinearLayout>

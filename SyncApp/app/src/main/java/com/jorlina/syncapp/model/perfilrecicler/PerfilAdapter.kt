@@ -8,13 +8,14 @@ import com.jorlina.syncapp.model.menuprincipalrecicler.SyncHolder
 import com.jorlina.syncapp.model.SyncItem
 
 class PerfilAdapter (
-    private var items: List<SyncItem>,
+    private val items: MutableList<SyncItem> = mutableListOf(),
     private val onItemClick: (SyncItem) -> Unit,
+    private val onDeleteClick: (SyncItem, Int) -> Unit
 ): RecyclerView.Adapter<PerfilHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PerfilHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.elemento_crud, parent, false)
-        return PerfilHolder(view, onItemClick)
+        return PerfilHolder(view, onItemClick, onDeleteClick)
     }
 
     override fun onBindViewHolder(holder: PerfilHolder, position: Int){
@@ -26,11 +27,18 @@ class PerfilAdapter (
         return items.size
     }
 
-        fun updateList(newList: List<SyncItem>){
-            items = newList
-            notifyDataSetChanged()
-        }
+    fun removeItem(position: Int) {
+        items.removeAt(position)
+        notifyItemRemoved(position)
+    }
+
+    fun updateList(newList: List<SyncItem>) {
+        items.clear()
+        items.addAll(newList)
+        notifyDataSetChanged()
+    }
 }
+
 
 
 

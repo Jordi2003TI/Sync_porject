@@ -52,7 +52,7 @@ interface ItemService {
     @DELETE("/api/item/{id}")
     suspend fun deleteItemById(
         @Path("id") id: Long
-    ): retrofit2.Response<String>
+    ): retrofit2.Response<SyncItem>
 
     @Multipart
     @POST("/api/item/{id}/image")

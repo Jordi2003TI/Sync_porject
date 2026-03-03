@@ -10,7 +10,8 @@ import com.jorlina.syncapp.model.toDateString
 
 class PerfilHolder  (
     itemView: View,
-    private val onItemClick: (SyncItem) -> Unit
+    private val onItemClick: (SyncItem) -> Unit,
+    private val onDeleteClick: (SyncItem, Int) -> Unit
 ): RecyclerView.ViewHolder(itemView){
 
     private val tvData : TextView = itemView.findViewById(R.id.tvData)
@@ -51,6 +52,15 @@ class PerfilHolder  (
         itemView.setOnClickListener {
             onItemClick(item)
         }
+
+        ivFotoDeleteItemUser.setOnClickListener {
+            val position = bindingAdapterPosition
+            if (position != RecyclerView.NO_POSITION){
+                onDeleteClick(item,position)
+            }
+
+        }
+
     }
 
 

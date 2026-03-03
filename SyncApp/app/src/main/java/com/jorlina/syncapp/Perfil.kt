@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -55,14 +56,57 @@ class Perfil : AppCompatActivity() {
         rvPerfil.layoutManager = LinearLayoutManager(this)
 
         PerfilAdapter= PerfilAdapter(
-            items = listOf(),
+            items = mutableListOf(),
             onItemClick = { item ->
                 Toast.makeText(
                     this,
                     "Has pulsado sobre ${item.titulo}",
                     Toast.LENGTH_SHORT
                 ).show()
+            },
+            onDeleteClick = { item, position ->
+                AlertDialog.Builder(this)
+                    .setTitle("Eliminar")
+                    .setMessage("¿Seguro que quieres eliminar este item?")
+                    .setPositiveButton("Sí") { _, _ ->
+                        lifecycleScope.launch {
+                            try {
+                                val response = ItemApi.API().deleteItemById(item.id)
+
+                                if (response.isSuccessful) {
+
+                                    listaCompleta = listaCompleta.filter { it.id != item.id }
+                                    PerfilAdapter.removeItem(position)
+
+                                    Toast.makeText(
+                                        this@Perfil,
+                                        "${item.titulo} eliminado correctamente",
+                                        Toast.LENGTH_SHORT
+                                    ).show()
+
+                                } else {
+                                    Toast.makeText(
+                                        this@Perfil,
+                                        "Error al eliminar: ${response.code()}",
+                                        Toast.LENGTH_SHORT
+                                    ).show()
+                                }
+
+                            } catch (e: Exception) {
+                                e.printStackTrace()
+                                Toast.makeText(
+                                    this@Perfil,
+                                    "Error de conexión al eliminar",
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                            }
+                        }
+                    }
+                    .setNegativeButton("No", null)
+                    .show()
             }
+
+
         )
         rvPerfil.adapter = PerfilAdapter
 
