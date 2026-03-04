@@ -1,5 +1,9 @@
 package com.jorlina.syncapp.model
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
 data class SyncItem(
     val id : Long,
     val idUser : Long,
@@ -12,4 +16,4 @@ data class SyncItem(
     val categoria: String,
     val onCreated: Long,
     val onUpdate: Long
-)
+) : Parcelable
