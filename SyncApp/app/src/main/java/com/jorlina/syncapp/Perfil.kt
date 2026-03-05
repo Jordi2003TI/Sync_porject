@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -25,6 +26,28 @@ class Perfil : AppCompatActivity() {
     private lateinit var rvPerfil: RecyclerView
     private lateinit var PerfilAdapter: PerfilAdapter
     private var listaCompleta: List<SyncItem> = listOf()
+
+    private val editItemLauncher =
+        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+
+            if (result.resultCode == RESULT_OK) {
+
+                val updatedItem = result.data?.getParcelableExtra<SyncItem>("UPDATED_ITEM")
+
+                updatedItem?.let { item ->
+
+                    val index = listaCompleta.indexOfFirst { it.id == item.id }
+
+                    if (index != -1) {
+                        val mutable = listaCompleta.toMutableList()
+                        mutable[index] = item
+                        listaCompleta = mutable
+
+                        PerfilAdapter.updateList(listaCompleta)
+                    }
+                }
+            }
+        }
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -55,8 +78,9 @@ class Perfil : AppCompatActivity() {
     private fun initUI(){
         rvPerfil.layoutManager = LinearLayoutManager(this)
 
-        PerfilAdapter= PerfilAdapter(
+        PerfilAdapter = PerfilAdapter(
             items = mutableListOf(),
+
             onItemClick = { item ->
                 Toast.makeText(
                     this,
@@ -64,6 +88,7 @@ class Perfil : AppCompatActivity() {
                     Toast.LENGTH_SHORT
                 ).show()
             },
+
             onDeleteClick = { item, position ->
                 AlertDialog.Builder(this)
                     .setTitle("Eliminar")
@@ -104,10 +129,16 @@ class Perfil : AppCompatActivity() {
                     }
                     .setNegativeButton("No", null)
                     .show()
+            },
+
+            onEditClick = { item, position ->
+                val intent = Intent(this, PerfilPatchActivity::class.java)
+                intent.putExtra("SYNC_ITEM", item)
+
+                editItemLauncher.launch(intent)
             }
-
-
         )
+
         rvPerfil.adapter = PerfilAdapter
 
         val userIdString = intent.getStringExtra("RecueprarIdUser")
@@ -120,6 +151,7 @@ class Perfil : AppCompatActivity() {
         }
 
     }
+
 
     private fun fetchItemsByUserId(userId: Long) {
         lifecycleScope.launch {
@@ -144,7 +176,8 @@ class Perfil : AppCompatActivity() {
                         )
                     }
 
-                    PerfilAdapter.updateList(items)
+                    listaCompleta = items
+                    PerfilAdapter.updateList(listaCompleta)
 
                 } else {
                     Toast.makeText(

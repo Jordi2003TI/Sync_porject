@@ -10,12 +10,13 @@ import com.jorlina.syncapp.model.SyncItem
 class PerfilAdapter (
     private val items: MutableList<SyncItem> = mutableListOf(),
     private val onItemClick: (SyncItem) -> Unit,
-    private val onDeleteClick: (SyncItem, Int) -> Unit
+    private val onDeleteClick: (SyncItem, Int) -> Unit,
+    private val onEditClick: (SyncItem, Int) -> Unit //Esto es para refrescar el reciclerView al editar un item
 ): RecyclerView.Adapter<PerfilHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PerfilHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.elemento_crud, parent, false)
-        return PerfilHolder(view, onItemClick, onDeleteClick)
+        return PerfilHolder(view, onItemClick, onDeleteClick,onEditClick)
     }
 
     override fun onBindViewHolder(holder: PerfilHolder, position: Int){

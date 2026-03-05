@@ -38,13 +38,13 @@ interface ItemService {
     suspend fun updateItemTitulo(
         @Path("id") id: Long,
         @Query("titulo") titulo: String
-    ): retrofit2.Response<String>
+    ): retrofit2.Response<SyncItem>
 
     @PATCH("/api/item/{id}/descripcion")
     suspend fun updateItemDescripcion(
         @Path("id") id: Long,
         @Query("descripcion") descripcion: String
-    ): retrofit2.Response<String>
+    ): retrofit2.Response<SyncItem>
 
     @DELETE("/api/items")
     suspend fun deleteAllItems(): retrofit2.Response<String>

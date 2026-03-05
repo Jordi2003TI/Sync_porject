@@ -1,5 +1,6 @@
     package com.jorlina.syncapp
 
+    import android.content.Intent
     import android.os.Build
     import android.os.Bundle
     import android.widget.ArrayAdapter
@@ -151,7 +152,17 @@
                         ).show()
                     }
 
+                    val updatedItem = original.copy(
+                        titulo = nuevoTitulo,
+                        description = nuevaDescripcion
+                    )
+
+                    val intent = Intent()
+                    intent.putExtra("UPDATED_ITEM", updatedItem)
+                    setResult(RESULT_OK, intent)
+
                     finish()
+
 
                 } catch (e: Exception) {
                     e.printStackTrace()

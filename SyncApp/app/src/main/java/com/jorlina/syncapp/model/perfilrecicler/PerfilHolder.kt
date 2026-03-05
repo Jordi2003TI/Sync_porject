@@ -13,7 +13,8 @@
     class PerfilHolder  (
         itemView: View,
         private val onItemClick: (SyncItem) -> Unit,
-        private val onDeleteClick: (SyncItem, Int) -> Unit
+        private val onDeleteClick: (SyncItem, Int) -> Unit,
+        private val onEditClick: (SyncItem, Int) -> Unit //Esto es para refrescar el reciclerView al editar un item
     ): RecyclerView.ViewHolder(itemView){
 
         private val tvData : TextView = itemView.findViewById(R.id.tvData)
@@ -64,12 +65,11 @@
 
             }
 
-            ivEditElementoUser.setOnClickListener {
-                val context = itemView.context
-                val intent = Intent(context, PerfilPatchActivity::class.java)
-                intent.putExtra("SYNC_ITEM", item)
-                context.startActivity(intent)
-
+            ivEditElementoUser.setOnClickListener { //Este hace que el reciclerView se actualice despues de editar un item
+                val position = bindingAdapterPosition
+                if (position != RecyclerView.NO_POSITION) {
+                    onEditClick(item, position)
+                }
             }
 
         }
