@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "990673510920",
-    "project_id": "laesquinadivina-10cbb",
-    "storage_bucket": "laesquinadivina-10cbb.firebasestorage.app"
+    "project_number": "1038225513296",
+    "project_id": "syncapp-d524b",
+    "storage_bucket": "syncapp-d524b.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:990673510920:android:059748f1e19ca8664427bd",
+        "mobilesdk_app_id": "1:1038225513296:android:ddcf58f9cae85987e76a55",
         "android_client_info": {
           "package_name": "com.jorlina.syncapp"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBtH4ZHHO1m-6VXvJ_gh6oh0sYXKB4ybZE"
+          "current_key": "AIzaSyCu4Dvqb3Q6trxaH1PzjmDVVb_KSdG2RzQ"
         }
       ],
       "services": {
