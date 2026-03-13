@@ -185,10 +185,10 @@ class MenuPrincipalActivity : AppCompatActivity() {
     }
 
     private fun cargarDatosDesdeAPI() {
-        lifecycleScope.launch {
+        lifecycleScope.launch { //corutina
             try {
-                val response = ItemApi.API().getItem()
-                if (response.isSuccessful) {
+                val response = ItemApi.API().getItem() //Carga los items de la base de datos
+                if (response.isSuccessful) { //Comprobacion de que la lista se haya cargado
                     val listaAPI = response.body() ?: emptyList()
                     listaCompleta = listaAPI
                     // Actualizamos el RecyclerView

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AyudaActivity"
+    android:background="@color/bg_turquesa">
+
+    <LinearLayout
+        android:id="@+id/arrowBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/arrowBackIv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/arrow_back"
+            android:theme="@style/vectorAssets">
+        </ImageView>
+
+        <ImageView
+            android:layout_marginStart="20dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:src="@drawable/title_image_removebg">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/user_icon_image"
+            android:theme="@style/vectorAssets">
+        </ImageView>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/arrowBack">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_ayuda_menu"
+                android:textStyle="bold"
+                android:textSize="24dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/texto_menu"
+                android:textSize="16dp">
+            </TextView>
+            <ImageView
+                android:layout_width="332dp"
+                android:layout_height="500dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/menu_layaut_image"
+                android:layout_marginBottom="16dp">
+            </ImageView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_ayuda_perfil"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/texto_perfil"
+                android:textSize="16dp">
+            </TextView>
+            <ImageView
+                android:layout_width="332dp"
+                android:layout_height="500dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/perfil_layaut_image">
+            </ImageView>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_ayuda_filtros"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/texto_filtros"
+                android:textSize="16dp">
+            </TextView>
+            <ImageView
+                android:layout_width="332dp"
+                android:layout_height="500dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/filtros_layaut_image">
+            </ImageView>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_ayuda_create"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/texto_create"
+                android:textSize="16dp">
+            </TextView>
+            <ImageView
+                android:layout_width="332dp"
+                android:layout_height="500dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/create_layaut_image">
+            </ImageView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_ayuda_settings"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/texto_settings"
+                android:textSize="16dp">
+            </TextView>
+            <ImageView
+                android:layout_width="332dp"
+                android:layout_height="500dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/settings_layaut_image"
+                android:layout_marginBottom="22dp">
+            </ImageView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
