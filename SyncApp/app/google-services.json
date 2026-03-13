@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "292338648670",
+    "project_id": "pruebadam-99afb",
+    "storage_bucket": "pruebadam-99afb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292338648670:android:eb0ea04102ae09e85696cf",
+        "android_client_info": {
+          "package_name": "com.jorlina.syncapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQyMOkIuH84fZ4bzy_B3ER5eAXk-gNjJY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.jorlina.syncapp" />
+                  <option name="mobileSdkAppId" value="1:292338648670:android:eb0ea04102ae09e85696cf" />
+                  <option name="projectId" value="pruebadam-99afb" />
+                  <option name="projectNumber" value="292338648670" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
