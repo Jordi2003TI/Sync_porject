@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/cat_todas" android:title="Todas"></item>
+    <item android:id="@+id/cat_calculo" android:title="Calculo"></item>
+    <item android:id="@+id/cat_fundamentos" android:title="Fundamentos de la programacion"></item>
+    <item android:id="@+id/cat_biologia" android:title="Biologia General"></item>
+    <item android:id="@+id/cat_economia" android:title="Economia"></item>
+    <item android:id="@+id/cat_Psicologia_General" android:title="Psicologia General"></item>
+    <item android:id="@+id/Historia_del_Arte" android:title="Historia del Arte"></item>
+    <item android:id="@+id/Quimica_Organica" android:title="Quimica Organica"></item>
+</menu>

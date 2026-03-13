@@ -1,0 +1,234 @@
+[
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\menu_menu_toolbar.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\menu\\menu_toolbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\drawable_docs_icon.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\drawable\\docs_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\drawable_bg_splash.jpg.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\drawable\\bg_splash.jpg"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\drawable_settings_layaut_image.png.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\drawable\\settings_layaut_image.png"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\layout_activity_filtros.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\layout\\activity_filtros.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\drawable_full_star_icon.png.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\drawable\\full_star_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\xml_network_security_config.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\xml\\network_security_config.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\layout_activity_spalsh.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\layout\\activity_spalsh.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\menu_bottom_menu.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\menu\\bottom_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\drawable_arrow_back.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\drawable\\arrow_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\drawable_logo_image_removebg.png.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\drawable\\logo_image_removebg.png"
+    },
+    {
+        "merged": "com.jorlina.syncapp-debug-39:/layout_activity_perfil_patch.xml.flat",
+        "source": "com.jorlina.syncapp-main-41:/layout/activity_perfil_patch.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\drawable_edit_icon.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\drawable\\edit_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\layout_elemento_crud.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\layout\\elemento_crud.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\layout_activity_ayuda.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\layout\\activity_ayuda.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\drawable_logo_image_splashscreen.png.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\drawable\\logo_image_splashscreen.png"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\layout_activity_preferencias.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\layout\\activity_preferencias.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\drawable_empty_star_icon.png.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\drawable\\empty_star_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\drawable_favorite_icon.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\drawable\\favorite_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\layout_app_bar_fragment.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\layout\\app_bar_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\drawable_user_icon_image.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\drawable\\user_icon_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\layout_activity_perfil.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\layout\\activity_perfil.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\drawable_filtros_layaut_image.png.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\drawable\\filtros_layaut_image.png"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\drawable_create_layaut_image.png.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\drawable\\create_layaut_image.png"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\drawable_add_file_icon.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\drawable\\add_file_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\drawable_add_icon.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\drawable\\add_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\layout_activity_create.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\layout\\activity_create.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\menu_popup_categories.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\menu\\popup_categories.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\drawable_info_icon.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\drawable\\info_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "com.jorlina.syncapp-debug-39:/layout_elemento_crud.xml.flat",
+        "source": "com.jorlina.syncapp-main-41:/layout/elemento_crud.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\drawable_delete_icon.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\drawable\\delete_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\layout_activity_menu_principal.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\layout\\activity_menu_principal.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\drawable_title_image_removebg.png.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\drawable\\title_image_removebg.png"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\drawable_menu_layaut_image.png.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\drawable\\menu_layaut_image.png"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\drawable_perfil_layaut_image.png.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\drawable\\perfil_layaut_image.png"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\drawable_star_icon.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\drawable\\star_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\layout_activity_create_acont.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\layout\\activity_create_acont.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\drawable_settings_icon.png.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\drawable\\settings_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\menu_botonmenu.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\menu\\botonmenu.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\layout_elemento_recycle_view.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\layout\\elemento_recycle_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-39:\\drawable_full_favorite_icon.xml.flat",
+        "source": "C:\\Users\\carol\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-41:\\drawable\\full_favorite_icon.xml"
+    }
+]
