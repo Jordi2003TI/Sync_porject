@@ -14,6 +14,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
+import com.google.firebase.Firebase
+import com.google.firebase.firestore.firestore
 import com.jorlina.syncapp.CRUD.ITEM.ItemApi
 import com.jorlina.syncapp.model.SyncItemRequest
 import com.jorlina.syncapp.model.menuprincipalrecicler.SyncAdapter
@@ -33,6 +35,8 @@ class CreateActivity : AppCompatActivity() {
     private lateinit var SpinerCategoriaFiltros: Spinner
 
     private lateinit var btCreatePost: Button
+
+    val db = Firebase.firestore
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -79,6 +83,17 @@ class CreateActivity : AppCompatActivity() {
         SpinerCategoriaFiltros.adapter = adapterSpinner
     }
 
+    //Guardar las estadisticas de cuantos items creamos
+    fun incrementarItemsCreados() {
+
+        db.collection("stats")
+            .document("appStats")
+            .update(
+                "itemsCreados",
+                com.google.firebase.firestore.FieldValue.increment(1)
+            )
+    }
+
     private fun createItem() {
         val titulo = etTitleCreate.text.toString()
         val descripcion = etDescription.text.toString()
@@ -110,6 +125,7 @@ class CreateActivity : AppCompatActivity() {
                         "Item creado correctamente",
                         Toast.LENGTH_LONG).show()
                         setResult(RESULT_OK)
+                        incrementarItemsCreados() //Estadisticas
                         finish()
 
                 } else {
@@ -125,5 +141,7 @@ class CreateActivity : AppCompatActivity() {
             }
         }
     }
+
+
 }
 

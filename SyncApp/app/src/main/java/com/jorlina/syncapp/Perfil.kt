@@ -13,6 +13,8 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.Firebase
+import com.google.firebase.firestore.firestore
 import com.jorlina.syncapp.CRUD.ITEM.ItemApi
 import com.jorlina.syncapp.CRUD.ITEM.ItemService
 import com.jorlina.syncapp.model.DataSyncItem
@@ -26,6 +28,8 @@ class Perfil : AppCompatActivity() {
     private lateinit var rvPerfil: RecyclerView
     private lateinit var PerfilAdapter: PerfilAdapter
     private var listaCompleta: List<SyncItem> = listOf()
+
+    val db = Firebase.firestore
 
     private val editItemLauncher =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
@@ -63,6 +67,28 @@ class Perfil : AppCompatActivity() {
         initListeners();
         initUI()
 
+        contarEntradaPerfil()
+
+    }
+
+    //Funciones de estadisticas
+    fun contarEntradaPerfil() {
+
+        val ref = db.collection("stats").document("appStats")
+
+        ref.update(
+            "vecesPerfil",
+            com.google.firebase.firestore.FieldValue.increment(1)
+        )
+    }
+    fun incrementarItemsEliminados() {
+
+        db.collection("stats")
+            .document("appStats")
+            .update(
+                "itemsEliminados",
+                com.google.firebase.firestore.FieldValue.increment(1)
+            )
     }
 
     private fun initComponents(){
@@ -74,6 +100,7 @@ class Perfil : AppCompatActivity() {
 
 
     }
+
 
     private fun initUI(){
         rvPerfil.layoutManager = LinearLayoutManager(this)
@@ -99,7 +126,7 @@ class Perfil : AppCompatActivity() {
                                 val response = ItemApi.API().deleteItemById(item.id)
 
                                 if (response.isSuccessful) {
-
+                                    incrementarItemsEliminados()//Funcion de estadisticas
                                     listaCompleta = listaCompleta.filter { it.id != item.id }
                                     PerfilAdapter.removeItem(position)
 

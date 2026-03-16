@@ -15,7 +15,11 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.Firebase
+import com.google.firebase.firestore.firestore
 import com.jorlina.syncapp.CRUD.ITEM.ItemApi
+import com.jorlina.syncapp.Firebase.AppStats
+import com.jorlina.syncapp.Firebase.StatsActivity
 import com.jorlina.syncapp.model.DataSyncItem
 import com.jorlina.syncapp.model.SyncItem
 import com.jorlina.syncapp.model.menuprincipalrecicler.SyncAdapter
@@ -31,6 +35,9 @@ class MenuPrincipalActivity : AppCompatActivity() {
     private var REQUEST_CODE_FILTROS = 100
 
     private var likeBool = false
+
+    val db = Firebase.firestore
+    var tiempoInicio: Long = 0
 
     private val createItemLauncher =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
@@ -50,11 +57,23 @@ class MenuPrincipalActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        crearStatsIniciales()
         initComponents();
         initListeners();
         initUI()
     }
 
+    fun crearStatsIniciales() {
+        val ref = db.collection("stats").document("appStats")
+
+        ref.get()
+            .addOnSuccessListener { document ->
+                if (!document.exists()) {
+                    val stats = AppStats()
+                    ref.set(stats)
+                }
+            }
+    }
     private fun initComponents() {
 
         svBusquedaUser = findViewById(R.id.svBusquedaUser)
@@ -206,4 +225,42 @@ class MenuPrincipalActivity : AppCompatActivity() {
         }
 
     }
+
+    //Funciones para calcular las estadisticas!!
+
+    override fun onStart() {
+        super.onStart()
+        tiempoInicio = System.currentTimeMillis()
+    }
+
+    fun sumarTiempoUso(tiempo: Long) {
+
+        val ref = db.collection("stats").document("appStats")
+
+        ref.update("tiempoUsoTotal",
+            com.google.firebase.firestore.FieldValue.increment(tiempo))
+    }
+
+    override fun onStop() {
+        super.onStop()
+
+        val tiempoFin = System.currentTimeMillis()
+        val tiempoSesion = tiempoFin - tiempoInicio
+
+        sumarTiempoUso(tiempoSesion)
+    }
+
+
+//    fun obtenirEstadisticas() {
+//
+//        db.collection("estadisticas")
+//            .get()
+//            .addOnSuccessListener { result ->
+//
+//                val llistaEstadisticas = result.toObjects(AppStats::class.java)
+//
+//                mostrarEstadisticas(llistaEstadisticas)
+//
+//            }
+//    }
 }

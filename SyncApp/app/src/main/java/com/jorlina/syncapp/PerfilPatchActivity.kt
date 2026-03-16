@@ -15,6 +15,8 @@
     import androidx.core.view.ViewCompat
     import androidx.core.view.WindowInsetsCompat
     import androidx.lifecycle.lifecycleScope
+    import com.google.firebase.Firebase
+    import com.google.firebase.firestore.firestore
     import com.jorlina.syncapp.CRUD.ITEM.ItemApi
     import com.jorlina.syncapp.model.SyncItem
     import kotlinx.coroutines.launch
@@ -33,6 +35,8 @@
         private lateinit var SpinerCategoriaFiltrosP: Spinner
 
         private lateinit var btUpdatePost: Button
+
+        val db = Firebase.firestore //Base de datos de las stadisticas
 
         private var currentItem: SyncItem? = null
 
@@ -91,7 +95,16 @@
 
 
     }
+        //Funcion de control de estadisticas
+        fun incrementarItemsEditados() {
 
+            db.collection("stats")
+                .document("appStats")
+                .update(
+                    "itemsEditados",
+                    com.google.firebase.firestore.FieldValue.increment(1)
+                )
+        }
         private fun PerfilPatchActivity.updateItem() {
 
             val original = currentItem ?: return
@@ -139,6 +152,7 @@
                     }
 
                     if (huboCambios) {
+                        incrementarItemsEditados() //Funcion de estadisticas
                         Toast.makeText(
                             this@PerfilPatchActivity,
                             "Item actualizado correctamente",
