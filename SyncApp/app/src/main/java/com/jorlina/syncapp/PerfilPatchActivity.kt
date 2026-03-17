@@ -18,11 +18,12 @@
     import com.google.firebase.Firebase
     import com.google.firebase.firestore.firestore
     import com.jorlina.syncapp.CRUD.ITEM.ItemApi
+    import com.jorlina.syncapp.Firebase.FirebaseActivity
     import com.jorlina.syncapp.model.SyncItem
     import kotlinx.coroutines.launch
 
 
-    class PerfilPatchActivity : AppCompatActivity() {
+    class PerfilPatchActivity : FirebaseActivity() {
 
         private lateinit var etTitleCreateP: EditText
 
@@ -35,8 +36,6 @@
         private lateinit var SpinerCategoriaFiltrosP: Spinner
 
         private lateinit var btUpdatePost: Button
-
-        val db = Firebase.firestore //Base de datos de las stadisticas
 
         private var currentItem: SyncItem? = null
 
@@ -53,6 +52,7 @@
             initComponents();
             initListeners();
             initUI()
+            onStart()
 
             currentItem = intent.getParcelableExtra("SYNC_ITEM", SyncItem::class.java)
 
@@ -79,6 +79,7 @@
 
         private fun initListeners() {
             btUpdatePost.setOnClickListener {
+                onStop()
                 updateItem()
 
             }
@@ -95,16 +96,7 @@
 
 
     }
-        //Funcion de control de estadisticas
-        fun incrementarItemsEditados() {
 
-            db.collection("stats")
-                .document("appStats")
-                .update(
-                    "itemsEditados",
-                    com.google.firebase.firestore.FieldValue.increment(1)
-                )
-        }
         private fun PerfilPatchActivity.updateItem() {
 
             val original = currentItem ?: return

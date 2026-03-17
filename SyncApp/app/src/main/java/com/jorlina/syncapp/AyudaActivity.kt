@@ -8,11 +8,12 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.firebase.Firebase
 import com.google.firebase.firestore.firestore
+import com.jorlina.syncapp.Firebase.FirebaseActivity
 import com.jorlina.syncapp.Firebase.StatsActivity
 
-class AyudaActivity : AppCompatActivity() {
+class AyudaActivity : FirebaseActivity() {
     private lateinit var arrowBackIv : ImageView
-    val db = Firebase.firestore
+
 
 
 
@@ -29,16 +30,9 @@ class AyudaActivity : AppCompatActivity() {
         initListeners();
         initUI()
 
+        onStart()
         contarEntradaAyuda()
-    }
 
-    fun contarEntradaAyuda() {
-
-        val ref = db.collection("stats").document("appStats")
-        ref.update(
-            "vecesAyuda",
-            com.google.firebase.firestore.FieldValue.increment(1)
-        )
     }
     private fun initComponents() {
         arrowBackIv = findViewById<ImageView>(R.id.arrowBackIv)
@@ -46,6 +40,7 @@ class AyudaActivity : AppCompatActivity() {
 
     private fun initListeners() {
         arrowBackIv.setOnClickListener {
+            onStop()
             finish()
         }
     }

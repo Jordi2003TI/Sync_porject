@@ -33,11 +33,11 @@
     <string name="description">Descripcion del post y información o textos complementarios...</string>
     <string name="filter">FILTRAR</string>
     <string name="filters">FILTROS</string>
-    <string name="gcm_defaultSenderId" translatable="false">1038225513296</string>
-    <string name="google_api_key" translatable="false">AIzaSyCu4Dvqb3Q6trxaH1PzjmDVVb_KSdG2RzQ</string>
-    <string name="google_app_id" translatable="false">1:1038225513296:android:ddcf58f9cae85987e76a55</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCu4Dvqb3Q6trxaH1PzjmDVVb_KSdG2RzQ</string>
-    <string name="google_storage_bucket" translatable="false">syncapp-d524b.firebasestorage.app</string>
+    <string name="gcm_defaultSenderId" translatable="false">583226486079</string>
+    <string name="google_api_key" translatable="false">AIzaSyC_Ks6-R2YEXw0eS3gXkYHHbfhRRx87LPQ</string>
+    <string name="google_app_id" translatable="false">1:583226486079:android:90c7b6a4ad04651a3f778a</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC_Ks6-R2YEXw0eS3gXkYHHbfhRRx87LPQ</string>
+    <string name="google_storage_bucket" translatable="false">fir-synckotlin.firebasestorage.app</string>
     <string name="guest">INVITADO</string>
     <string name="iconUser">IconoUser</string>
     <string name="icono_login">Icono login</string>
@@ -50,7 +50,7 @@
     <string name="name">name</string>
     <string name="password">password</string>
     <string name="preferencias">Preferencias</string>
-    <string name="project_id" translatable="false">syncapp-d524b</string>
+    <string name="project_id" translatable="false">fir-synckotlin</string>
     <string name="recoverPassword">Recuperar Contraseña</string>
     <string name="texto_create">
         A. Toca la flecha para volver al meu principal, los cambios no se guardarán.

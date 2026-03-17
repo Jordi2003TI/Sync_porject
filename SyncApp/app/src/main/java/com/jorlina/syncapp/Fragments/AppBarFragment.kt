@@ -19,6 +19,7 @@ class AppBarFragment: Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        onStart()
         return inflater.inflate(R.layout.app_bar_fragment, container, false)
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -31,10 +32,12 @@ class AppBarFragment: Fragment() {
 
 
         arrowBackIv.setOnClickListener {
+            onStop()
             requireActivity().finish()
         }
 
         userIconIv.setOnClickListener {
+            onStop()
             val prefs = requireContext().getSharedPreferences("sync_prefs", 0)
             val userId = prefs.getString("userId", null)
             if (userId != null) {
@@ -47,6 +50,7 @@ class AppBarFragment: Fragment() {
         }
 
         ivInfo.setOnClickListener {
+            onStop()
             val intent = Intent(requireContext(), AyudaActivity::class.java)
             startActivity(intent)
         }

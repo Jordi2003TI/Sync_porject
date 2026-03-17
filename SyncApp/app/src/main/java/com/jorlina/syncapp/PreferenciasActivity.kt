@@ -24,6 +24,7 @@ class PreferenciasActivity : AppCompatActivity() {
         initComponents();
         initListeners();
         initUI()
+        onStart()
     }
 
     private fun initComponents() {
@@ -32,6 +33,7 @@ class PreferenciasActivity : AppCompatActivity() {
 
     private fun initListeners() {
         arrowBackIv.setOnClickListener {
+            onStop()
             finish()
         }
     }

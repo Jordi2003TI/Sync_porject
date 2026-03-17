@@ -17,19 +17,18 @@ import com.google.firebase.Firebase
 import com.google.firebase.firestore.firestore
 import com.jorlina.syncapp.CRUD.ITEM.ItemApi
 import com.jorlina.syncapp.CRUD.ITEM.ItemService
+import com.jorlina.syncapp.Firebase.FirebaseActivity
 import com.jorlina.syncapp.model.DataSyncItem
 import com.jorlina.syncapp.model.SyncItem
 import com.jorlina.syncapp.model.menuprincipalrecicler.SyncAdapter
 import com.jorlina.syncapp.model.perfilrecicler.PerfilAdapter
 import kotlinx.coroutines.launch
 
-class Perfil : AppCompatActivity() {
+class Perfil : FirebaseActivity() {
 
     private lateinit var rvPerfil: RecyclerView
     private lateinit var PerfilAdapter: PerfilAdapter
     private var listaCompleta: List<SyncItem> = listOf()
-
-    val db = Firebase.firestore
 
     private val editItemLauncher =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
@@ -68,28 +67,10 @@ class Perfil : AppCompatActivity() {
         initUI()
 
         contarEntradaPerfil()
+        onStart()
 
     }
 
-    //Funciones de estadisticas
-    fun contarEntradaPerfil() {
-
-        val ref = db.collection("stats").document("appStats")
-
-        ref.update(
-            "vecesPerfil",
-            com.google.firebase.firestore.FieldValue.increment(1)
-        )
-    }
-    fun incrementarItemsEliminados() {
-
-        db.collection("stats")
-            .document("appStats")
-            .update(
-                "itemsEliminados",
-                com.google.firebase.firestore.FieldValue.increment(1)
-            )
-    }
 
     private fun initComponents(){
         rvPerfil = findViewById<RecyclerView>(R.id.rvPerfil)

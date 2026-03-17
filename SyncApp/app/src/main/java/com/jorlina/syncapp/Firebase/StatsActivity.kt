@@ -19,20 +19,21 @@ class StatsActivity : AppCompatActivity() {
     }
 
 
-    fun guardarEstadisticas(id: String, minutos: Int, posteados: Int, editados: Int, eliminados: Int, ayudas: Int, perfil: Int) {
+    fun guardarEstadisticas(id:  String, tiempoUsoTotal: Long, vecesAyuda: Int, vecesPerfil: Int, itemsCreados: Int, itemsEditados: Int, itemsEliminados: Int) {
 
         val nouDocument = db.collection("estadisticas").document()
 
-        val estadistica = Estadisticas(
+        val estadistica = AppStats(
             id = nouDocument.id,
-            minutos = minutos,
-            posteados = posteados,
-            editados = editados,
-            eliminados = eliminados,
-            ayudas = ayudas,
-            perfil = perfil
+            tiempoUsoTotal = tiempoUsoTotal,
+            vecesAyuda = vecesAyuda,
+            vecesPerfil = vecesPerfil,
+            itemsCreados = itemsCreados,
+            itemsEditados = itemsEditados,
+            itemsEliminados = itemsEliminados
         )
 
         nouDocument.set(estadistica)
     }
+
 }

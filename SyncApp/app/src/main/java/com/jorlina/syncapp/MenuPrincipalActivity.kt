@@ -19,13 +19,14 @@ import com.google.firebase.Firebase
 import com.google.firebase.firestore.firestore
 import com.jorlina.syncapp.CRUD.ITEM.ItemApi
 import com.jorlina.syncapp.Firebase.AppStats
+import com.jorlina.syncapp.Firebase.FirebaseActivity
 import com.jorlina.syncapp.Firebase.StatsActivity
 import com.jorlina.syncapp.model.DataSyncItem
 import com.jorlina.syncapp.model.SyncItem
 import com.jorlina.syncapp.model.menuprincipalrecicler.SyncAdapter
 import kotlinx.coroutines.launch
 
-class MenuPrincipalActivity : AppCompatActivity() {
+class MenuPrincipalActivity : FirebaseActivity() {
     private lateinit var svBusquedaUser: SearchView
     private lateinit var filterButton: Button
     private lateinit var bnvNavegation: BottomNavigationView
@@ -35,9 +36,6 @@ class MenuPrincipalActivity : AppCompatActivity() {
     private var REQUEST_CODE_FILTROS = 100
 
     private var likeBool = false
-
-    val db = Firebase.firestore
-    var tiempoInicio: Long = 0
 
     private val createItemLauncher =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
@@ -58,22 +56,12 @@ class MenuPrincipalActivity : AppCompatActivity() {
             insets
         }
         crearStatsIniciales()
+        onStart()
         initComponents();
         initListeners();
         initUI()
     }
 
-    fun crearStatsIniciales() {
-        val ref = db.collection("stats").document("appStats")
-
-        ref.get()
-            .addOnSuccessListener { document ->
-                if (!document.exists()) {
-                    val stats = AppStats()
-                    ref.set(stats)
-                }
-            }
-    }
     private fun initComponents() {
 
         svBusquedaUser = findViewById(R.id.svBusquedaUser)
@@ -100,7 +88,7 @@ class MenuPrincipalActivity : AppCompatActivity() {
         })
 
         filterButton.setOnClickListener {
-
+            onStop()
             val intent = Intent(this, Filtros::class.java)
             startActivityForResult(intent, REQUEST_CODE_FILTROS)
         }
@@ -108,12 +96,14 @@ class MenuPrincipalActivity : AppCompatActivity() {
         bnvNavegation.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_crud -> {
+                    onStop()
                     val intent = Intent(this, CreateActivity::class.java)
                     createItemLauncher.launch(intent)
                     true
                 }
 
                 R.id.nav_settings -> {
+                    onStop()
                     startActivity(Intent(this, PreferenciasActivity::class.java))
                     true
                 }
@@ -225,31 +215,6 @@ class MenuPrincipalActivity : AppCompatActivity() {
         }
 
     }
-
-    //Funciones para calcular las estadisticas!!
-
-    override fun onStart() {
-        super.onStart()
-        tiempoInicio = System.currentTimeMillis()
-    }
-
-    fun sumarTiempoUso(tiempo: Long) {
-
-        val ref = db.collection("stats").document("appStats")
-
-        ref.update("tiempoUsoTotal",
-            com.google.firebase.firestore.FieldValue.increment(tiempo))
-    }
-
-    override fun onStop() {
-        super.onStop()
-
-        val tiempoFin = System.currentTimeMillis()
-        val tiempoSesion = tiempoFin - tiempoInicio
-
-        sumarTiempoUso(tiempoSesion)
-    }
-
 
 //    fun obtenirEstadisticas() {
 //
