@@ -30,23 +30,23 @@ class Perfil : FirebaseActivity() {
     private lateinit var PerfilAdapter: PerfilAdapter
     private var listaCompleta: List<SyncItem> = listOf()
 
-    private val editItemLauncher =
-        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+    private val editItemLauncher = // Esto es una variable globla que hace que cada vez que entremos ejecute esto.
+        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result -> // esta siempre es igual (recoge el resulSet)
 
-            if (result.resultCode == RESULT_OK) {
+            if (result.resultCode == RESULT_OK) { // Comprueba el resultSet es Okay
 
-                val updatedItem = result.data?.getParcelableExtra<SyncItem>("UPDATED_ITEM")
+                val updatedItem = result.data?.getParcelableExtra<SyncItem>("UPDATED_ITEM") // le da a la variable updateItem el valor de data
 
-                updatedItem?.let { item ->
+                updatedItem?.let { item -> // Comprobamos que no sea nulo
 
-                    val index = listaCompleta.indexOfFirst { it.id == item.id }
+                    val index = listaCompleta.indexOfFirst { it.id == item.id } // sacamos en la posicion que se ecunetra el item mediante la id
 
                     if (index != -1) {
-                        val mutable = listaCompleta.toMutableList()
-                        mutable[index] = item
-                        listaCompleta = mutable
+                        val mutable = listaCompleta.toMutableList() // copiamos la lista normal pero mutable
+                        mutable[index] = item // buscamos la psocicon del anterior item para remplazarlo por el nuevo item
+                        listaCompleta = mutable // ya cambiamos la lista por la nueva
 
-                        PerfilAdapter.updateList(listaCompleta)
+                        PerfilAdapter.updateList(listaCompleta) // actualizamos la lista
                     }
                 }
             }
@@ -84,10 +84,10 @@ class Perfil : FirebaseActivity() {
 
 
     private fun initUI(){
-        rvPerfil.layoutManager = LinearLayoutManager(this)
+        rvPerfil.layoutManager = LinearLayoutManager(this)// Es para hacer que nuestro recycle vew sepa como mostrar los elementos
 
         PerfilAdapter = PerfilAdapter(
-            items = mutableListOf(),
+            items = mutableListOf(),// Estamos creando una mutableList para que podamos actualizar el recycle al momento
 
             onItemClick = { item ->
                 Toast.makeText(
@@ -96,19 +96,19 @@ class Perfil : FirebaseActivity() {
                     Toast.LENGTH_SHORT
                 ).show()
             },
-
+            // Aqui le damos a accion al boton de papelera/basura
             onDeleteClick = { item, position ->
                 AlertDialog.Builder(this)
                     .setTitle("Eliminar")
                     .setMessage("¿Seguro que quieres eliminar este item?")
                     .setPositiveButton("Sí") { _, _ ->
-                        lifecycleScope.launch {
+                        lifecycleScope.launch { //  Corrutina - sincronizar con la api
                             try {
-                                val response = ItemApi.API().deleteItemById(item.id)
+                                val response = ItemApi.API().deleteItemById(item.id) // aqui nos devuleve información de la api es decir nos devuelve un 200 -> ok
 
-                                if (response.isSuccessful) {
+                                if (response.isSuccessful) { // Comprobamos que to ha ido okay que nos devuelve ok
                                     incrementarItemsEliminados()//Funcion de estadisticas
-                                    listaCompleta = listaCompleta.filter { it.id != item.id }
+                                    listaCompleta = listaCompleta.filter { it.id != item.id } // recogemos la lista pero en memoria aun no la hemos aplicado
                                     PerfilAdapter.removeItem(position)
 
                                     Toast.makeText(

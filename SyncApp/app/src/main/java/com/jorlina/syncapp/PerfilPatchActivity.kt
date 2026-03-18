@@ -37,7 +37,7 @@
 
         private lateinit var btUpdatePost: Button
 
-        private var currentItem: SyncItem? = null
+        private var currentItem: SyncItem? = null // Aqui la declaramos y en el onCreate le damos valor (es opcional)
 
         @RequiresApi(Build.VERSION_CODES.TIRAMISU)
         override fun onCreate(savedInstanceState: Bundle?) {
@@ -54,10 +54,10 @@
             initUI()
             onStart()
 
-            currentItem = intent.getParcelableExtra("SYNC_ITEM", SyncItem::class.java)
+            currentItem = intent.getParcelableExtra("SYNC_ITEM", SyncItem::class.java) // Recogemos el item que nos lllega de onEditClick en perfil
 
-            currentItem?.let {
-                rellenarCampos(it)
+            currentItem?.let { // Comprobamos que el item exista y rellenamos los campos del xml del item si existe
+                rellenarCampos(it) // El it es propio currentItem
             }
 
         }
@@ -97,9 +97,9 @@
 
     }
 
-        private fun PerfilPatchActivity.updateItem() {
+        private fun updateItem() {
 
-            val original = currentItem ?: return
+            val original = currentItem ?: return // esto solo comprueba que el item tenga valores
 
             val nuevoTitulo = etTitleCreateP.text.toString()
             val nuevaDescripcion = etDescriptionP.text.toString()
@@ -137,7 +137,7 @@
                                 "Error actualizando descripción",
                                 Toast.LENGTH_SHORT
                             ).show()
-                            return@launch
+                            return@launch // Es importante ponerlo
                         }
 
                         huboCambios = true
@@ -158,13 +158,13 @@
                         ).show()
                     }
 
-                    val updatedItem = original.copy(
+                    val updatedItem = original.copy( // hacemos una copia del original pero cambiadonle tipo y descripcion. Solo lo hacemos para refrecar el recycle local
                         titulo = nuevoTitulo,
                         description = nuevaDescripcion
                     )
 
                     val intent = Intent()
-                    intent.putExtra("UPDATED_ITEM", updatedItem)
+                    intent.putExtra("UPDATED_ITEM", updatedItem) // creamos un intent del item que acabamss de crear
                     setResult(RESULT_OK, intent)
 
                     finish()
@@ -187,8 +187,7 @@
             etDescriptionP.setText(item.description)
 
             // Si usas categorías en spinner
-            val position = (SpinerCategoriaFiltrosP.adapter as ArrayAdapter<String>)
-                .getPosition(item.categoria)
+            val position = (SpinerCategoriaFiltrosP.adapter as ArrayAdapter<String>).getPosition(item.categoria)
             SpinerCategoriaFiltrosP.setSelection(position)
         }
     }

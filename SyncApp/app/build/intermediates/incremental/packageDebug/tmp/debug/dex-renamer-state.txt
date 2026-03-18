@@ -1,4 +1,4 @@
-#Tue Mar 17 23:28:19 CET 2026
+#Wed Mar 18 20:45:25 CET 2026
 base.0=C\:\\Users\\jordi\\Desktop\\2_ano\\Desenvolupamnet_Sostenible_aplicacions_mobils\\PROJECTO\\SyncApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\jordi\\Desktop\\2_ano\\Desenvolupamnet_Sostenible_aplicacions_mobils\\PROJECTO\\SyncApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.10=C\:\\Users\\jordi\\Desktop\\2_ano\\Desenvolupamnet_Sostenible_aplicacions_mobils\\PROJECTO\\SyncApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex

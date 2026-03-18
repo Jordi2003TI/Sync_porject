@@ -1,5 +1,5 @@
     package com.jorlina.syncapp.model.perfilrecicler
-
+    // Aqui declramos todas las varaibles del xml que componene el recycle view por ejemplo el boton de basura de cada item
     import android.content.Intent
     import android.view.View
     import android.widget.ImageView
@@ -27,16 +27,19 @@
         private val ivStar4: ImageView = itemView.findViewById(R.id.ivStar4)
         private val ivStar5: ImageView = itemView.findViewById(R.id.ivStar5)
         private val ivEditElementoUser : ImageView = itemView.findViewById(R.id.ivEditElementoUser)
-        private val ivFotoDeleteItemUser : ImageView = itemView.findViewById(R.id.ivFotoDeleteItemUser)
+        private val ivFotoDeleteItemUser : ImageView = itemView.findViewById(R.id.ivFotoDeleteItemUser) // Imagen de basura de cada item
 
 
+        // Aqui ponemos directamente todos los findVireById
         fun bind(item: SyncItem){
             tvTituloElementoUser.text = item.titulo
             tvDescripcionDeUser.text = item.description
             ivImagenElementoUser.setImageResource(item.imagen_doc)
 
             ivEditElementoUser.setImageResource(R.drawable.edit_icon)
-            ivFotoDeleteItemUser.setImageResource(R.drawable.delete_icon)
+            ivFotoDeleteItemUser.setImageResource(R.drawable.delete_icon) // Aqui cambios la imagen de la basura
+
+
 
             tvData.text = if (item.onUpdate != null) {
                 "Editado: ${item.onUpdate.toDateString()}"
@@ -57,18 +60,18 @@
                 onItemClick(item)
             }
 
-            ivFotoDeleteItemUser.setOnClickListener {
-                val position = bindingAdapterPosition
+            ivFotoDeleteItemUser.setOnClickListener { // La imagen se commporta como un boton
+                val position = bindingAdapterPosition // Esto coge la posicion es propia de kotlin
                 if (position != RecyclerView.NO_POSITION){
-                    onDeleteClick(item,position)
+                    onDeleteClick(item,position) // Esto es para ELIMINAR el reciclerView al editar un item (Funcion delarada en el adapater)
                 }
 
             }
 
-            ivEditElementoUser.setOnClickListener { //Este hace que el reciclerView se actualice despues de editar un item
-                val position = bindingAdapterPosition
+            ivEditElementoUser.setOnClickListener { // La imagen se commporta como un boton
+                val position = bindingAdapterPosition // Esto coge la posicion es propia de kotlin
                 if (position != RecyclerView.NO_POSITION) {
-                    onEditClick(item, position)
+                    onEditClick(item, position) // Esto es para ACTULIZAR el reciclerView al editar un item (Funcion declarada en el adapater)
                 }
             }
 

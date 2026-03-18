@@ -1,5 +1,5 @@
 package com.jorlina.syncapp.model.menuprincipalrecicler
-
+// Eso va a ser siempre casi identico solo camba el tipo de objeto ej: List<SyncItem>
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView

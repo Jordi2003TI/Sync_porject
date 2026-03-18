@@ -10,13 +10,13 @@ import com.jorlina.syncapp.model.SyncItem
 class PerfilAdapter (
     private val items: MutableList<SyncItem> = mutableListOf(),
     private val onItemClick: (SyncItem) -> Unit,
-    private val onDeleteClick: (SyncItem, Int) -> Unit,
-    private val onEditClick: (SyncItem, Int) -> Unit //Esto es para refrescar el reciclerView al editar un item
+    private val onDeleteClick: (SyncItem, Int) -> Unit, // Esto es para ELIMINAR el reciclerView al editar un item (Unit es void pero en kotlin)
+    private val onEditClick: (SyncItem, Int) -> Unit
 ): RecyclerView.Adapter<PerfilHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PerfilHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.elemento_crud, parent, false)
-        return PerfilHolder(view, onItemClick, onDeleteClick,onEditClick)
+        return PerfilHolder(view, onItemClick, onDeleteClick,onEditClick) // Estos son las funciones compartidas entre adapter y holder
     }
 
     override fun onBindViewHolder(holder: PerfilHolder, position: Int){
@@ -28,7 +28,7 @@ class PerfilAdapter (
         return items.size
     }
 
-    fun removeItem(position: Int) {
+    fun removeItem(position: Int) { //
         items.removeAt(position)
         notifyItemRemoved(position)
     }
