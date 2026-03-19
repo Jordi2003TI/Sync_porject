@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!--Necesario para el crud nos da permisos http-->
     <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Y esto tanbieb : android:networkSecurityConfig="@xml/network_security_config" -->
 
     <application
         android:allowBackup="true"

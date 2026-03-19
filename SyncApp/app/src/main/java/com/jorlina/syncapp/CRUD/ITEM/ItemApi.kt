@@ -27,7 +27,7 @@ class ItemApi {
                 val unsafeOkHttpClient = getUnsafeOkHttpClient()
                 mItemAPI = Retrofit.Builder()
                     .addConverterFactory(GsonConverterFactory.create(gsondateformat))
-                    .baseUrl("http://141.253.193.196:8080/")
+                    .baseUrl("http://141.253.193.196:8080/") //url api
                     .client(unsafeOkHttpClient) // Afegeix el client
                     .build()
 
