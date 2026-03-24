@@ -13,10 +13,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.jorlina.syncapp.CreateAccount.CreateAcontActivity
+import com.jorlina.syncapp.Firebase.FirebaseActivity
 import com.jorlina.syncapp.MenuPrincipalActivity
 import com.jorlina.syncapp.R
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : FirebaseActivity() {
 
     private val viewModel: LoginViewModel by viewModels()
 
@@ -45,6 +46,7 @@ class MainActivity : AppCompatActivity() {
         initComponents();
         initListeners();
         initUI()
+        crearStatsIniciales()
     }
     private fun initComponents(){
         btLogin = findViewById<Button>(R.id.btLogin)
