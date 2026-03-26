@@ -12,359 +12,520 @@
 12    <uses-permission android:name="android.permission.INTERNET" />
 12-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:6:5-67
 12-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:6:22-64
-13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-13-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:24:5-79
-13-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:24:22-76
-14    <uses-permission android:name="android.permission.WAKE_LOCK" />
-14-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:25:5-68
-14-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:25:22-65
-15    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-15-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:26:5-110
-15-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:26:22-107
-16    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
-16-->[com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\329c58449440141c9b3d39e0628f61cc\transformed\play-services-measurement-api-22.1.2\AndroidManifest.xml:25:5-79
-16-->[com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\329c58449440141c9b3d39e0628f61cc\transformed\play-services-measurement-api-22.1.2\AndroidManifest.xml:25:22-76
-17    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
-17-->[com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\329c58449440141c9b3d39e0628f61cc\transformed\play-services-measurement-api-22.1.2\AndroidManifest.xml:26:5-88
-17-->[com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\329c58449440141c9b3d39e0628f61cc\transformed\play-services-measurement-api-22.1.2\AndroidManifest.xml:26:22-85
-18    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
-18-->[com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\329c58449440141c9b3d39e0628f61cc\transformed\play-services-measurement-api-22.1.2\AndroidManifest.xml:27:5-82
-18-->[com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\329c58449440141c9b3d39e0628f61cc\transformed\play-services-measurement-api-22.1.2\AndroidManifest.xml:27:22-79
-19
-20    <permission
-20-->[androidx.core:core:1.17.0] C:\Users\jordi\.gradle\caches\8.13\transforms\8f948f483584586230f1811dbeb52056\transformed\core-1.17.0\AndroidManifest.xml:22:5-24:47
-21        android:name="com.jorlina.syncapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-21-->[androidx.core:core:1.17.0] C:\Users\jordi\.gradle\caches\8.13\transforms\8f948f483584586230f1811dbeb52056\transformed\core-1.17.0\AndroidManifest.xml:23:9-81
-22        android:protectionLevel="signature" />
-22-->[androidx.core:core:1.17.0] C:\Users\jordi\.gradle\caches\8.13\transforms\8f948f483584586230f1811dbeb52056\transformed\core-1.17.0\AndroidManifest.xml:24:9-44
-23
-24    <uses-permission android:name="com.jorlina.syncapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- Y esto tanbieb : android:networkSecurityConfig="@xml/network_security_config" -->
-24-->[androidx.core:core:1.17.0] C:\Users\jordi\.gradle\caches\8.13\transforms\8f948f483584586230f1811dbeb52056\transformed\core-1.17.0\AndroidManifest.xml:26:5-97
-24-->[androidx.core:core:1.17.0] C:\Users\jordi\.gradle\caches\8.13\transforms\8f948f483584586230f1811dbeb52056\transformed\core-1.17.0\AndroidManifest.xml:26:22-94
-25    <application
-25-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:9:5-71:19
-26        android:allowBackup="true"
-26-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:10:9-35
-27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-27-->[androidx.core:core:1.17.0] C:\Users\jordi\.gradle\caches\8.13\transforms\8f948f483584586230f1811dbeb52056\transformed\core-1.17.0\AndroidManifest.xml:28:18-86
-28        android:dataExtractionRules="@xml/data_extraction_rules"
-28-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:11:9-65
-29        android:debuggable="true"
-30        android:extractNativeLibs="false"
-31        android:fullBackupContent="@xml/backup_rules"
-31-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:12:9-54
-32        android:icon="@mipmap/ic_launcher"
-32-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:13:9-43
-33        android:label="@string/app_name"
-33-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:14:9-41
-34        android:networkSecurityConfig="@xml/network_security_config"
-34-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:15:9-69
-35        android:roundIcon="@mipmap/ic_launcher_round"
-35-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:16:9-54
-36        android:supportsRtl="true"
-36-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:17:9-35
-37        android:testOnly="true"
-38        android:theme="@style/Theme.SyncApp" >
-38-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:18:9-45
-39        <activity
-39-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:19:9-21:40
-40            android:name="com.jorlina.syncapp.Firebase.FirebaseActivity"
-40-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:20:13-54
-41            android:exported="false" />
-41-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:21:13-37
-42        <activity
-42-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:22:9-24:40
-43            android:name="com.jorlina.syncapp.Firebase.StatsActivity"
-43-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:23:13-51
-44            android:exported="false" />
-44-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:24:13-37
-45        <activity
-45-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:25:9-27:40
-46            android:name="com.jorlina.syncapp.PerfilPatchActivity"
-46-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:26:13-48
-47            android:exported="false" />
-47-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:27:13-37
-48        <activity
-48-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:28:9-30:40
-49            android:name="com.jorlina.syncapp.model.PerfilHolder"
-49-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:29:13-47
-50            android:exported="false" />
-50-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:30:13-37
-51        <activity
-51-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:31:9-40:20
-52            android:name="com.jorlina.syncapp.SpalshActivity"
-52-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:32:13-43
-53            android:exported="true"
-53-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:33:13-36
-54            android:theme="@style/Theme.App.SplashScreen" >
-54-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:34:13-58
-55            <intent-filter>
-55-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:35:13-39:29
-56                <action android:name="android.intent.action.MAIN" />
-56-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:36:17-69
-56-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:36:25-66
-57
-58                <category android:name="android.intent.category.LAUNCHER" />
-58-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:38:17-77
-58-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:38:27-74
-59            </intent-filter>
-60        </activity>
-61        <activity
-61-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:41:9-43:40
-62            android:name="com.jorlina.syncapp.PreferenciasActivity"
-62-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:42:13-49
-63            android:exported="false" />
-63-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:43:13-37
-64        <activity
-64-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:44:9-46:40
-65            android:name="com.jorlina.syncapp.AyudaActivity"
-65-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:45:13-42
-66            android:exported="false" />
-66-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:46:13-37
-67        <activity
-67-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:47:9-49:40
-68            android:name="com.jorlina.syncapp.preferencias"
-68-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:48:13-41
-69            android:exported="false" />
-69-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:49:13-37
-70        <activity
-70-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:50:9-52:40
-71            android:name="com.jorlina.syncapp.ayuda"
-71-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:51:13-34
-72            android:exported="false" />
-72-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:52:13-37
-73        <activity
-73-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:53:9-55:40
-74            android:name="com.jorlina.syncapp.CreateActivity"
-74-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:54:13-43
-75            android:exported="false" />
-75-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:55:13-37
-76        <activity
-76-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:56:9-58:40
-77            android:name="com.jorlina.syncapp.Perfil"
-77-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:57:13-35
-78            android:exported="false" />
-78-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:58:13-37
-79        <activity
-79-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:59:9-61:40
-80            android:name="com.jorlina.syncapp.Filtros"
-80-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:60:13-36
-81            android:exported="false" />
-81-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:61:13-37
-82        <activity
-82-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:62:9-64:40
-83            android:name="com.jorlina.syncapp.MenuPrincipalActivity"
-83-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:63:13-50
-84            android:exported="false" />
-84-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:64:13-37
-85        <activity
-85-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:65:9-67:40
-86            android:name="com.jorlina.syncapp.CreateAccount.CreateAcontActivity"
-86-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:66:13-62
-87            android:exported="false" />
-87-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:67:13-37
-88        <activity
-88-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:68:9-70:40
-89            android:name="com.jorlina.syncapp.MainLogin.MainActivity"
-89-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:69:13-51
-90            android:exported="false" />
-90-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:70:13-37
-91
-92        <receiver
-92-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:29:9-33:20
-93            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-93-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:30:13-85
-94            android:enabled="true"
-94-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:31:13-35
-95            android:exported="false" >
-95-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:32:13-37
-96        </receiver>
-97
-98        <service
-98-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:35:9-38:40
-99            android:name="com.google.android.gms.measurement.AppMeasurementService"
-99-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:36:13-84
-100            android:enabled="true"
-100-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:37:13-35
-101            android:exported="false" />
-101-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:38:13-37
-102        <service
-102-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:39:9-43:72
-103            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-103-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:40:13-87
-104            android:enabled="true"
-104-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:41:13-35
-105            android:exported="false"
-105-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:42:13-37
-106            android:permission="android.permission.BIND_JOB_SERVICE" />
-106-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:43:13-69
-107
-108        <property
-108-->[com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\329c58449440141c9b3d39e0628f61cc\transformed\play-services-measurement-api-22.1.2\AndroidManifest.xml:30:9-32:61
-109            android:name="android.adservices.AD_SERVICES_CONFIG"
-109-->[com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\329c58449440141c9b3d39e0628f61cc\transformed\play-services-measurement-api-22.1.2\AndroidManifest.xml:31:13-65
-110            android:resource="@xml/ga_ad_services_config" />
-110-->[com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\329c58449440141c9b3d39e0628f61cc\transformed\play-services-measurement-api-22.1.2\AndroidManifest.xml:32:13-58
-111
-112        <service
-112-->[com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\329c58449440141c9b3d39e0628f61cc\transformed\play-services-measurement-api-22.1.2\AndroidManifest.xml:34:9-40:19
-113            android:name="com.google.firebase.components.ComponentDiscoveryService"
-113-->[com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\329c58449440141c9b3d39e0628f61cc\transformed\play-services-measurement-api-22.1.2\AndroidManifest.xml:35:13-84
-114            android:directBootAware="true"
-114-->[com.google.firebase:firebase-common:21.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\b5e22f75e75ca21186beed97219bcedb\transformed\firebase-common-21.0.0\AndroidManifest.xml:32:13-43
-115            android:exported="false" >
-115-->[com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\329c58449440141c9b3d39e0628f61cc\transformed\play-services-measurement-api-22.1.2\AndroidManifest.xml:36:13-37
-116            <meta-data
-116-->[com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\329c58449440141c9b3d39e0628f61cc\transformed\play-services-measurement-api-22.1.2\AndroidManifest.xml:37:13-39:85
-117                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-117-->[com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\329c58449440141c9b3d39e0628f61cc\transformed\play-services-measurement-api-22.1.2\AndroidManifest.xml:38:17-139
-118                android:value="com.google.firebase.components.ComponentRegistrar" />
-118-->[com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\329c58449440141c9b3d39e0628f61cc\transformed\play-services-measurement-api-22.1.2\AndroidManifest.xml:39:17-82
-119            <meta-data
-119-->[com.google.firebase:firebase-firestore-ktx:25.1.1] C:\Users\jordi\.gradle\caches\8.13\transforms\7b1c27b8fdaf3f6c89669c72966a9f9e\transformed\firebase-firestore-ktx-25.1.1\AndroidManifest.xml:12:13-14:85
-120                android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreLegacyRegistrar"
-120-->[com.google.firebase:firebase-firestore-ktx:25.1.1] C:\Users\jordi\.gradle\caches\8.13\transforms\7b1c27b8fdaf3f6c89669c72966a9f9e\transformed\firebase-firestore-ktx-25.1.1\AndroidManifest.xml:13:17-129
-121                android:value="com.google.firebase.components.ComponentRegistrar" />
-121-->[com.google.firebase:firebase-firestore-ktx:25.1.1] C:\Users\jordi\.gradle\caches\8.13\transforms\7b1c27b8fdaf3f6c89669c72966a9f9e\transformed\firebase-firestore-ktx-25.1.1\AndroidManifest.xml:14:17-82
-122            <meta-data
-122-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\jordi\.gradle\caches\8.13\transforms\e863aca82c78467c04f8dc61d4e9dc66\transformed\firebase-firestore-25.1.1\AndroidManifest.xml:17:13-19:85
-123                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
-123-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\jordi\.gradle\caches\8.13\transforms\e863aca82c78467c04f8dc61d4e9dc66\transformed\firebase-firestore-25.1.1\AndroidManifest.xml:18:17-122
-124                android:value="com.google.firebase.components.ComponentRegistrar" />
-124-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\jordi\.gradle\caches\8.13\transforms\e863aca82c78467c04f8dc61d4e9dc66\transformed\firebase-firestore-25.1.1\AndroidManifest.xml:19:17-82
-125            <meta-data
-125-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\jordi\.gradle\caches\8.13\transforms\e863aca82c78467c04f8dc61d4e9dc66\transformed\firebase-firestore-25.1.1\AndroidManifest.xml:20:13-22:85
-126                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-126-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\jordi\.gradle\caches\8.13\transforms\e863aca82c78467c04f8dc61d4e9dc66\transformed\firebase-firestore-25.1.1\AndroidManifest.xml:21:17-111
-127                android:value="com.google.firebase.components.ComponentRegistrar" />
-127-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\jordi\.gradle\caches\8.13\transforms\e863aca82c78467c04f8dc61d4e9dc66\transformed\firebase-firestore-25.1.1\AndroidManifest.xml:22:17-82
-128            <meta-data
-128-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\d4258445a11b0559605b8d9463d52a1c\transformed\firebase-installations-18.0.0\AndroidManifest.xml:15:13-17:85
-129                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
-129-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\d4258445a11b0559605b8d9463d52a1c\transformed\firebase-installations-18.0.0\AndroidManifest.xml:16:17-130
-130                android:value="com.google.firebase.components.ComponentRegistrar" />
-130-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\d4258445a11b0559605b8d9463d52a1c\transformed\firebase-installations-18.0.0\AndroidManifest.xml:17:17-82
-131            <meta-data
-131-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\d4258445a11b0559605b8d9463d52a1c\transformed\firebase-installations-18.0.0\AndroidManifest.xml:18:13-20:85
-132                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-132-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\d4258445a11b0559605b8d9463d52a1c\transformed\firebase-installations-18.0.0\AndroidManifest.xml:19:17-127
-133                android:value="com.google.firebase.components.ComponentRegistrar" />
-133-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\d4258445a11b0559605b8d9463d52a1c\transformed\firebase-installations-18.0.0\AndroidManifest.xml:20:17-82
-134            <meta-data
-134-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\bef30ac4ab057bfb34a6ed1a13fcf92a\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
-135                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
-135-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\bef30ac4ab057bfb34a6ed1a13fcf92a\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
-136                android:value="com.google.firebase.components.ComponentRegistrar" />
-136-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\bef30ac4ab057bfb34a6ed1a13fcf92a\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
-137            <meta-data
-137-->[com.google.firebase:firebase-common:21.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\b5e22f75e75ca21186beed97219bcedb\transformed\firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
-138                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
-138-->[com.google.firebase:firebase-common:21.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\b5e22f75e75ca21186beed97219bcedb\transformed\firebase-common-21.0.0\AndroidManifest.xml:36:17-109
-139                android:value="com.google.firebase.components.ComponentRegistrar" />
-139-->[com.google.firebase:firebase-common:21.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\b5e22f75e75ca21186beed97219bcedb\transformed\firebase-common-21.0.0\AndroidManifest.xml:37:17-82
-140        </service>
-141
-142        <provider
-142-->[com.google.firebase:firebase-common:21.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\b5e22f75e75ca21186beed97219bcedb\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
-143            android:name="com.google.firebase.provider.FirebaseInitProvider"
-143-->[com.google.firebase:firebase-common:21.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\b5e22f75e75ca21186beed97219bcedb\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
-144            android:authorities="com.jorlina.syncapp.firebaseinitprovider"
-144-->[com.google.firebase:firebase-common:21.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\b5e22f75e75ca21186beed97219bcedb\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
-145            android:directBootAware="true"
-145-->[com.google.firebase:firebase-common:21.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\b5e22f75e75ca21186beed97219bcedb\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
-146            android:exported="false"
-146-->[com.google.firebase:firebase-common:21.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\b5e22f75e75ca21186beed97219bcedb\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
-147            android:initOrder="100" />
-147-->[com.google.firebase:firebase-common:21.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\b5e22f75e75ca21186beed97219bcedb\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
-148
-149        <activity
-149-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\jordi\.gradle\caches\8.13\transforms\32d36cd2247255718c1b1e4c5f34f11e\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:9-173
-150            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-150-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\jordi\.gradle\caches\8.13\transforms\32d36cd2247255718c1b1e4c5f34f11e\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:19-85
-151            android:exported="false"
-151-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\jordi\.gradle\caches\8.13\transforms\32d36cd2247255718c1b1e4c5f34f11e\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:146-170
-152            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-152-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\jordi\.gradle\caches\8.13\transforms\32d36cd2247255718c1b1e4c5f34f11e\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:86-145
-153
-154        <provider
-154-->[androidx.emoji2:emoji2:1.3.0] C:\Users\jordi\.gradle\caches\8.13\transforms\1f2e2e5cb5d830ea92751f50b5163c92\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-155            android:name="androidx.startup.InitializationProvider"
-155-->[androidx.emoji2:emoji2:1.3.0] C:\Users\jordi\.gradle\caches\8.13\transforms\1f2e2e5cb5d830ea92751f50b5163c92\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
-156            android:authorities="com.jorlina.syncapp.androidx-startup"
-156-->[androidx.emoji2:emoji2:1.3.0] C:\Users\jordi\.gradle\caches\8.13\transforms\1f2e2e5cb5d830ea92751f50b5163c92\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
-157            android:exported="false" >
-157-->[androidx.emoji2:emoji2:1.3.0] C:\Users\jordi\.gradle\caches\8.13\transforms\1f2e2e5cb5d830ea92751f50b5163c92\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
-158            <meta-data
-158-->[androidx.emoji2:emoji2:1.3.0] C:\Users\jordi\.gradle\caches\8.13\transforms\1f2e2e5cb5d830ea92751f50b5163c92\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-159                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-159-->[androidx.emoji2:emoji2:1.3.0] C:\Users\jordi\.gradle\caches\8.13\transforms\1f2e2e5cb5d830ea92751f50b5163c92\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
-160                android:value="androidx.startup" />
-160-->[androidx.emoji2:emoji2:1.3.0] C:\Users\jordi\.gradle\caches\8.13\transforms\1f2e2e5cb5d830ea92751f50b5163c92\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
-161            <meta-data
-161-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\jordi\.gradle\caches\8.13\transforms\0fee49fe50be3e9e7757b0a9ace7a996\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
-162                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-162-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\jordi\.gradle\caches\8.13\transforms\0fee49fe50be3e9e7757b0a9ace7a996\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
-163                android:value="androidx.startup" />
-163-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\jordi\.gradle\caches\8.13\transforms\0fee49fe50be3e9e7757b0a9ace7a996\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
-164            <meta-data
-164-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
-165                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-165-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
-166                android:value="androidx.startup" />
-166-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
-167        </provider>
-168
-169        <uses-library
-169-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\jordi\.gradle\caches\8.13\transforms\20f1a26153222689597588c8c752b116\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:23:9-25:40
-170            android:name="android.ext.adservices"
-170-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\jordi\.gradle\caches\8.13\transforms\20f1a26153222689597588c8c752b116\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:24:13-50
-171            android:required="false" />
-171-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\jordi\.gradle\caches\8.13\transforms\20f1a26153222689597588c8c752b116\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:25:13-37
-172
-173        <meta-data
-173-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\efdded04549f594dad79b0138c5e3086\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
-174            android:name="com.google.android.gms.version"
-174-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\efdded04549f594dad79b0138c5e3086\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
-175            android:value="@integer/google_play_services_version" />
-175-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\efdded04549f594dad79b0138c5e3086\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
-176
-177        <receiver
-177-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
-178            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-178-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
-179            android:directBootAware="false"
-179-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+13    <!-- Y esto tanbieb : android:networkSecurityConfig="@xml/network_security_config" -->
+14
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:9:5-79
+15-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:9:22-76
+16    <uses-permission android:name="android.permission.WAKE_LOCK" />
+16-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:25:5-68
+16-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:25:22-65
+17    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+17-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:26:5-110
+17-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:26:22-107
+18    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+18-->[com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\329c58449440141c9b3d39e0628f61cc\transformed\play-services-measurement-api-22.1.2\AndroidManifest.xml:25:5-79
+18-->[com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\329c58449440141c9b3d39e0628f61cc\transformed\play-services-measurement-api-22.1.2\AndroidManifest.xml:25:22-76
+19    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+19-->[com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\329c58449440141c9b3d39e0628f61cc\transformed\play-services-measurement-api-22.1.2\AndroidManifest.xml:26:5-88
+19-->[com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\329c58449440141c9b3d39e0628f61cc\transformed\play-services-measurement-api-22.1.2\AndroidManifest.xml:26:22-85
+20    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+20-->[com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\329c58449440141c9b3d39e0628f61cc\transformed\play-services-measurement-api-22.1.2\AndroidManifest.xml:27:5-82
+20-->[com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\329c58449440141c9b3d39e0628f61cc\transformed\play-services-measurement-api-22.1.2\AndroidManifest.xml:27:22-79
+21    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+21-->[com.google.android.recaptcha:recaptcha:18.5.1] C:\Users\jordi\.gradle\caches\8.13\transforms\5eb6209a0088e64f6e04ed591a80922d\transformed\recaptcha-18.5.1\AndroidManifest.xml:9:5-98
+21-->[com.google.android.recaptcha:recaptcha:18.5.1] C:\Users\jordi\.gradle\caches\8.13\transforms\5eb6209a0088e64f6e04ed591a80922d\transformed\recaptcha-18.5.1\AndroidManifest.xml:9:22-95
+22
+23    <permission
+23-->[androidx.core:core:1.17.0] C:\Users\jordi\.gradle\caches\8.13\transforms\8f948f483584586230f1811dbeb52056\transformed\core-1.17.0\AndroidManifest.xml:22:5-24:47
+24        android:name="com.jorlina.syncapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+24-->[androidx.core:core:1.17.0] C:\Users\jordi\.gradle\caches\8.13\transforms\8f948f483584586230f1811dbeb52056\transformed\core-1.17.0\AndroidManifest.xml:23:9-81
+25        android:protectionLevel="signature" />
+25-->[androidx.core:core:1.17.0] C:\Users\jordi\.gradle\caches\8.13\transforms\8f948f483584586230f1811dbeb52056\transformed\core-1.17.0\AndroidManifest.xml:24:9-44
+26
+27    <uses-permission android:name="com.jorlina.syncapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+27-->[androidx.core:core:1.17.0] C:\Users\jordi\.gradle\caches\8.13\transforms\8f948f483584586230f1811dbeb52056\transformed\core-1.17.0\AndroidManifest.xml:26:5-97
+27-->[androidx.core:core:1.17.0] C:\Users\jordi\.gradle\caches\8.13\transforms\8f948f483584586230f1811dbeb52056\transformed\core-1.17.0\AndroidManifest.xml:26:22-94
+28
+29    <application
+29-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:10:5-75:19
+30        android:allowBackup="true"
+30-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:11:9-35
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.17.0] C:\Users\jordi\.gradle\caches\8.13\transforms\8f948f483584586230f1811dbeb52056\transformed\core-1.17.0\AndroidManifest.xml:28:18-86
+32        android:dataExtractionRules="@xml/data_extraction_rules"
+32-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:12:9-65
+33        android:debuggable="true"
+34        android:extractNativeLibs="false"
+35        android:fullBackupContent="@xml/backup_rules"
+35-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:13:9-54
+36        android:icon="@mipmap/ic_launcher"
+36-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:14:9-43
+37        android:label="@string/app_name"
+37-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:15:9-41
+38        android:networkSecurityConfig="@xml/network_security_config"
+38-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:16:9-69
+39        android:roundIcon="@mipmap/ic_launcher_round"
+39-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:17:9-54
+40        android:supportsRtl="true"
+40-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:18:9-35
+41        android:testOnly="true"
+42        android:theme="@style/Theme.SyncApp" >
+42-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:19:9-45
+43        <activity
+43-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:20:9-22:40
+44            android:name="com.jorlina.syncapp.Firebase.FirebaseActivity"
+44-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:21:13-54
+45            android:exported="false" />
+45-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:22:13-37
+46        <activity
+46-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:23:9-25:40
+47            android:name="com.jorlina.syncapp.Firebase.StatsActivity"
+47-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:24:13-51
+48            android:exported="false" />
+48-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:25:13-37
+49        <activity
+49-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:26:9-28:40
+50            android:name="com.jorlina.syncapp.PerfilPatchActivity"
+50-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:27:13-48
+51            android:exported="false" />
+51-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:28:13-37
+52        <activity
+52-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:29:9-31:40
+53            android:name="com.jorlina.syncapp.model.PerfilHolder"
+53-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:30:13-47
+54            android:exported="false" />
+54-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:31:13-37
+55        <activity
+55-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:32:9-41:20
+56            android:name="com.jorlina.syncapp.SpalshActivity"
+56-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:33:13-43
+57            android:exported="true"
+57-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:34:13-36
+58            android:theme="@style/Theme.App.SplashScreen" >
+58-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:35:13-58
+59            <intent-filter>
+59-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:36:13-40:29
+60                <action android:name="android.intent.action.MAIN" />
+60-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:37:17-69
+60-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:37:25-66
+61
+62                <category android:name="android.intent.category.LAUNCHER" />
+62-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:39:17-77
+62-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:39:27-74
+63            </intent-filter>
+64        </activity>
+65        <activity
+65-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:42:9-44:40
+66            android:name="com.jorlina.syncapp.PreferenciasActivity"
+66-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:43:13-49
+67            android:exported="false" />
+67-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:44:13-37
+68        <activity
+68-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:45:9-47:40
+69            android:name="com.jorlina.syncapp.AyudaActivity"
+69-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:46:13-42
+70            android:exported="false" />
+70-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:47:13-37
+71        <activity
+71-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:48:9-50:40
+72            android:name="com.jorlina.syncapp.preferencias"
+72-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:49:13-41
+73            android:exported="false" />
+73-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:50:13-37
+74        <activity
+74-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:51:9-53:40
+75            android:name="com.jorlina.syncapp.ayuda"
+75-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:52:13-34
+76            android:exported="false" />
+76-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:53:13-37
+77        <activity
+77-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:54:9-56:40
+78            android:name="com.jorlina.syncapp.CreateActivity"
+78-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:55:13-43
+79            android:exported="false" />
+79-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:56:13-37
+80        <activity
+80-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:57:9-59:40
+81            android:name="com.jorlina.syncapp.Perfil"
+81-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:58:13-35
+82            android:exported="false" />
+82-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:59:13-37
+83        <activity
+83-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:60:9-62:40
+84            android:name="com.jorlina.syncapp.Filtros"
+84-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:61:13-36
+85            android:exported="false" />
+85-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:62:13-37
+86        <activity
+86-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:63:9-65:40
+87            android:name="com.jorlina.syncapp.MenuPrincipalActivity"
+87-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:64:13-50
+88            android:exported="false" />
+88-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:65:13-37
+89        <activity
+89-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:66:9-68:40
+90            android:name="com.jorlina.syncapp.CreateAccount.CreateAcontActivity"
+90-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:67:13-62
+91            android:exported="false" />
+91-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:68:13-37
+92        <activity
+92-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:69:9-71:40
+93            android:name="com.jorlina.syncapp.MainLogin.MainActivity"
+93-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:70:13-51
+94            android:exported="false" />
+94-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:71:13-37
+95        <activity
+95-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:72:9-74:39
+96            android:name="com.jorlina.syncapp.SyncAppApplication"
+96-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:73:13-47
+97            android:exported="false" />
+97-->C:\Users\jordi\Desktop\2_ano\Desenvolupamnet_Sostenible_aplicacions_mobils\PROJECTO\SyncApp\app\src\main\AndroidManifest.xml:74:13-37
+98
+99        <service
+99-->[com.google.firebase:firebase-auth-ktx:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\7ce4bdb2c8b711f247d5ef53ba32b3bc\transformed\firebase-auth-ktx-23.1.0\AndroidManifest.xml:8:9-14:19
+100            android:name="com.google.firebase.components.ComponentDiscoveryService"
+100-->[com.google.firebase:firebase-auth-ktx:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\7ce4bdb2c8b711f247d5ef53ba32b3bc\transformed\firebase-auth-ktx-23.1.0\AndroidManifest.xml:9:13-84
+101            android:directBootAware="true"
+101-->[com.google.firebase:firebase-common:21.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\b5e22f75e75ca21186beed97219bcedb\transformed\firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+102            android:exported="false" >
+102-->[com.google.firebase:firebase-auth-ktx:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\7ce4bdb2c8b711f247d5ef53ba32b3bc\transformed\firebase-auth-ktx-23.1.0\AndroidManifest.xml:10:13-37
+103            <meta-data
+103-->[com.google.firebase:firebase-auth-ktx:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\7ce4bdb2c8b711f247d5ef53ba32b3bc\transformed\firebase-auth-ktx-23.1.0\AndroidManifest.xml:11:13-13:85
+104                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthLegacyRegistrar"
+104-->[com.google.firebase:firebase-auth-ktx:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\7ce4bdb2c8b711f247d5ef53ba32b3bc\transformed\firebase-auth-ktx-23.1.0\AndroidManifest.xml:12:17-119
+105                android:value="com.google.firebase.components.ComponentRegistrar" />
+105-->[com.google.firebase:firebase-auth-ktx:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\7ce4bdb2c8b711f247d5ef53ba32b3bc\transformed\firebase-auth-ktx-23.1.0\AndroidManifest.xml:13:17-82
+106            <meta-data
+106-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:69:13-71:85
+107                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+107-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:70:17-109
+108                android:value="com.google.firebase.components.ComponentRegistrar" />
+108-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:71:17-82
+109            <meta-data
+109-->[com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\329c58449440141c9b3d39e0628f61cc\transformed\play-services-measurement-api-22.1.2\AndroidManifest.xml:37:13-39:85
+110                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+110-->[com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\329c58449440141c9b3d39e0628f61cc\transformed\play-services-measurement-api-22.1.2\AndroidManifest.xml:38:17-139
+111                android:value="com.google.firebase.components.ComponentRegistrar" />
+111-->[com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\329c58449440141c9b3d39e0628f61cc\transformed\play-services-measurement-api-22.1.2\AndroidManifest.xml:39:17-82
+112            <meta-data
+112-->[com.google.firebase:firebase-firestore-ktx:25.1.1] C:\Users\jordi\.gradle\caches\8.13\transforms\7b1c27b8fdaf3f6c89669c72966a9f9e\transformed\firebase-firestore-ktx-25.1.1\AndroidManifest.xml:12:13-14:85
+113                android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreLegacyRegistrar"
+113-->[com.google.firebase:firebase-firestore-ktx:25.1.1] C:\Users\jordi\.gradle\caches\8.13\transforms\7b1c27b8fdaf3f6c89669c72966a9f9e\transformed\firebase-firestore-ktx-25.1.1\AndroidManifest.xml:13:17-129
+114                android:value="com.google.firebase.components.ComponentRegistrar" />
+114-->[com.google.firebase:firebase-firestore-ktx:25.1.1] C:\Users\jordi\.gradle\caches\8.13\transforms\7b1c27b8fdaf3f6c89669c72966a9f9e\transformed\firebase-firestore-ktx-25.1.1\AndroidManifest.xml:14:17-82
+115            <meta-data
+115-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\jordi\.gradle\caches\8.13\transforms\e863aca82c78467c04f8dc61d4e9dc66\transformed\firebase-firestore-25.1.1\AndroidManifest.xml:17:13-19:85
+116                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+116-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\jordi\.gradle\caches\8.13\transforms\e863aca82c78467c04f8dc61d4e9dc66\transformed\firebase-firestore-25.1.1\AndroidManifest.xml:18:17-122
+117                android:value="com.google.firebase.components.ComponentRegistrar" />
+117-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\jordi\.gradle\caches\8.13\transforms\e863aca82c78467c04f8dc61d4e9dc66\transformed\firebase-firestore-25.1.1\AndroidManifest.xml:19:17-82
+118            <meta-data
+118-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\jordi\.gradle\caches\8.13\transforms\e863aca82c78467c04f8dc61d4e9dc66\transformed\firebase-firestore-25.1.1\AndroidManifest.xml:20:13-22:85
+119                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+119-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\jordi\.gradle\caches\8.13\transforms\e863aca82c78467c04f8dc61d4e9dc66\transformed\firebase-firestore-25.1.1\AndroidManifest.xml:21:17-111
+120                android:value="com.google.firebase.components.ComponentRegistrar" />
+120-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\jordi\.gradle\caches\8.13\transforms\e863aca82c78467c04f8dc61d4e9dc66\transformed\firebase-firestore-25.1.1\AndroidManifest.xml:22:17-82
+121            <meta-data
+121-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\d4258445a11b0559605b8d9463d52a1c\transformed\firebase-installations-18.0.0\AndroidManifest.xml:15:13-17:85
+122                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+122-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\d4258445a11b0559605b8d9463d52a1c\transformed\firebase-installations-18.0.0\AndroidManifest.xml:16:17-130
+123                android:value="com.google.firebase.components.ComponentRegistrar" />
+123-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\d4258445a11b0559605b8d9463d52a1c\transformed\firebase-installations-18.0.0\AndroidManifest.xml:17:17-82
+124            <meta-data
+124-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\d4258445a11b0559605b8d9463d52a1c\transformed\firebase-installations-18.0.0\AndroidManifest.xml:18:13-20:85
+125                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+125-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\d4258445a11b0559605b8d9463d52a1c\transformed\firebase-installations-18.0.0\AndroidManifest.xml:19:17-127
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\d4258445a11b0559605b8d9463d52a1c\transformed\firebase-installations-18.0.0\AndroidManifest.xml:20:17-82
+127            <meta-data
+127-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\bef30ac4ab057bfb34a6ed1a13fcf92a\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+128                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+128-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\bef30ac4ab057bfb34a6ed1a13fcf92a\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+129                android:value="com.google.firebase.components.ComponentRegistrar" />
+129-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\bef30ac4ab057bfb34a6ed1a13fcf92a\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+130            <meta-data
+130-->[com.google.firebase:firebase-common:21.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\b5e22f75e75ca21186beed97219bcedb\transformed\firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+131                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+131-->[com.google.firebase:firebase-common:21.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\b5e22f75e75ca21186beed97219bcedb\transformed\firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+132                android:value="com.google.firebase.components.ComponentRegistrar" />
+132-->[com.google.firebase:firebase-common:21.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\b5e22f75e75ca21186beed97219bcedb\transformed\firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+133        </service>
+134
+135        <activity
+135-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:29:9-46:20
+136            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+136-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:30:13-80
+137            android:excludeFromRecents="true"
+137-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:31:13-46
+138            android:exported="true"
+138-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:32:13-36
+139            android:launchMode="singleTask"
+139-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:33:13-44
+140            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+140-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:34:13-72
+141            <intent-filter>
+141-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:35:13-45:29
+142                <action android:name="android.intent.action.VIEW" />
+142-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:36:17-69
+142-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:36:25-66
+143
+144                <category android:name="android.intent.category.DEFAULT" />
+144-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:38:17-76
+144-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:38:27-73
+145                <category android:name="android.intent.category.BROWSABLE" />
+145-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:39:17-78
+145-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:39:27-75
+146
+147                <data
+147-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:41:17-44:51
+148                    android:host="firebase.auth"
+148-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:42:21-49
+149                    android:path="/"
+149-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:43:21-37
+150                    android:scheme="genericidp" />
+150-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:44:21-48
+151            </intent-filter>
+152        </activity>
+153        <activity
+153-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:47:9-64:20
+154            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+154-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:48:13-79
+155            android:excludeFromRecents="true"
+155-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:49:13-46
+156            android:exported="true"
+156-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:50:13-36
+157            android:launchMode="singleTask"
+157-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:51:13-44
+158            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+158-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:52:13-72
+159            <intent-filter>
+159-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:53:13-63:29
+160                <action android:name="android.intent.action.VIEW" />
+160-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:36:17-69
+160-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:36:25-66
+161
+162                <category android:name="android.intent.category.DEFAULT" />
+162-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:38:17-76
+162-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:38:27-73
+163                <category android:name="android.intent.category.BROWSABLE" />
+163-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:39:17-78
+163-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:39:27-75
+164
+165                <data
+165-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:41:17-44:51
+166                    android:host="firebase.auth"
+166-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:42:21-49
+167                    android:path="/"
+167-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:43:21-37
+168                    android:scheme="recaptcha" />
+168-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\jordi\.gradle\caches\8.13\transforms\47a6acbbe5b867d67508c0d802443aae\transformed\firebase-auth-23.1.0\AndroidManifest.xml:44:21-48
+169            </intent-filter>
+170        </activity>
+171
+172        <receiver
+172-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:29:9-33:20
+173            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+173-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:30:13-85
+174            android:enabled="true"
+174-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:31:13-35
+175            android:exported="false" >
+175-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:32:13-37
+176        </receiver>
+177
+178        <service
+178-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:35:9-38:40
+179            android:name="com.google.android.gms.measurement.AppMeasurementService"
+179-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:36:13-84
 180            android:enabled="true"
-180-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
-181            android:exported="true"
-181-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
-182            android:permission="android.permission.DUMP" >
-182-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
-183            <intent-filter>
-183-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
-184                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-184-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
-184-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
-185            </intent-filter>
-186            <intent-filter>
-186-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
-187                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-187-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
-187-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
-188            </intent-filter>
-189            <intent-filter>
-189-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
-190                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-190-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
-190-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
-191            </intent-filter>
-192            <intent-filter>
-192-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
-193                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-193-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
-193-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
-194            </intent-filter>
-195        </receiver>
-196    </application>
-197
-198</manifest>
+180-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:37:13-35
+181            android:exported="false" />
+181-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:38:13-37
+182        <service
+182-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:39:9-43:72
+183            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+183-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:40:13-87
+184            android:enabled="true"
+184-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:41:13-35
+185            android:exported="false"
+185-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:42:13-37
+186            android:permission="android.permission.BIND_JOB_SERVICE" />
+186-->[com.google.android.gms:play-services-measurement:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\d2aa385f16118e82ef13c40b651ff98e\transformed\play-services-measurement-22.1.2\AndroidManifest.xml:43:13-69
+187
+188        <property
+188-->[com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\329c58449440141c9b3d39e0628f61cc\transformed\play-services-measurement-api-22.1.2\AndroidManifest.xml:30:9-32:61
+189            android:name="android.adservices.AD_SERVICES_CONFIG"
+189-->[com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\329c58449440141c9b3d39e0628f61cc\transformed\play-services-measurement-api-22.1.2\AndroidManifest.xml:31:13-65
+190            android:resource="@xml/ga_ad_services_config" />
+190-->[com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\jordi\.gradle\caches\8.13\transforms\329c58449440141c9b3d39e0628f61cc\transformed\play-services-measurement-api-22.1.2\AndroidManifest.xml:32:13-58
+191
+192        <provider
+192-->[com.google.firebase:firebase-common:21.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\b5e22f75e75ca21186beed97219bcedb\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+193            android:name="com.google.firebase.provider.FirebaseInitProvider"
+193-->[com.google.firebase:firebase-common:21.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\b5e22f75e75ca21186beed97219bcedb\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+194            android:authorities="com.jorlina.syncapp.firebaseinitprovider"
+194-->[com.google.firebase:firebase-common:21.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\b5e22f75e75ca21186beed97219bcedb\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+195            android:directBootAware="true"
+195-->[com.google.firebase:firebase-common:21.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\b5e22f75e75ca21186beed97219bcedb\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+196            android:exported="false"
+196-->[com.google.firebase:firebase-common:21.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\b5e22f75e75ca21186beed97219bcedb\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+197            android:initOrder="100" />
+197-->[com.google.firebase:firebase-common:21.0.0] C:\Users\jordi\.gradle\caches\8.13\transforms\b5e22f75e75ca21186beed97219bcedb\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+198
+199        <service
+199-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\jordi\.gradle\caches\8.13\transforms\0e981f3de6668dfdaf5502486f01181a\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:24:9-32:19
+200            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+200-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\jordi\.gradle\caches\8.13\transforms\0e981f3de6668dfdaf5502486f01181a\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:25:13-94
+201            android:enabled="true"
+201-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\jordi\.gradle\caches\8.13\transforms\0e981f3de6668dfdaf5502486f01181a\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:26:13-35
+202            android:exported="false" >
+202-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\jordi\.gradle\caches\8.13\transforms\0e981f3de6668dfdaf5502486f01181a\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:27:13-37
+203            <meta-data
+203-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\jordi\.gradle\caches\8.13\transforms\0e981f3de6668dfdaf5502486f01181a\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:29:13-31:104
+204                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+204-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\jordi\.gradle\caches\8.13\transforms\0e981f3de6668dfdaf5502486f01181a\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:30:17-76
+205                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+205-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\jordi\.gradle\caches\8.13\transforms\0e981f3de6668dfdaf5502486f01181a\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:31:17-101
+206        </service>
+207
+208        <activity
+208-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\jordi\.gradle\caches\8.13\transforms\0e981f3de6668dfdaf5502486f01181a\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:34:9-41:20
+209            android:name="androidx.credentials.playservices.HiddenActivity"
+209-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\jordi\.gradle\caches\8.13\transforms\0e981f3de6668dfdaf5502486f01181a\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:35:13-76
+210            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+210-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\jordi\.gradle\caches\8.13\transforms\0e981f3de6668dfdaf5502486f01181a\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:36:13-87
+211            android:enabled="true"
+211-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\jordi\.gradle\caches\8.13\transforms\0e981f3de6668dfdaf5502486f01181a\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:37:13-35
+212            android:exported="false"
+212-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\jordi\.gradle\caches\8.13\transforms\0e981f3de6668dfdaf5502486f01181a\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:38:13-37
+213            android:fitsSystemWindows="true"
+213-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\jordi\.gradle\caches\8.13\transforms\0e981f3de6668dfdaf5502486f01181a\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:39:13-45
+214            android:theme="@style/Theme.Hidden" >
+214-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\jordi\.gradle\caches\8.13\transforms\0e981f3de6668dfdaf5502486f01181a\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:40:13-48
+215        </activity>
+216        <activity
+216-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\jordi\.gradle\caches\8.13\transforms\80bed3128c524c1eb0a784fddcfbec35\transformed\play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
+217            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+217-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\jordi\.gradle\caches\8.13\transforms\80bed3128c524c1eb0a784fddcfbec35\transformed\play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
+218            android:excludeFromRecents="true"
+218-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\jordi\.gradle\caches\8.13\transforms\80bed3128c524c1eb0a784fddcfbec35\transformed\play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
+219            android:exported="false"
+219-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\jordi\.gradle\caches\8.13\transforms\80bed3128c524c1eb0a784fddcfbec35\transformed\play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
+220            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+220-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\jordi\.gradle\caches\8.13\transforms\80bed3128c524c1eb0a784fddcfbec35\transformed\play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
+221        <!--
+222            Service handling Google Sign-In user revocation. For apps that do not integrate with
+223            Google Sign-In, this service will never be started.
+224        -->
+225        <service
+225-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\jordi\.gradle\caches\8.13\transforms\80bed3128c524c1eb0a784fddcfbec35\transformed\play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
+226            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+226-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\jordi\.gradle\caches\8.13\transforms\80bed3128c524c1eb0a784fddcfbec35\transformed\play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
+227            android:exported="true"
+227-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\jordi\.gradle\caches\8.13\transforms\80bed3128c524c1eb0a784fddcfbec35\transformed\play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
+228            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+228-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\jordi\.gradle\caches\8.13\transforms\80bed3128c524c1eb0a784fddcfbec35\transformed\play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
+229            android:visibleToInstantApps="true" />
+229-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\jordi\.gradle\caches\8.13\transforms\80bed3128c524c1eb0a784fddcfbec35\transformed\play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
+230
+231        <activity
+231-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\jordi\.gradle\caches\8.13\transforms\32d36cd2247255718c1b1e4c5f34f11e\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:9-173
+232            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+232-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\jordi\.gradle\caches\8.13\transforms\32d36cd2247255718c1b1e4c5f34f11e\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:19-85
+233            android:exported="false"
+233-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\jordi\.gradle\caches\8.13\transforms\32d36cd2247255718c1b1e4c5f34f11e\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:146-170
+234            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+234-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\jordi\.gradle\caches\8.13\transforms\32d36cd2247255718c1b1e4c5f34f11e\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:86-145
+235
+236        <provider
+236-->[androidx.emoji2:emoji2:1.3.0] C:\Users\jordi\.gradle\caches\8.13\transforms\1f2e2e5cb5d830ea92751f50b5163c92\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+237            android:name="androidx.startup.InitializationProvider"
+237-->[androidx.emoji2:emoji2:1.3.0] C:\Users\jordi\.gradle\caches\8.13\transforms\1f2e2e5cb5d830ea92751f50b5163c92\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+238            android:authorities="com.jorlina.syncapp.androidx-startup"
+238-->[androidx.emoji2:emoji2:1.3.0] C:\Users\jordi\.gradle\caches\8.13\transforms\1f2e2e5cb5d830ea92751f50b5163c92\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+239            android:exported="false" >
+239-->[androidx.emoji2:emoji2:1.3.0] C:\Users\jordi\.gradle\caches\8.13\transforms\1f2e2e5cb5d830ea92751f50b5163c92\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+240            <meta-data
+240-->[androidx.emoji2:emoji2:1.3.0] C:\Users\jordi\.gradle\caches\8.13\transforms\1f2e2e5cb5d830ea92751f50b5163c92\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+241                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+241-->[androidx.emoji2:emoji2:1.3.0] C:\Users\jordi\.gradle\caches\8.13\transforms\1f2e2e5cb5d830ea92751f50b5163c92\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+242                android:value="androidx.startup" />
+242-->[androidx.emoji2:emoji2:1.3.0] C:\Users\jordi\.gradle\caches\8.13\transforms\1f2e2e5cb5d830ea92751f50b5163c92\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+243            <meta-data
+243-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\jordi\.gradle\caches\8.13\transforms\0fee49fe50be3e9e7757b0a9ace7a996\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+244                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+244-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\jordi\.gradle\caches\8.13\transforms\0fee49fe50be3e9e7757b0a9ace7a996\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+245                android:value="androidx.startup" />
+245-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\jordi\.gradle\caches\8.13\transforms\0fee49fe50be3e9e7757b0a9ace7a996\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+246            <meta-data
+246-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+247                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+247-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+248                android:value="androidx.startup" />
+248-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+249        </provider>
+250
+251        <uses-library
+251-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\jordi\.gradle\caches\8.13\transforms\20f1a26153222689597588c8c752b116\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:23:9-25:40
+252            android:name="android.ext.adservices"
+252-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\jordi\.gradle\caches\8.13\transforms\20f1a26153222689597588c8c752b116\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:24:13-50
+253            android:required="false" />
+253-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\jordi\.gradle\caches\8.13\transforms\20f1a26153222689597588c8c752b116\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:25:13-37
+254
+255        <meta-data
+255-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\efdded04549f594dad79b0138c5e3086\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
+256            android:name="com.google.android.gms.version"
+256-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\efdded04549f594dad79b0138c5e3086\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
+257            android:value="@integer/google_play_services_version" />
+257-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\efdded04549f594dad79b0138c5e3086\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
+258
+259        <receiver
+259-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+260            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+260-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+261            android:directBootAware="false"
+261-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+262            android:enabled="true"
+262-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+263            android:exported="true"
+263-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+264            android:permission="android.permission.DUMP" >
+264-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+265            <intent-filter>
+265-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+266                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+266-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+266-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+267            </intent-filter>
+268            <intent-filter>
+268-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+269                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+269-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+269-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+270            </intent-filter>
+271            <intent-filter>
+271-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+272                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+272-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+272-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+273            </intent-filter>
+274            <intent-filter>
+274-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+275                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+275-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+275-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jordi\.gradle\caches\8.13\transforms\9cb22f7ddce1426d10602e1c854a7119\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+276            </intent-filter>
+277        </receiver> <!-- The activities will be merged into the manifest of the hosting app. -->
+278        <activity
+278-->[com.google.android.play:core-common:2.0.3] C:\Users\jordi\.gradle\caches\8.13\transforms\c38fc9ab9d6c8fdac8de06e6fba4f7ce\transformed\core-common-2.0.3\AndroidManifest.xml:14:9-18:65
+279            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+279-->[com.google.android.play:core-common:2.0.3] C:\Users\jordi\.gradle\caches\8.13\transforms\c38fc9ab9d6c8fdac8de06e6fba4f7ce\transformed\core-common-2.0.3\AndroidManifest.xml:15:13-93
+280            android:exported="false"
+280-->[com.google.android.play:core-common:2.0.3] C:\Users\jordi\.gradle\caches\8.13\transforms\c38fc9ab9d6c8fdac8de06e6fba4f7ce\transformed\core-common-2.0.3\AndroidManifest.xml:16:13-37
+281            android:stateNotNeeded="true"
+281-->[com.google.android.play:core-common:2.0.3] C:\Users\jordi\.gradle\caches\8.13\transforms\c38fc9ab9d6c8fdac8de06e6fba4f7ce\transformed\core-common-2.0.3\AndroidManifest.xml:17:13-42
+282            android:theme="@style/Theme.PlayCore.Transparent" />
+282-->[com.google.android.play:core-common:2.0.3] C:\Users\jordi\.gradle\caches\8.13\transforms\c38fc9ab9d6c8fdac8de06e6fba4f7ce\transformed\core-common-2.0.3\AndroidManifest.xml:18:13-62
+283    </application>
+284
+285</manifest>

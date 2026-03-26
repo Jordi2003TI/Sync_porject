@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.jorlina.syncapp-mergeDebugResources-46:/values-xlarge-v4/values-xlarge-v4.xml",
+            "outputFile": "com.jorlina.syncapp-mergeDebugResources-51:/values-xlarge-v4/values-xlarge-v4.xml",
             "map": [
                 {
                     "source": "C:\\Users\\jordi\\.gradle\\caches\\8.13\\transforms\\1f7efda551882667b824c4468431e7a2\\transformed\\appcompat-1.7.1\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
