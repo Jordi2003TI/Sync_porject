@@ -44,6 +44,10 @@ open class FirebaseActivity : AppCompatActivity() {
         actualizarContador("vecesPerfil")
     }
 
+    fun contarEntradaCrear() {
+        actualizarContador("vecesCrear")
+    }
+
     private fun actualizarContador(campo: String) {
         val ref = FirebaseClient.db.collection("stats").document("appStats")
         ref.update(campo, FieldValue.increment(1))
@@ -81,7 +85,8 @@ open class FirebaseActivity : AppCompatActivity() {
                         vecesPerfil = 0,
                         itemsCreados = 0,
                         itemsEditados = 0,
-                        itemsEliminados = 0
+                        itemsEliminados = 0,
+                        vecesCrear = 0
                     )
                     ref.set(stats)
                         .addOnSuccessListener {

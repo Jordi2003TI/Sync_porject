@@ -4349,7 +4349,6 @@ id tvAutor
 id tvAutorP
 id tvCO2
 id tvCO2text
-id tvCO2textg
 id tvCategoria
 id tvCategoriaP
 id tvCreaCuenta

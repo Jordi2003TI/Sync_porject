@@ -4348,7 +4348,6 @@ int id tvAutor 0x7f090256
 int id tvAutorP 0x7f090257
 int id tvCO2 0x7f090258
 int id tvCO2text 0x7f090259
-int id tvCO2textg 0x7f09025a
 int id tvCategoria 0x7f09025b
 int id tvCategoriaP 0x7f09025c
 int id tvCreaCuenta 0x7f09025d

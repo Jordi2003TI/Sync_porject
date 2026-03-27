@@ -75,8 +75,8 @@ class StatsActivity : AppCompatActivity() {
                     actualizarCO2(minutos)
 
                     // Actualizar gráficos con datos de Firebase
-                    cargarGraficoDetalleConDatos(it)
-                    cargarGraficoGeneralConDatos(it)
+                    cargarAcciones(it)
+                    cargarAfluencia(it)
                 } ?: run {
                     Log.e("StatsActivity", "Error: stats es null")
                     Toast.makeText(this, "Error al cargar datos de Firebase", Toast.LENGTH_LONG).show()
@@ -94,19 +94,20 @@ class StatsActivity : AppCompatActivity() {
         tvCO2.text = "$co2 g"
     }
 
-    private fun cargarGraficoDetalleConDatos(stats: AppStats) {
+    //TODO Por cada minuto son 0,5 g de C02 consumidos
+
+    private fun cargarAcciones(stats: AppStats) {
         val entries = listOf(
-            BarEntry(0f, stats.vecesAyuda.toFloat()),
-            BarEntry(1f, stats.vecesPerfil.toFloat()),
-            BarEntry(2f, stats.itemsCreados.toFloat()),
-            BarEntry(3f, stats.itemsEditados.toFloat())
+            BarEntry(0f, stats.itemsEliminados.toFloat()),
+            BarEntry(1f, stats.itemsCreados.toFloat()),
+            BarEntry(2f, stats.itemsEditados.toFloat()),
         )
         val dataSet = BarDataSet(entries, "Detalle")
         dataSet.color = android.graphics.Color.rgb(66, 133, 244)
         val data = BarData(dataSet)
         barChartDetalle.data = data
 
-        val labels = listOf("Ayuda", "Perfil", "Creados", "Editados")
+        val labels = listOf("Eliminados", "Creados", "Editados")
         val xAxis = barChartDetalle.xAxis
         xAxis.valueFormatter = IndexAxisValueFormatter(labels)
         xAxis.position = XAxis.XAxisPosition.BOTTOM
@@ -119,18 +120,18 @@ class StatsActivity : AppCompatActivity() {
         barChartDetalle.invalidate()
     }
 
-    private fun cargarGraficoGeneralConDatos(stats: AppStats) {
+    private fun cargarAfluencia(stats: AppStats) {
         val entries = listOf(
             BarEntry(0f, stats.vecesAyuda.toFloat()),
             BarEntry(1f, stats.vecesPerfil.toFloat()),
-            BarEntry(2f, stats.itemsCreados.toFloat())
+            BarEntry(2f, stats.vecesCrear.toFloat())
         )
         val dataSet = BarDataSet(entries, "General")
         dataSet.color = android.graphics.Color.rgb(66, 133, 244)
         val data = BarData(dataSet)
         barChartGeneral.data = data
 
-        val labels = listOf("Ayuda", "Perfil", "Creados")
+        val labels = listOf("Ayuda", "Perfil", "Crear")
         val xAxis = barChartGeneral.xAxis
         xAxis.valueFormatter = IndexAxisValueFormatter(labels)
         xAxis.position = XAxis.XAxisPosition.BOTTOM

@@ -7,5 +7,6 @@ data class AppStats(
     val vecesPerfil: Int = 0,
     val itemsCreados: Int = 0,
     val itemsEditados: Int = 0,
-    val itemsEliminados: Int = 0
+    val itemsEliminados: Int = 0,
+    val vecesCrear: Int = 0
 )
