@@ -91,6 +91,16 @@ class CreateActivity : FirebaseActivity() {
         val idUser = etIdUser.text.toString().toLongOrNull() ?: 1L
         val categoria = SpinerCategoriaFiltros.selectedItem.toString()
 
+        //val edad = etEdad.text.toString().toInt()
+        //val precio = etPrecio.text.toString().toDouble()
+        //val altura = etAltura.text.toString().toFloat()
+        //val poblacion = etPoblacion.text.toString().toLong()
+        //val edad = etEdad.text.toString().toIntOrNull()
+        //val precio = etPrecio.text.toString().toDoubleOrNull()
+        //val lista = texto.split(",")
+        //val formatter = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+        //val fecha = formatter.parse(fechaString)-
+
 
         if (titulo.isEmpty() || descripcion.isEmpty()) {
             Toast.makeText(this,
@@ -115,9 +125,9 @@ class CreateActivity : FirebaseActivity() {
                     Toast.makeText(this@CreateActivity,
                         "Item creado correctamente",
                         Toast.LENGTH_LONG).show()
-                        setResult(RESULT_OK)
+                        setResult(RESULT_OK) //hace que se recargue el reciclerView
                         incrementarItemsCreados() //Estadisticas
-                        onStop()
+                        onStop()         //Estadisticas
                         finish()
 
                 } else {
