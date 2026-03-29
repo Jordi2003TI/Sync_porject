@@ -10,9 +10,9 @@
               <option name="connection">
                 <ConnectionSetting>
                   <option name="appId" value="com.jorlina.syncapp" />
-                  <option name="mobileSdkAppId" value="1:583226486079:android:90c7b6a4ad04651a3f778a" />
-                  <option name="projectId" value="fir-synckotlin" />
-                  <option name="projectNumber" value="583226486079" />
+                  <option name="mobileSdkAppId" value="1:524037508025:android:27a150886c92c9dae58468" />
+                  <option name="projectId" value="pruebaejercicio" />
+                  <option name="projectNumber" value="524037508025" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

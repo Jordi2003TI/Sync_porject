@@ -24,36 +24,36 @@
         "source": "C:\\Users\\jordi\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-55:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\jordi\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-53:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\jordi\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-55:\\mipmap-mdpi\\ic_launcher_round.webp"
-    },
-    {
         "merged": "C:\\Users\\jordi\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-53:\\drawable_delete_icon.xml.flat",
         "source": "C:\\Users\\jordi\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-55:\\drawable\\delete_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\jordi\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-53:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\jordi\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-55:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\jordi\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-53:\\drawable_menu_layaut_image.png.flat",
         "source": "C:\\Users\\jordi\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-55:\\drawable\\menu_layaut_image.png"
     },
     {
-        "merged": "C:\\Users\\jordi\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-53:\\menu_menu_toolbar.xml.flat",
-        "source": "C:\\Users\\jordi\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-55:\\menu\\menu_toolbar.xml"
-    },
-    {
         "merged": "C:\\Users\\jordi\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-53:\\drawable_logo_image_removebg.png.flat",
         "source": "C:\\Users\\jordi\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-55:\\drawable\\logo_image_removebg.png"
+    },
+    {
+        "merged": "C:\\Users\\jordi\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-53:\\menu_menu_toolbar.xml.flat",
+        "source": "C:\\Users\\jordi\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-55:\\menu\\menu_toolbar.xml"
     },
     {
         "merged": "C:\\Users\\jordi\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-53:\\mipmap-hdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\jordi\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-55:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\jordi\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-53:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\jordi\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-55:\\mipmap-xhdpi\\ic_launcher.webp"
-    },
-    {
         "merged": "C:\\Users\\jordi\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-53:\\drawable_bg_splash.jpg.flat",
         "source": "C:\\Users\\jordi\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-55:\\drawable\\bg_splash.jpg"
+    },
+    {
+        "merged": "C:\\Users\\jordi\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-53:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\jordi\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-main-55:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\jordi\\.gradle\\daemon\\8.13\\com.jorlina.syncapp-debug-53:\\drawable_title_image_removebg.png.flat",
