@@ -53,7 +53,7 @@ open class FirebaseActivity : AppCompatActivity() {
         ref.update(campo, FieldValue.increment(1))
             .addOnFailureListener { e ->
                 Log.e(TAG, "Error al actualizar $campo: ${e.message}")
-                crearDocumentoSiNoExiste()
+
             }
     }
 
@@ -102,22 +102,14 @@ open class FirebaseActivity : AppCompatActivity() {
             }
     }
 
-    private fun crearDocumentoSiNoExiste() {
-        val ref = FirebaseClient.db.collection("stats").document("appStats")
-        ref.get().addOnSuccessListener { doc ->
-            if (!doc.exists()) {
-                val stats = AppStats()
-                ref.set(stats)
-            }
-        }
-    }
+
 
     fun sumarTiempoUso(tiempo: Long) {
         val ref = FirebaseClient.db.collection("stats").document("appStats")
         ref.update("tiempoUsoTotal", FieldValue.increment(tiempo))
             .addOnFailureListener { e ->
                 Log.e(TAG, "Error al sumar tiempo: ${e.message}")
-                crearDocumentoSiNoExiste()
+
             }
     }
 
