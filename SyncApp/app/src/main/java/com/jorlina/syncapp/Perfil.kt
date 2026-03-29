@@ -2,6 +2,7 @@ package com.jorlina.syncapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -18,6 +19,7 @@ import com.google.firebase.firestore.firestore
 import com.jorlina.syncapp.CRUD.ITEM.ItemApi
 import com.jorlina.syncapp.CRUD.ITEM.ItemService
 import com.jorlina.syncapp.Firebase.FirebaseActivity
+import com.jorlina.syncapp.Firebase.StatsActivity
 import com.jorlina.syncapp.model.DataSyncItem
 import com.jorlina.syncapp.model.SyncItem
 import com.jorlina.syncapp.model.menuprincipalrecicler.SyncAdapter
@@ -29,6 +31,8 @@ class Perfil : FirebaseActivity() {
     private lateinit var rvPerfil: RecyclerView
     private lateinit var PerfilAdapter: PerfilAdapter
     private var listaCompleta: List<SyncItem> = listOf()
+
+    private lateinit var FireBase: Button
 
     private val editItemLauncher = // Esto es una variable globla que hace que cada vez que entremos ejecute esto.
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result -> // esta siempre es igual (recoge el resulSet)
@@ -74,11 +78,15 @@ class Perfil : FirebaseActivity() {
 
     private fun initComponents(){
         rvPerfil = findViewById<RecyclerView>(R.id.rvPerfil)
+        FireBase = findViewById<Button>(R.id.FireBase)
 
     }
 
     private fun initListeners(){
-
+        FireBase.setOnClickListener {
+            var intent = Intent(this, StatsActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 

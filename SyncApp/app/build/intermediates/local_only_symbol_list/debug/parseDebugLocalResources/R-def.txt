@@ -35,6 +35,7 @@ drawable settings_layaut_image
 drawable star_icon
 drawable title_image_removebg
 drawable user_icon_image
+id FireBase
 id Historia_del_Arte
 id Quimica_Organica
 id SpinerAlfabetic
@@ -45,6 +46,8 @@ id action_profile
 id appBarCv
 id arrowBack
 id arrowBackIv
+id barChartDetalle
+id barChartGeneral
 id bnvNavegation
 id btCreateAccount
 id btCreatePost
@@ -52,7 +55,9 @@ id btFiltrar
 id btFiltrosUser
 id btLogin
 id btUpdatePost
+id btnVolver
 id cardAjustes
+id cardCO2
 id cat_Psicologia_General
 id cat_biologia
 id cat_calculo
@@ -122,6 +127,8 @@ id tbApp
 id toolbar
 id tvAutor
 id tvAutorP
+id tvCO2
+id tvCO2text
 id tvCategoria
 id tvCategoriaP
 id tvCreaCuenta
@@ -135,8 +142,10 @@ id tvEscribeDescripcionP
 id tvIdUser
 id tvLabelName
 id tvLabelPassword
+id tvMinutos
 id tvNombreUsuario
 id tvRecuperarContrasena
+id tvTiempo
 id tvTituloArticulo
 id tvTituloArticuloP
 id tvTituloElementoUser
@@ -151,6 +160,7 @@ layout activity_perfil
 layout activity_perfil_patch
 layout activity_preferencias
 layout activity_spalsh
+layout activity_stats
 layout app_bar_fragment
 layout elemento_crud
 layout elemento_recycle_view

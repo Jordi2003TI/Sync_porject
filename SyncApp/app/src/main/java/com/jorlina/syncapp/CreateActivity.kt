@@ -51,6 +51,7 @@ class CreateActivity : FirebaseActivity() {
         initListeners();
         initUI()
 
+        contarEntradaCrear()
         onStart()
     }
 
@@ -122,6 +123,7 @@ class CreateActivity : FirebaseActivity() {
                 val response = ItemApi.API().addItem(newItem)
 
                 if (response.isSuccessful) {
+                    incrementarItemsCreados()
                     Toast.makeText(this@CreateActivity,
                         "Item creado correctamente",
                         Toast.LENGTH_LONG).show()
