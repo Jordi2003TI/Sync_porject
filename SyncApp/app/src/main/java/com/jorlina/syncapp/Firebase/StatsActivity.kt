@@ -94,7 +94,7 @@ class StatsActivity : AppCompatActivity() {
         tvCO2.text = "$co2 g"
     }
 
-    //TODO Por cada minuto son 0,5 g de C02 consumidos
+    // Por cada minuto son 0,5 g de C02 consumidos
 
     private fun cargarAcciones(stats: AppStats) {
         val entries = listOf(

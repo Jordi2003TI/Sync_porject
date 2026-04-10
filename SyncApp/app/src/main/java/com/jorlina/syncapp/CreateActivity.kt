@@ -1,6 +1,8 @@
 package com.jorlina.syncapp
 
+import android.content.Intent
 import android.os.Bundle
+import android.speech.SpeechRecognizer
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
@@ -36,6 +38,10 @@ class CreateActivity : FirebaseActivity() {
     private lateinit var SpinerCategoriaFiltros: Spinner
 
     private lateinit var btCreatePost: Button
+
+    private lateinit var recognizer: SpeechRecognizer
+    private lateinit var recognizerIntent: Intent
+    private lateinit var micButton: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -95,6 +95,20 @@
         android:text="@string/filters">
     </Button>
 
+    <Button
+        android:id="@+id/btMicrofono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/cvBusquedaUser"
+        app:layout_constraintBottom_toTopOf="@+id/cvTituloRecientes"
+        app:layout_constraintStart_toEndOf="@+id/btFiltrosUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:text="VOZ">
+
+    </Button>
+
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cvTituloRecientes"
         android:layout_width="match_parent"

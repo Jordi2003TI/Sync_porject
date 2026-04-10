@@ -4,7 +4,7 @@
             "outputFile": "com.jorlina.syncapp-mergeDebugResources-51:/values-night-v33/values-night-v33.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\jordi\\.gradle\\caches\\8.13\\transforms\\95885cf69bf4932f30eb54ced8201191\\transformed\\core-splashscreen-1.2.0\\res\\values-night-v33\\values-night-v33.xml",
+                    "source": "C:\\Users\\carol\\.gradle\\caches\\8.13\\transforms\\95885cf69bf4932f30eb54ced8201191\\transformed\\core-splashscreen-1.2.0\\res\\values-night-v33\\values-night-v33.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

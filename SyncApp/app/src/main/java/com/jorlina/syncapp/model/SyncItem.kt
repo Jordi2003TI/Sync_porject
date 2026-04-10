@@ -3,6 +3,8 @@ package com.jorlina.syncapp.model
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
+
+//Necesita plugins en el graddle (id("kotlin-parcelize"))
 @Parcelize
 data class SyncItem(
     val id : Long,

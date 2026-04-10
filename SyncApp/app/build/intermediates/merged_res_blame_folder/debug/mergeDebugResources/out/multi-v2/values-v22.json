@@ -4,7 +4,7 @@
             "outputFile": "com.jorlina.syncapp-mergeDebugResources-51:/values-v22/values-v22.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\jordi\\.gradle\\caches\\8.13\\transforms\\1f7efda551882667b824c4468431e7a2\\transformed\\appcompat-1.7.1\\res\\values-v22\\values-v22.xml",
+                    "source": "C:\\Users\\carol\\.gradle\\caches\\8.13\\transforms\\1f7efda551882667b824c4468431e7a2\\transformed\\appcompat-1.7.1\\res\\values-v22\\values-v22.xml",
                     "from": {
                         "startLines": "2,3,4,9",
                         "startColumns": "4,4,4,4",

@@ -3878,6 +3878,7 @@ id btCreatePost
 id btFiltrar
 id btFiltrosUser
 id btLogin
+id btMicrofono
 id btUpdatePost
 id btnVolver
 id buttonPanel

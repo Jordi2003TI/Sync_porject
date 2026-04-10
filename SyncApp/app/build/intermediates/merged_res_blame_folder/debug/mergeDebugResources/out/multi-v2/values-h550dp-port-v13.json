@@ -4,7 +4,7 @@
             "outputFile": "com.jorlina.syncapp-mergeDebugResources-51:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\jordi\\.gradle\\caches\\8.13\\transforms\\7bd6cea6f4901f6956ede924f4c48362\\transformed\\material-1.13.0\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
+                    "source": "C:\\Users\\carol\\.gradle\\caches\\8.13\\transforms\\7bd6cea6f4901f6956ede924f4c48362\\transformed\\material-1.13.0\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

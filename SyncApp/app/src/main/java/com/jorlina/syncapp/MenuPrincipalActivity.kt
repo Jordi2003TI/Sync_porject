@@ -1,7 +1,12 @@
 package com.jorlina.syncapp
 
+import android.speech.RecognitionListener
+import android.app.Service
+import android.os.IBinder
 import android.content.Intent
 import android.os.Bundle
+import android.speech.RecognizerIntent
+import android.speech.SpeechRecognizer
 import android.util.Log
 import android.widget.Button
 import android.widget.SearchView
@@ -26,6 +31,11 @@ import com.jorlina.syncapp.model.SyncItem
 import com.jorlina.syncapp.model.menuprincipalrecicler.SyncAdapter
 import kotlinx.coroutines.launch
 
+import android.Manifest
+import android.content.pm.PackageManager
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
+
 class MenuPrincipalActivity : FirebaseActivity() {
     private lateinit var svBusquedaUser: SearchView
     private lateinit var filterButton: Button
@@ -36,6 +46,11 @@ class MenuPrincipalActivity : FirebaseActivity() {
     private var REQUEST_CODE_FILTROS = 100
 
     private var likeBool = false
+    private lateinit var recognizer: SpeechRecognizer
+    private lateinit var recognizerIntent: Intent
+    private lateinit var micButton: Button
+
+
 
     private val createItemLauncher =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
@@ -60,19 +75,60 @@ class MenuPrincipalActivity : FirebaseActivity() {
         initComponents();
         initListeners();
         initUI()
+        pedirPermisosMic()
+    }
+
+    private fun pedirPermisosMic(){
+        // Pedir permiso en tiempo de ejecución
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO)
+            != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(
+                this,
+                arrayOf(Manifest.permission.RECORD_AUDIO),
+                101
+            )
+        }
     }
 
     private fun initComponents() {
-
         svBusquedaUser = findViewById(R.id.svBusquedaUser)
-        filterButton = findViewById<Button>(R.id.btFiltrosUser)
-        bnvNavegation = findViewById<BottomNavigationView>(R.id.bnvNavegation)
-        rvRecientes = findViewById<RecyclerView>(R.id.rvRecientes)
+        filterButton = findViewById(R.id.btFiltrosUser)
+        bnvNavegation = findViewById(R.id.bnvNavegation)
+        rvRecientes = findViewById(R.id.rvRecientes)
+        micButton = findViewById(R.id.btMicrofono)
 
+        // Inicializar recognizer e intent
+        recognizer = SpeechRecognizer.createSpeechRecognizer(this)
+        recognizerIntent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH).apply {
+            putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
+            putExtra(RecognizerIntent.EXTRA_LANGUAGE, "ca-ES") // o "es-ES"
+        }
 
+        recognizer.setRecognitionListener(object : RecognitionListener {
+            override fun onResults(results: Bundle?) {
+                val spokenText = results
+                    ?.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)
+                    ?.get(0)
+                    ?.lowercase()
+
+                handleVoiceCommand(spokenText)
+            }
+            override fun onError(error: Int) {}
+            override fun onReadyForSpeech(params: Bundle?) {}
+            override fun onBeginningOfSpeech() {}
+            override fun onRmsChanged(rmsdB: Float) {}
+            override fun onBufferReceived(buffer: ByteArray?) {}
+            override fun onEndOfSpeech() {}
+            override fun onPartialResults(partialResults: Bundle?) {}
+            override fun onEvent(eventType: Int, params: Bundle?) {}
+        })
     }
 
     private fun initListeners() {
+
+        micButton.setOnClickListener {
+            recognizer.startListening(recognizerIntent)
+        }
 
         svBusquedaUser.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
 
@@ -216,16 +272,41 @@ class MenuPrincipalActivity : FirebaseActivity() {
 
     }
 
-//    fun obtenirEstadisticas() {
-//
-//        db.collection("estadisticas")
-//            .get()
-//            .addOnSuccessListener { result ->
-//
-//                val llistaEstadisticas = result.toObjects(AppStats::class.java)
-//
-//                mostrarEstadisticas(llistaEstadisticas)
-//
-//            }
-//    }
+    private fun handleVoiceCommand(command: String?) {
+
+        Toast.makeText(this@MenuPrincipalActivity,
+            "Reconocimiento de voz activado",
+            Toast.LENGTH_LONG).show()
+
+        when {
+            command?.contains("buscar") == true -> {
+                // Extrae lo que viene después de "buscar"
+                val query = command.substringAfter("buscar").trim()
+                svBusquedaUser.setQuery(query, false)
+                filtrarPorTitulo(query)
+            }
+            command?.contains("limpiar") == true -> {
+                svBusquedaUser.setQuery("", false)
+                filtrarPorTitulo("")
+            }
+            command?.contains("atras") == true -> {
+                onBackPressedDispatcher.onBackPressed()
+            }
+            command?.contains("nuevo") == true -> {
+                val intent = Intent(this, CreateActivity::class.java)
+                createItemLauncher.launch(intent)
+            }
+            command?.contains("ajustes") == true -> {
+                startActivity(Intent(this, PreferenciasActivity::class.java))
+            }
+            command?.contains("perfil") == true -> {
+                startActivity(Intent(this, Perfil::class.java))
+            }
+        }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        recognizer.destroy()
+    }
 }
