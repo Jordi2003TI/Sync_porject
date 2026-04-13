@@ -1,7 +1,11 @@
 package com.jorlina.syncapp
 
+import android.content.BroadcastReceiver
+import android.content.Context
 import android.content.Intent
+import android.content.IntentFilter
 import android.os.Bundle
+import android.speech.SpeechRecognizer
 import android.view.View
 import android.view.ViewParent
 import android.widget.Adapter
@@ -13,11 +17,14 @@ import android.widget.Spinner
 import android.widget.Switch
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import java.text.FieldPosition
 
 class Filtros : AppCompatActivity() {
+
+    private lateinit var recognizer: SpeechRecognizer
 
     private lateinit var spinner: Spinner
 
@@ -29,6 +36,7 @@ class Filtros : AppCompatActivity() {
 
     private var categoriaSeleccionada: String = "Todas"
 
+    private lateinit var voiceReceiver: BroadcastReceiver
 
     private lateinit var switchLike: Switch
     private var likeSeleccionado: Boolean = false
@@ -46,7 +54,47 @@ class Filtros : AppCompatActivity() {
         listeners()
         initUI()
 
+        voiceReceiver = object : BroadcastReceiver() {
+            override fun onReceive(context: Context?, intent: Intent?) {
+                val command = intent?.getStringExtra("command")
+                handleVoiceCommand(command)
+            }
+        }
+
     }
+
+    override fun onResume() {
+        super.onResume()
+        ContextCompat.registerReceiver(
+            this,
+            voiceReceiver,
+            IntentFilter("VOICE_RESULT"),
+            ContextCompat.RECEIVER_NOT_EXPORTED
+        )
+    }
+    override fun onPause() {
+        super.onPause()
+        unregisterReceiver(voiceReceiver)
+    }
+
+    private fun handleVoiceCommand(command: String?) {
+        val cmd = command?.lowercase()?.trim() ?: return
+
+        when {
+            cmd.contains("filtrar") -> btFiltrar.performClick()
+            cmd.contains("favoritos") -> switchLike.isChecked = true
+            cmd.contains("todas") -> SpinerCategoria.setSelection(0)
+            cmd.contains("calculo") -> SpinerCategoria.setSelection(1)
+            cmd.contains("programacion") -> SpinerCategoria.setSelection(2)
+            cmd.contains("bioligia") -> SpinerCategoria.setSelection(3)
+            cmd.contains("economia") -> SpinerCategoria.setSelection(4)
+            cmd.contains("psicologia") -> SpinerCategoria.setSelection(5)
+            cmd.contains("historia") -> SpinerCategoria.setSelection(6)
+            cmd.contains("quimica") -> SpinerCategoria.setSelection(7)
+            cmd.contains("atrás") || cmd.contains("atras") -> finish()
+        }
+    }
+
 
     private fun initUI() {
         val adapter = ArrayAdapter.createFromResource(

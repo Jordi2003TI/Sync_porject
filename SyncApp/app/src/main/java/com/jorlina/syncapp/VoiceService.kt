@@ -1,6 +1,7 @@
 package com.jorlina.syncapp
 
 import android.app.Service
+import android.content.BroadcastReceiver
 import android.content.Intent
 import android.os.Bundle
 import android.os.IBinder
@@ -11,6 +12,7 @@ import android.speech.SpeechRecognizer
 class VoiceService : Service() {
 
     private lateinit var recognizer: SpeechRecognizer
+
     private lateinit var recognizerIntent: Intent
 
     override fun onCreate() {
@@ -33,6 +35,8 @@ class VoiceService : Service() {
                 intent.putExtra("command", spokenText)
                 sendBroadcast(intent)
             }
+
+
             override fun onError(error: Int) {}
             override fun onReadyForSpeech(params: Bundle?) {}
             override fun onBeginningOfSpeech() {}
@@ -46,6 +50,8 @@ class VoiceService : Service() {
         })
 
         recognizer.startListening(recognizerIntent)
+
+
     }
 
     override fun onDestroy() {

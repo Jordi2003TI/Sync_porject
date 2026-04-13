@@ -37,6 +37,8 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 
 class MenuPrincipalActivity : FirebaseActivity() {
+
+
     private lateinit var svBusquedaUser: SearchView
     private lateinit var filterButton: Button
     private lateinit var bnvNavegation: BottomNavigationView
@@ -313,6 +315,10 @@ class MenuPrincipalActivity : FirebaseActivity() {
 
             cmd.contains("perfil") -> {
                 startActivity(Intent(this, Perfil::class.java))
+            }
+
+            cmd.contains("filtros") -> {
+                startActivity(Intent(this, Filtros::class.java))
             }
         }
     }
