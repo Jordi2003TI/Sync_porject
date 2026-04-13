@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="gcm_defaultSenderId" translatable="false">583226486079</string>
-    <string name="google_api_key" translatable="false">AIzaSyC_Ks6-R2YEXw0eS3gXkYHHbfhRRx87LPQ</string>
-    <string name="google_app_id" translatable="false">1:583226486079:android:90c7b6a4ad04651a3f778a</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC_Ks6-R2YEXw0eS3gXkYHHbfhRRx87LPQ</string>
-    <string name="google_storage_bucket" translatable="false">fir-synckotlin.firebasestorage.app</string>
-    <string name="project_id" translatable="false">fir-synckotlin</string>
+    <string name="gcm_defaultSenderId" translatable="false">524037508025</string>
+    <string name="google_api_key" translatable="false">AIzaSyAzwL3JVJWBj0L21uzKAM-3naVUxg3RDMA</string>
+    <string name="google_app_id" translatable="false">1:524037508025:android:27a150886c92c9dae58468</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAzwL3JVJWBj0L21uzKAM-3naVUxg3RDMA</string>
+    <string name="google_storage_bucket" translatable="false">pruebaejercicio.firebasestorage.app</string>
+    <string name="project_id" translatable="false">pruebaejercicio</string>
 </resources>

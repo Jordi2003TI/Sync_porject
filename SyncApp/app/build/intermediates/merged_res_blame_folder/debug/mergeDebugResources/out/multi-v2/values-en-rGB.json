@@ -4,7 +4,7 @@
             "outputFile": "com.jorlina.syncapp-mergeDebugResources-51:/values-en-rGB/values-en-rGB.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\carol\\.gradle\\caches\\8.13\\transforms\\3ae2a2e91c42398b872464a45be9a095\\transformed\\browser-1.4.0\\res\\values-en-rGB\\values-en-rGB.xml",
+                    "source": "C:\\Users\\jordi\\.gradle\\caches\\8.13\\transforms\\3ae2a2e91c42398b872464a45be9a095\\transformed\\browser-1.4.0\\res\\values-en-rGB\\values-en-rGB.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\carol\\.gradle\\caches\\8.13\\transforms\\7bd6cea6f4901f6956ede924f4c48362\\transformed\\material-1.13.0\\res\\values-en-rGB\\values-en-rGB.xml",
+                    "source": "C:\\Users\\jordi\\.gradle\\caches\\8.13\\transforms\\7bd6cea6f4901f6956ede924f4c48362\\transformed\\material-1.13.0\\res\\values-en-rGB\\values-en-rGB.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -40,7 +40,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\carol\\.gradle\\caches\\8.13\\transforms\\8f948f483584586230f1811dbeb52056\\transformed\\core-1.17.0\\res\\values-en-rGB\\values-en-rGB.xml",
+                    "source": "C:\\Users\\jordi\\.gradle\\caches\\8.13\\transforms\\8f948f483584586230f1811dbeb52056\\transformed\\core-1.17.0\\res\\values-en-rGB\\values-en-rGB.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -57,7 +57,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\carol\\.gradle\\caches\\8.13\\transforms\\1f7efda551882667b824c4468431e7a2\\transformed\\appcompat-1.7.1\\res\\values-en-rGB\\values-en-rGB.xml",
+                    "source": "C:\\Users\\jordi\\.gradle\\caches\\8.13\\transforms\\1f7efda551882667b824c4468431e7a2\\transformed\\appcompat-1.7.1\\res\\values-en-rGB\\values-en-rGB.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -74,7 +74,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\carol\\.gradle\\caches\\8.13\\transforms\\b9c8fd18cf9bab746b10481b0bb74a6f\\transformed\\credentials-1.2.0-rc01\\res\\values-en-rGB\\values-en-rGB.xml",
+                    "source": "C:\\Users\\jordi\\.gradle\\caches\\8.13\\transforms\\b9c8fd18cf9bab746b10481b0bb74a6f\\transformed\\credentials-1.2.0-rc01\\res\\values-en-rGB\\values-en-rGB.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -91,7 +91,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\carol\\.gradle\\caches\\8.13\\transforms\\32d36cd2247255718c1b1e4c5f34f11e\\transformed\\play-services-base-18.5.0\\res\\values-en-rGB\\values.xml",
+                    "source": "C:\\Users\\jordi\\.gradle\\caches\\8.13\\transforms\\32d36cd2247255718c1b1e4c5f34f11e\\transformed\\play-services-base-18.5.0\\res\\values-en-rGB\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -108,7 +108,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\carol\\.gradle\\caches\\8.13\\transforms\\efdded04549f594dad79b0138c5e3086\\transformed\\play-services-basement-18.4.0\\res\\values-en-rGB\\values.xml",
+                    "source": "C:\\Users\\jordi\\.gradle\\caches\\8.13\\transforms\\efdded04549f594dad79b0138c5e3086\\transformed\\play-services-basement-18.4.0\\res\\values-en-rGB\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

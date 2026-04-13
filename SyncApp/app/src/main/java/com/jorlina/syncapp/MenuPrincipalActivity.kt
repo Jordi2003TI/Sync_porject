@@ -101,7 +101,7 @@ class MenuPrincipalActivity : FirebaseActivity() {
         recognizer = SpeechRecognizer.createSpeechRecognizer(this)
         recognizerIntent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH).apply {
             putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
-            putExtra(RecognizerIntent.EXTRA_LANGUAGE, "ca-ES") // o "es-ES"
+            putExtra(RecognizerIntent.EXTRA_LANGUAGE, "es-ES")
         }
 
         recognizer.setRecognitionListener(object : RecognitionListener {
@@ -111,9 +111,16 @@ class MenuPrincipalActivity : FirebaseActivity() {
                     ?.get(0)
                     ?.lowercase()
 
+                Log.d("VOICE", "Texto reconocido: $spokenText")
+
                 handleVoiceCommand(spokenText)
             }
-            override fun onError(error: Int) {}
+            override fun onError(error: Int) {
+                Log.e("VOICE", "Error reconocimiento: $error")
+                Toast.makeText(this@MenuPrincipalActivity,
+                    "Error en reconocimiento ($error)",
+                    Toast.LENGTH_SHORT).show()
+            }
             override fun onReadyForSpeech(params: Bundle?) {}
             override fun onBeginningOfSpeech() {}
             override fun onRmsChanged(rmsdB: Float) {}
@@ -277,29 +284,34 @@ class MenuPrincipalActivity : FirebaseActivity() {
         Toast.makeText(this@MenuPrincipalActivity,
             "Reconocimiento de voz activado",
             Toast.LENGTH_LONG).show()
+        val cmd = command?.lowercase()?.trim() ?: return
 
         when {
-            command?.contains("buscar") == true -> {
-                // Extrae lo que viene después de "buscar"
-                val query = command.substringAfter("buscar").trim()
+            cmd.contains("buscar") -> {
+                val query = cmd.substringAfter("buscar").trim()
                 svBusquedaUser.setQuery(query, false)
                 filtrarPorTitulo(query)
             }
-            command?.contains("limpiar") == true -> {
+
+            cmd.contains("limpiar") -> {
                 svBusquedaUser.setQuery("", false)
                 filtrarPorTitulo("")
             }
-            command?.contains("atras") == true -> {
+
+            cmd.contains("atras") || cmd.contains("atrás") || cmd.contains("enrere") -> {
                 onBackPressedDispatcher.onBackPressed()
             }
-            command?.contains("nuevo") == true -> {
+
+            cmd.contains("nuevo") -> {
                 val intent = Intent(this, CreateActivity::class.java)
                 createItemLauncher.launch(intent)
             }
-            command?.contains("ajustes") == true -> {
+
+            cmd.contains("ajustes") -> {
                 startActivity(Intent(this, PreferenciasActivity::class.java))
             }
-            command?.contains("perfil") == true -> {
+
+            cmd.contains("perfil") -> {
                 startActivity(Intent(this, Perfil::class.java))
             }
         }

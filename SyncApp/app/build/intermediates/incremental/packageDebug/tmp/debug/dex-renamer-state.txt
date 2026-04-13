@@ -1,16 +1,16 @@
-#Fri Apr 10 19:55:32 CEST 2026
-base.0=C\:\\Users\\carol\\Desktop\\PROGRAM\\AplicacionsMovils\\SyncApp_project\\SyncApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Users\\carol\\Desktop\\PROGRAM\\AplicacionsMovils\\SyncApp_project\\SyncApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.10=C\:\\Users\\carol\\Desktop\\PROGRAM\\AplicacionsMovils\\SyncApp_project\\SyncApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
-base.11=C\:\\Users\\carol\\Desktop\\PROGRAM\\AplicacionsMovils\\SyncApp_project\\SyncApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
-base.2=C\:\\Users\\carol\\Desktop\\PROGRAM\\AplicacionsMovils\\SyncApp_project\\SyncApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
-base.3=C\:\\Users\\carol\\Desktop\\PROGRAM\\AplicacionsMovils\\SyncApp_project\\SyncApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
-base.4=C\:\\Users\\carol\\Desktop\\PROGRAM\\AplicacionsMovils\\SyncApp_project\\SyncApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
-base.5=C\:\\Users\\carol\\Desktop\\PROGRAM\\AplicacionsMovils\\SyncApp_project\\SyncApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
-base.6=C\:\\Users\\carol\\Desktop\\PROGRAM\\AplicacionsMovils\\SyncApp_project\\SyncApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
-base.7=C\:\\Users\\carol\\Desktop\\PROGRAM\\AplicacionsMovils\\SyncApp_project\\SyncApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
-base.8=C\:\\Users\\carol\\Desktop\\PROGRAM\\AplicacionsMovils\\SyncApp_project\\SyncApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
-base.9=C\:\\Users\\carol\\Desktop\\PROGRAM\\AplicacionsMovils\\SyncApp_project\\SyncApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
+#Mon Apr 13 18:32:39 CEST 2026
+base.0=C\:\\Users\\jordi\\Desktop\\2_ano\\Desenvolupamnet_Sostenible_aplicacions_mobils\\PROJECTO\\SyncApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\jordi\\Desktop\\2_ano\\Desenvolupamnet_Sostenible_aplicacions_mobils\\PROJECTO\\SyncApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.10=C\:\\Users\\jordi\\Desktop\\2_ano\\Desenvolupamnet_Sostenible_aplicacions_mobils\\PROJECTO\\SyncApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.11=C\:\\Users\\jordi\\Desktop\\2_ano\\Desenvolupamnet_Sostenible_aplicacions_mobils\\PROJECTO\\SyncApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
+base.2=C\:\\Users\\jordi\\Desktop\\2_ano\\Desenvolupamnet_Sostenible_aplicacions_mobils\\PROJECTO\\SyncApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
+base.3=C\:\\Users\\jordi\\Desktop\\2_ano\\Desenvolupamnet_Sostenible_aplicacions_mobils\\PROJECTO\\SyncApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
+base.4=C\:\\Users\\jordi\\Desktop\\2_ano\\Desenvolupamnet_Sostenible_aplicacions_mobils\\PROJECTO\\SyncApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
+base.5=C\:\\Users\\jordi\\Desktop\\2_ano\\Desenvolupamnet_Sostenible_aplicacions_mobils\\PROJECTO\\SyncApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
+base.6=C\:\\Users\\jordi\\Desktop\\2_ano\\Desenvolupamnet_Sostenible_aplicacions_mobils\\PROJECTO\\SyncApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
+base.7=C\:\\Users\\jordi\\Desktop\\2_ano\\Desenvolupamnet_Sostenible_aplicacions_mobils\\PROJECTO\\SyncApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
+base.8=C\:\\Users\\jordi\\Desktop\\2_ano\\Desenvolupamnet_Sostenible_aplicacions_mobils\\PROJECTO\\SyncApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
+base.9=C\:\\Users\\jordi\\Desktop\\2_ano\\Desenvolupamnet_Sostenible_aplicacions_mobils\\PROJECTO\\SyncApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.10=classes2.dex
