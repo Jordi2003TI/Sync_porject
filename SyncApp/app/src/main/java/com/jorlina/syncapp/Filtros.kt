@@ -5,6 +5,7 @@ import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
 import android.os.Bundle
+import android.speech.RecognizerIntent
 import android.speech.SpeechRecognizer
 import android.view.View
 import android.view.ViewParent
@@ -21,6 +22,8 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import java.text.FieldPosition
+
+import android.speech.RecognitionListener
 
 class Filtros : AppCompatActivity() {
 
@@ -40,6 +43,9 @@ class Filtros : AppCompatActivity() {
 
     private lateinit var switchLike: Switch
     private var likeSeleccionado: Boolean = false
+
+    private lateinit var micButton: Button
+    private lateinit var recognizerIntent: Intent
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -75,24 +81,6 @@ class Filtros : AppCompatActivity() {
     override fun onPause() {
         super.onPause()
         unregisterReceiver(voiceReceiver)
-    }
-
-    private fun handleVoiceCommand(command: String?) {
-        val cmd = command?.lowercase()?.trim() ?: return
-
-        when {
-            cmd.contains("filtrar") -> btFiltrar.performClick()
-            cmd.contains("favoritos") -> switchLike.isChecked = true
-            cmd.contains("todas") -> SpinerCategoria.setSelection(0)
-            cmd.contains("calculo") -> SpinerCategoria.setSelection(1)
-            cmd.contains("programacion") -> SpinerCategoria.setSelection(2)
-            cmd.contains("bioligia") -> SpinerCategoria.setSelection(3)
-            cmd.contains("economia") -> SpinerCategoria.setSelection(4)
-            cmd.contains("psicologia") -> SpinerCategoria.setSelection(5)
-            cmd.contains("historia") -> SpinerCategoria.setSelection(6)
-            cmd.contains("quimica") -> SpinerCategoria.setSelection(7)
-            cmd.contains("atrás") || cmd.contains("atras") -> finish()
-        }
     }
 
 
@@ -146,6 +134,10 @@ class Filtros : AppCompatActivity() {
             finish()
         }
 
+        micButton.setOnClickListener {
+            recognizer.startListening(recognizerIntent)
+        }
+
     }
 
     private fun initComponents() {
@@ -157,5 +149,83 @@ class Filtros : AppCompatActivity() {
         switchLike = findViewById(R.id.switchLike)
         btFiltrar = findViewById<Button>(R.id.btFiltrar)
 
+
+        micButton = findViewById(R.id.btMicrofono)
+
+        recognizer = SpeechRecognizer.createSpeechRecognizer(this)
+
+        recognizerIntent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH).apply {
+            putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,
+                RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
+            putExtra(RecognizerIntent.EXTRA_LANGUAGE, "es-ES")
+        }
+
+        recognizer.setRecognitionListener(object : RecognitionListener {
+
+            override fun onResults(results: Bundle?) {
+                val spokenText = results
+                    ?.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)
+                    ?.firstOrNull()
+                    ?.lowercase()
+
+                handleVoiceCommand(spokenText)
+            }
+
+            override fun onError(error: Int) {}
+
+            override fun onReadyForSpeech(params: Bundle?) {}
+            override fun onBeginningOfSpeech() {}
+            override fun onRmsChanged(rmsdB: Float) {}
+            override fun onBufferReceived(buffer: ByteArray?) {}
+            override fun onEndOfSpeech() {}
+            override fun onPartialResults(partialResults: Bundle?) {}
+            override fun onEvent(eventType: Int, params: Bundle?) {}
+        })
+
     }
+
+    private fun handleVoiceCommand(command: String?) {
+
+        val cmd = command?.lowercase()?.trim() ?: return
+
+        when {
+
+            cmd.contains("cálculo") ||
+                    cmd.contains("filtrar calculo") -> {
+
+                SpinerCategoria.setSelection(1)
+                categoriaSeleccionada = "Calculo"
+            }
+
+            cmd.contains("programación") -> {
+                SpinerCategoria.setSelection(2)
+                categoriaSeleccionada = "Programacion"
+            }
+
+            cmd.contains("biología") || cmd.contains("biologia") -> {
+                SpinerCategoria.setSelection(3)
+                categoriaSeleccionada = "Biologia"
+            }
+
+            cmd.contains("favoritos") -> {
+                switchLike.isChecked = true
+                likeSeleccionado = true
+            }
+
+            cmd.contains("filtrar") -> {
+                btFiltrar.performClick()
+            }
+
+            cmd.contains("atrás") || cmd.contains("atras") -> {
+                finish()
+            }
+        }
+    }
+
+    override fun onDestroy() {
+        recognizer.destroy()
+        super.onDestroy()
+    }
+
+
 }

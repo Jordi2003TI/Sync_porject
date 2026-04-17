@@ -21,7 +21,7 @@ class VoiceService : Service() {
         recognizer = SpeechRecognizer.createSpeechRecognizer(this)
         recognizerIntent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH).apply {
             putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
-            putExtra(RecognizerIntent.EXTRA_LANGUAGE, "ca-ES")
+            putExtra(RecognizerIntent.EXTRA_LANGUAGE, "es-ES")
         }
 
         recognizer.setRecognitionListener(object : RecognitionListener {
@@ -30,6 +30,8 @@ class VoiceService : Service() {
                     ?.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)
                     ?.get(0)
                     ?.lowercase()
+
+                android.util.Log.d("VOICE_DEBUG", "Reconocido: $spokenText")
 
                 val intent = Intent("VOICE_RESULT")
                 intent.putExtra("command", spokenText)

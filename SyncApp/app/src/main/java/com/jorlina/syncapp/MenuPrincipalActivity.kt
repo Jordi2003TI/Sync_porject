@@ -320,6 +320,10 @@ class MenuPrincipalActivity : FirebaseActivity() {
             cmd.contains("filtros") -> {
                 startActivity(Intent(this, Filtros::class.java))
             }
+
+            cmd.contains("gráficos") || cmd.contains("gráfico") || cmd.contains("gráfica") -> {
+                startActivity(Intent(this, StatsActivity::class.java))
+            }
         }
     }
 
