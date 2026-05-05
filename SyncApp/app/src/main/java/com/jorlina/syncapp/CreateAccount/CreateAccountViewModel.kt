@@ -30,11 +30,11 @@ class CreateAccountViewModel : ViewModel() {
         }
 
         if (username.length > 50) {
-            errorMessage.value = "Usuario demasiado largo"
+            _errorMessage.value = "Usuario demasiado largo"
             return
         }
 
-        if (!username.matches(Regex("[a-zA-Z0-9]+"))) {
+        if (!username.matches(Regex("[a-zA-Z0-9_]+"))) {
             _errorMessage.value = "El usuario solo puede contener letras, números y guiones bajos"
             return
         }
