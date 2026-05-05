@@ -59,7 +59,7 @@ class CreateAcontActivity : AppCompatActivity() {
 
         btCrear.setOnClickListener {
             viewModel.createAccount(
-                etUsername.text.toString(),
+                etUsername.text.toString().trim(),
                 etEmail.text.toString(),
                 etPassword.text.toString(),
                 etRepeatPassword.text.toString()
