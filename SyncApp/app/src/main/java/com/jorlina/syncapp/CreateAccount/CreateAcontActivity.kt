@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.jorlina.syncapp.R
+import android.view.View
 
 class CreateAcontActivity : AppCompatActivity() {
 
@@ -66,8 +67,9 @@ class CreateAcontActivity : AppCompatActivity() {
             )
         }
 
-        viewModel.errorMessage.observe(this) {
-            tvErrorCreate.text = it
+        viewModel.errorMessage.observe(this) { error ->
+            tvErrorCreate.text = error ?: ""
+            tvErrorCreate.visibility = if (error != null) View.VISIBLE else View.GONE
         }
 
         viewModel.registerResult.observe(this) { success ->
